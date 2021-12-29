@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 :root{
     --mainColor:#B5EAEA;
     --secondaryColor:#EDF6E5;
@@ -18,13 +18,14 @@
 }
 html,body{
     background: var(--mainColor);
+    font-family: 'Roboto Mono', monospace;
 }
 h1,h2,h3,h4,h5,h6,strong{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: var(--mainText);
 }
 p,li,span,label,input,textarea{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: var(--secondaryText);
 }
 a{
@@ -61,4 +62,93 @@ h6{
         width: 95%; 
         margin:0 auto;
     }
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 6em;
+    align-items: center;
+    margin: 2em;
+}
+header .logo{
+    width: 20%;
+    cursor: pointer;
+}
+header .logo img{
+    width:100%;
+    max-width: 150px;
+    min-width: 130px;
+}
+
+/* Menu bar */
+.menu {
+    width: 90%;
+    max-width: 600px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-box{
+    position: relative;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+  }  
+  .menu-box{
+      font-size: 1.6rem;
+  }
+  .menu-box::before {
+    position: absolute;
+    content: "" attr(data-title) "";
+    top: 36%;
+    left: 50%;
+    transform: translateY(60px) translateX(-50%);
+    z-index: 10;
+    font-size: 12px;
+    font-family: inherit;
+    letter-spacing: 0.52px;
+    transition: 300ms;
+  }
+  
+  .menu-box:hover::before {
+    transform: translateY(0) translateX(-50%);
+  }
+  
+  .menu-box:hover .menu-icon {
+    transform: translateY(-60px);
+  }
+  
+  .menu-icon {
+    display: inline-block;
+    transition: 350ms;
+    transform: translateY(0);
+  }
+li:nth-child(1) a {
+  color: rgb(247, 123, 22);
+}
+li:nth-child(2) a {
+  color: rgb(29, 175, 90);
+}
+li:nth-child(3) a {
+  color: rgb(224, 24, 157);
+}
+li:nth-child(4) a {
+  color: rgb(139, 53, 53);
+}
+li:nth-child(5) a {
+  color: rgb(240, 0, 0);
+}
+li:nth-child(6) a {
+  color: rgb(25, 133, 255);
 }

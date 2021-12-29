@@ -83,17 +83,10 @@ h6 {
     width: 1200px;
     margin: 0 auto;
 }
-
-@media screen and (max-width:1200px) {
-    .main-container {
-        width: 95%;
-        margin: 0 auto;
-    }
-}
-
-.s1 {
+.s1{
     height: 100vh;
 }
+
 
 /* Header */
 header {
@@ -112,7 +105,6 @@ header .logo {
 header .logo img {
     width: 100%;
     max-width: 150px;
-    min-width: 130px;
 }
 
 /* Menu bar */
@@ -249,9 +241,9 @@ li:nth-child(6) a {
 
 #drawer {
     display: flex;
-    margin: 5px;
+    margin-inline: 5px;
     padding: 10px;
-    width: 10%;
+    width: 20%;
     justify-content:space-evenly;
     font-size: 1.2rem;
 }
@@ -262,20 +254,17 @@ li:nth-child(6) a {
 
 
 .left-column {
-    width: 100%;
     grid-area: left-column;
     padding-top: 40px;
     padding-bottom: 40px; 
-    display: flex;
-    flex-direction: column;
 }
 /* Profile */
 #profile-pic{
     display: flex;
     margin: 0 auto;
-    width: 90%; 
-    max-width: 350px;
-    min-width: 250px;
+    width: 80%; 
+    max-width: 300px;
+    min-width: 200px;
     object-fit: cover;
     border-radius:0 50px 0 50px ;
 }
@@ -283,6 +272,8 @@ li:nth-child(6) a {
     grid-area: right-column;
     display: grid;
     align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 /* Intro preview Text */
 #preview{
@@ -321,9 +312,51 @@ li:nth-child(6) a {
     left: -7px;
 }
 #preview-shadow{
-    width: 400px;
+    max-width: 400px;
     height: 200px;
     padding-left:35px ;
     padding-top: 30px;
     background:var(--infoColor3);
+}
+
+@media screen and (max-width:1200px) {
+    .main-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:800px){
+    html{
+        font-size:10px;
+    }
+    header .logo img {
+        width: 100%;
+        max-width: 100px;
+    }
+    .s1{
+        height: 100%;
+    }
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+        ;
+    }
+    .right-column{
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    #preview{
+        width: 300px;
+    }
+    #preview-shadow{
+        width: 300px;
+        height: 140px;
+        padding-top:20px ;
+        padding-left: 20px;
+    }
 }

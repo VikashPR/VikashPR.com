@@ -206,6 +206,7 @@ header .logo img {
         'nav-wrapper nav-wrapper'
         'left-column right-column'
     ;
+    user-select: none;
 }
 
 .nav-wrapper {
@@ -292,6 +293,7 @@ header .logo img {
     border: 1.5px solid #16abc2;
     background: var(--infoColor2);
     padding: 20px;
+    user-select: none;
 }
 
 #preview h1 {

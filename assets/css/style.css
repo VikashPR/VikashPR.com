@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-
+ 
 :root {
     --mainColor: #B5EAEA;
     --secondaryColor: #FFF;
     --infoColor: #EDF6E5;
-    --infoColor2: #FFBCBC;
+    --infoColor2: #ffbcbc56;
     --infoColor3: #F38BA0;
 
     --borderColor: #c1c1c1;
@@ -124,6 +124,7 @@ header .logo img {
     align-items: center;
     justify-content: space-evenly;
     background: var(--infoColor);
+    /* background:#fff; */
     border-radius: 10px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
@@ -137,6 +138,7 @@ header .logo img {
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    
 }
 
 .menu-box {
@@ -221,14 +223,6 @@ li:nth-child(6) a {
     align-items: center;
 }
 
-.left-column {
-    grid-area: left-column;
-}
-
-.right-column {
-    grid-area: right-column;
-}
-
 .dots-wrapper {
     display: flex;
     padding: 10px;
@@ -263,4 +257,73 @@ li:nth-child(6) a {
 }
 #drawer #burger-menu{
     cursor:pointer;
+}
+
+
+
+.left-column {
+    width: 100%;
+    grid-area: left-column;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    display: flex;
+    flex-direction: column;
+}
+/* Profile */
+#profile-pic{
+    display: flex;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 350px;
+    min-width: 250px;
+    object-fit: cover;
+    border-radius:0 50px 0 50px ;
+}
+.right-column {
+    grid-area: right-column;
+    display: grid;
+    align-content: center;
+}
+/* Intro preview Text */
+#preview{
+    width: 400px;
+    position:relative;
+    border:1.5px solid #16abc2;
+    background:var(--infoColor2);
+    padding: 20px;
+}
+#preview h1{
+    font-size:3rem;
+    font-weight: 600;
+}
+.corner {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50% ;
+    border:1.5px solid #16abc2;
+    background-color: #fff;
+}
+#corner-tl{
+    top: -7px;
+    left: -7px;
+}
+#corner-tr{
+    top: -7px;
+    right: -7px;
+}
+#corner-br{
+    bottom: -7px;
+    right: -7px;
+}
+#corner-bl{
+    bottom: -7px;
+    left: -7px;
+}
+#preview-shadow{
+    width: 400px;
+    height: 200px;
+    padding-left:35px ;
+    padding-top: 30px;
+    background:var(--infoColor3);
 }

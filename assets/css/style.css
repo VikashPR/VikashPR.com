@@ -85,7 +85,8 @@ h6 {
 }
 
 .s1 {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
 }
 
 
@@ -105,7 +106,17 @@ header .logo {
 
 header .logo img {
     width: 100%;
-    max-width: 150px;
+    max-width: 70px;
+    border: 2px solid var(--infoColor3);
+    border-radius:20px ;
+    padding: 5px;
+    background: var(--infoColor);   
+}
+.header-wrapper{
+    position:sticky;
+    top: 0;
+    z-index: 20;
+    
 }
 
 /* Menu bar */
@@ -122,6 +133,7 @@ header .logo img {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     z-index: 20;
     transition: 300ms;
+    border: 2px solid var(--infoColor3);
 }
 
 .menu-box {
@@ -133,7 +145,6 @@ header .logo img {
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-
 }
 
 .menu-box {
@@ -428,9 +439,14 @@ header .logo img {
     .menu {
         position: fixed;
         left: 0;
+        right: 0;
         bottom: 0;
-        width: 100%;
-        margin: 0;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+    .menu-box {
+        width: 50px;
+        height: 40px;
     }
 
     #preview {

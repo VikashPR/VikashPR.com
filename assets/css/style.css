@@ -102,12 +102,15 @@ header {
     z-index: 20;
 }
 
-header .logo {
+.logo {
     width: 20%;
     cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
-header .logo img {
+.logo img {
     width: 100%;
     max-width: 70px;
     border: 2px solid var(--infoColor3);

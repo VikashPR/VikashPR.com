@@ -7,12 +7,15 @@
     --infoColor: #EDF6E5;
     --infoColor2: #ffbcbc56;
     --infoColor3: #F38BA0;
+    --skillPrimary:#fe58a0;
 
     --borderColor: #c1c1c1;
 
     --mainText: black;
+    --skillTextPrimary: #363636;
     --secondaryText: #4b5156;
 }
+
 
 * {
     box-sizing: border-box;
@@ -514,6 +517,56 @@ header {
     margin: 30px 0;
 }
 
+/* Skill Section */
+.skill{
+    display: grid;
+    padding: 16px;
+}
+.skill .card{
+    background: var(--primaryColor);
+    padding: 2rem;
+    margin: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.skill .card:hover{
+    box-shadow: 0px 12px 16px  #36363624 ;
+}
+.skill .card svg{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 80px;
+    width: 80px;
+    font-size:2.2rem;
+    color: var(--secondaryColor);
+    background-color: var(--skillPrimary);
+    padding: 10px;
+    border-radius: 35%;
+    margin-inline: auto;
+}
+.skill .card > .skill-header {
+    padding-block: 24px ;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--skillPrimary);
+}
+.skill .card .skill-list{
+    padding-block: 8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    color: var(--secondaryText);
+    text-transform: uppercase;
+    font-size:1.2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 800px){
+    .skill{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
 /* Media Querry */
 @media screen and (max-width:1200px) {
     .main-container {
@@ -612,6 +665,21 @@ header {
         background: #fff;
         transform-origin: right;
         transform: rotate(-30deg);
+    }
+    .skill{
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        max-width: 50px;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .logo img {
+        width: 100%;
+        max-width: 50px;
     }
 
 }

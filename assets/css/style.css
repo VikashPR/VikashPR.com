@@ -697,7 +697,9 @@ header {
     .sec{
         margin-right: 0;
     }
-
+    .sec-s1{
+        margin-top: 20px;
+    }
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:

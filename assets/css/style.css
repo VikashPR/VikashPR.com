@@ -696,6 +696,7 @@ header {
     }
     .sec{
         margin-right: 0;
+        max-height: 100%;
     }
     .sec-s1{
         margin-top: 20px;

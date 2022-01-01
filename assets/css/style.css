@@ -689,17 +689,17 @@ header {
     html {
         font-size: 10px;
     }
-
-    header .logo img {
-        width: 100%;
-        max-width: 100px;
+    .logo{
+        position: relative;
+        top: 10px;
+        left: 10px;
     }
     .sec{
         margin-right: 0;
         max-height: 100%;
     }
     .sec-s1{
-        margin-top: 20px;
+        margin-top: 60px;
     }
     .intro-wrapper {
         grid-template-columns: 1fr;
@@ -785,14 +785,9 @@ header {
     .logo {
         max-width: 50px;
         cursor: pointer;
-        position: fixed;
+        position: absolute;
         top: 10px;
         left: 10px;
-    }
-    
-    .logo img {
-        width: 100%;
-        max-width: 50px;
     }
     .sec-s4 .row{
         margin: 30px 0 30px 60px;

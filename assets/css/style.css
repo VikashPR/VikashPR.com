@@ -97,6 +97,7 @@ h6 {
     margin-right: 80px;
 }
 
+
 /* Header */
 header {
     position: fixed;
@@ -104,14 +105,15 @@ header {
     right: 10px;
     z-index: 20;
 }
-
-.logo {
-    width: 20%;
-    cursor: pointer;
-    position: fixed;
+.sec-s1{
+    flex-direction:column;
+    align-items:flex-start
+}
+/* Logo */
+.logo{
+    position:fixed;
     top: 20px;
     left: 20px;
-    z-index: 999;
 }
 
 .logo img {
@@ -122,7 +124,6 @@ header {
     padding: 5px;
     background: var(--infoColor);   
 }
-
 
 /* Menu bar */
 .menu {
@@ -691,15 +692,15 @@ header {
     }
     .logo{
         position: relative;
-        top: 10px;
-        left: 10px;
+        top: 0;
+    }
+    .sec-s1{
+        flex-direction:column;
+        align-items:flex-start
     }
     .sec{
         margin-right: 0;
         max-height: 100%;
-    }
-    .sec-s1{
-        margin-top: 60px;
     }
     .intro-wrapper {
         grid-template-columns: 1fr;
@@ -782,13 +783,8 @@ header {
     .skill{
         grid-template-columns: 1fr;
     }
-    .logo {
-        max-width: 50px;
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-    }
+
+
     .sec-s4 .row{
         margin: 30px 0 30px 60px;
         justify-content:flex-start;

@@ -143,6 +143,10 @@ header {
     transition: 300ms;
     border: 2px solid #084d81;
     flex-direction: column;
+    background: #011627;
+}
+.menu-active{
+    transform: translateX(100px)
 }
 
 .menu-box {
@@ -270,10 +274,10 @@ header {
     font-size: 1.2rem;
 }
 
-#drawer #burger-menu-mobile {
+#drawer #burger-menu {
     cursor: pointer;
 }
-
+s
 
 
 .left-column {

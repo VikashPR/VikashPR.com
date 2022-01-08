@@ -277,8 +277,6 @@ header {
 #drawer #burger-menu {
     cursor: pointer;
 }
-s
-
 
 .left-column {
     grid-area: left-column;
@@ -738,8 +736,11 @@ s
     .sec {
         margin-right: 0;
         max-height: 100%;
+        min-height: 100vh;
     }
-
+    .menu-active{
+        transform: translateY(100px)
+    }
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -752,6 +753,9 @@ s
 
     .right-column {
         justify-content: center;
+    }
+    .left-column{
+        padding-bottom: 0;
     }
 
     header {

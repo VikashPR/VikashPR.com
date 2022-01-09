@@ -98,7 +98,7 @@ header {
     /* border: 2px solid var(--infoColor3); */
     border-radius: 20px;
     padding: 5px;
-    background: #000;
+    background: #fa4b7a;
 }
 
 /* Menu bar */
@@ -725,6 +725,7 @@ header {
     }
 
     .logo {
+        display: none;
         position: relative;
         top: 0;
     }

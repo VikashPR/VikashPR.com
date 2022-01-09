@@ -210,7 +210,7 @@ header {
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: space-between;
-    background: #9bc8d8;
+    background: #1b3249;
     align-items: center;
 }
 
@@ -595,8 +595,7 @@ header {
     width: calc(50% - 50px);
     padding: 20px;
     position: relative;
-    background: transparent;
-    background:#0a50a0;
+    background:#0a69a0;
 }
 
 .sec-s4 .center-line {
@@ -626,7 +625,7 @@ header {
 .row section .details {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .row section .details .title {
@@ -637,7 +636,7 @@ header {
 
 .row section p {
     margin: 10px 5px;
-    font-family: 'Roboto Mono', sans-serif;
+    /* font-family: 'Roboto Mono', sans-serif; */
 }
 
 .row section .bottom a {
@@ -658,7 +657,7 @@ header {
 .row section::before {
     position: absolute;
     content: "";
-    background:#0a50a0;
+    background:#0a69a0;
     height: 20px;
     width: 20px;
     top: 28px;

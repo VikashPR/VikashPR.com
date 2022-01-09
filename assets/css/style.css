@@ -26,34 +26,16 @@
 
 html,
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', monospace;
     /* background: var(--mainColor); */
     scroll-behavior: smooth;
-    background: #011627;
-    color: #5f7e97;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-    font-family: 'Montserrat', sans-serif;
-}
-
-p,
-li,
-span,
-label,
-input,
-textarea {
-    font-family: 'Roboto Mono', monospace;
+    background: #fff;
+    color: #000;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 ul {
@@ -125,7 +107,7 @@ header {
     /* border: 2px solid var(--infoColor3); */
     border-radius: 20px;
     padding: 5px;
-    background: #7e57c2;
+    background: #fff;
 }
 
 /* Menu bar */
@@ -141,9 +123,9 @@ header {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     z-index: 20;
     transition: 300ms;
-    border: 2px solid #084d81;
+    border: 2px solid #000;
     flex-direction: column;
-    background: #011627;
+    background: #fff;
 }
 .menu-active{
     transform: translateX(100px)
@@ -218,8 +200,8 @@ header {
 
 /* Intro */
 .intro-wrapper {
-    background: #0b2942;
-    border: 1px solid #5f7e9790;
+    background: #fff;
+    border: 1px solid #000;
     border-radius: 5px 5px 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,7 +219,7 @@ header {
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: space-between;
-    background: #d6deeb;
+    background: #c3c3c3;
     align-items: center;
 }
 
@@ -311,7 +293,7 @@ header {
     width: 400px;
     position: relative;
     border: 1.5px solid #16abc2;
-    background: #084d817a;
+    background: rgba(0, 0, 0, 0.24);
     color: #fff;
     padding: 20px;
     user-select: none;
@@ -356,7 +338,7 @@ header {
     height: 200px;
     padding-left: 35px;
     padding-top: 30px;
-    background: #084d81;
+    background: #000;
 }
 
 .social-media {
@@ -415,7 +397,7 @@ header {
     font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
-    color: #d6deeb;
+    color: #000;
 }
 
 .seperator {
@@ -433,7 +415,7 @@ header {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #fff;
+    background: #000;
     z-index: 10;
 }
 
@@ -444,7 +426,7 @@ header {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #c792ea;
+    background: #000;
 }
 
 .about-content {
@@ -507,12 +489,11 @@ header {
 
 #download-cv {
     width: 190px;
-    color:  #addb67;
     font-size: 1.2rem;
     margin: 30px 0;
     border-radius: 10px;
     padding: 20px;
-    background: #5f7e9790;
+    background: #c3c3c3;
     margin: 30px 0;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -554,7 +535,7 @@ header {
     width: 80px;
     font-size: 2.2rem;
     color: #fff;
-    background-color: #E41F7B;
+    background-color: #000;
     padding: 10px;
     border-radius: 35%;
     margin-inline: auto;
@@ -564,14 +545,13 @@ header {
     padding-block: 24px;
     font-size: 1.4rem;
     text-align: center;
-    color:   #82aaff;
+    color:   #000;
 }
 
 .skill .card .skill-list {
     padding-block: 8px;
     display: grid;
     grid-template-columns: 1fr 28px;
-    /* color: var(--secondaryText); */
     text-transform: uppercase;
     font-size: 1.2rem;
     width: 90%;
@@ -590,18 +570,19 @@ header {
 
 .row section {
     font-family: 'Montserrat', sans-serif;
-    /* background-color:var(--secondaryColor); */
+    background-color:#000;
     border-radius: 5px;
     width: calc(50% - 50px);
     padding: 20px;
     position: relative;
+    color: #fff;
 }
 
 .sec-s4 .center-line {
     position: absolute;
     height: 80%;
     width: 4px;
-    /* background: var(--secondaryColor); */
+    background: #000;
     left: 50%;
     transform: translateX(50%);
     top: 20%;
@@ -643,8 +624,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: var(--infoColor3);  */
-    /* color: var(--secondaryColor); */
+    background: #fff; 
     border-radius: 5px;
 }
 
@@ -655,7 +635,7 @@ header {
 .row section::before {
     position: absolute;
     content: "";
-    /* background:var(--secondaryColor); */
+    background:#000;
     height: 20px;
     width: 20px;
     top: 28px;
@@ -674,17 +654,17 @@ header {
 .row section .icon,
 .center-line .scroll-icon {
     position: absolute;
-    /* color: var(--infoColor3); */
+    color:  #fff;
     height: 50px;
     width: 50px;
     padding: 10px;
     text-align: center;
     border-radius: 50%;
     font-size: 1rem;
-    /* background: var(--secondaryColor); */
+    background:#000;
     top: 13px;
     z-index: 6;
-    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px #000, inset 0 2px 0 rgba(151, 151, 151, 0.507), 0 3px 0 4px rgba(175, 175, 175, 0.185);
 }
 
 .center-line .scroll-icon {

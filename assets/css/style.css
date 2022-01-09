@@ -789,6 +789,7 @@ header {
     }
 
     .right-content {
+        padding: 10px;
         width: 100%;
         text-align: center;
         align-items: center;
@@ -801,7 +802,7 @@ header {
     }
 
     #download-cv {
-        width: 130px;
+        width: 140px;
     }
 
     .left-content::before {

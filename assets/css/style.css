@@ -591,7 +591,6 @@ header {
 }
 
 .row section {
-    font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
     width: calc(50% - 50px);
     padding: 20px;
@@ -631,13 +630,14 @@ header {
 }
 
 .row section .details .title {
+    font-weight: 600;
     font-size: 1.6rem;
     z-index: 5;
 }
 
 .row section p {
     margin: 10px 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .row section .bottom a {
@@ -648,6 +648,7 @@ header {
     align-items: center;
     background: #28c7fa; 
     border-radius: 5px;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .row section .bottom a span {

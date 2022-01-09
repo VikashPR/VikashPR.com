@@ -2,18 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 :root {
-    --mainColor: #121212;
-    --secondaryColor: #FFF;
-    --infoColor: #BB86FC;
-    --infoColor2: #03DAC6;
-    --infoColor3: #F38BA0;
-    --skillPrimary: #fe58a0;
-
-    --borderColor: #c1c1c1;
-
-    --mainText: black;
-    --skillTextPrimary: #363636;
-    --secondaryText: #4b5156;
 
 }
 

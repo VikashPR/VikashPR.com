@@ -439,7 +439,12 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
-
+.right-content p{
+    margin-block: 5px;
+    font-size: 1.1rem;
+    line-height:1.8;
+    font-family: 'Roboto Mono', sans-serif;
+}
 .about-content .left-content img {
     width: 100%;
     min-width: 230px;
@@ -478,12 +483,15 @@ header {
 }
 
 #download-cv {
-    width: 190px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 200px;
     font-size: 1.2rem;
     margin: 30px 0;
     border-radius: 10px;
     padding: 20px;
-    background: grey;
+    background: #28c7fa;
     margin: 30px 0;
     text-align: center;
     transition: all 0.5s ease-in-out;

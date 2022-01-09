@@ -528,8 +528,8 @@ header {
     height: 80px;
     width: 80px;
     font-size: 2.2rem;
-    color: #ff304f;
-    background-color: #fff;
+    background-color: #ff304f;
+    color: #fff;
     padding: 10px;
     border-radius: 35%;
     margin-inline: auto;
@@ -550,6 +550,7 @@ header {
     font-size: 1.2rem;
     width: 90%;
     margin: 0 auto;
+    font-family: 'Roboto Mono', sans-serif;
 }
 .card-pL .skill-list:nth-child(3){
     color: #0080CC;

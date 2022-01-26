@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --bgPrimary: #0E1630;
+    --bgSecondary:#182038;
+    --primaryColor: #fff;
+    --secondaryColor: #ef4782;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background-color:var(--bg);
+    color: var(--primaryColor);
+    font-family: 'Montserrat', sans-serif;
+}

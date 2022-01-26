@@ -78,6 +78,7 @@ header .nav-links .nav-link a:after{
     position: absolute;
     bottom: -5px;
     left: 0;
+    right: 0;
     margin: auto;
     width: 0%;
     content: "";
@@ -87,7 +88,7 @@ header .nav-links .nav-link a:after{
     border-radius: 2px;
 }
 header .nav-links .nav-link a:hover::after,header .nav-links .nav-link a:hover{
-    width: 80%;
+    width: 100%;
     color: var(--infoColor);
 }
 

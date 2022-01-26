@@ -17,9 +17,11 @@
 
 body,
 html {
-    background-image: url("../image/bg.svg");
+    background: url("../image/bg.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     color: var(--secondaryColor);
     font-family: 'Quicksand', sans-serif;
 }
@@ -69,14 +71,17 @@ header .nav-links .nav-link a {
     color: var(--secondaryColor);
     position: relative;
 }
+
 header .nav-links .nav-link a::before,
-header .nav-links .nav-link a::after{
+header .nav-links .nav-link a::after {
     transition: all .5s;
 }
-header .nav-links .nav-link{
-    margin-inline-end:10px ;
+
+header .nav-links .nav-link {
+    margin-inline-end: 10px;
 }
-header .nav-links .nav-link a:after{
+
+header .nav-links .nav-link a:after {
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -89,18 +94,32 @@ header .nav-links .nav-link a:after{
     height: 4px;
     border-radius: 2px;
 }
-header .nav-links .nav-link a:hover::after,header .nav-links .nav-link a:hover{
+
+header .nav-links .nav-link a:hover::after,
+header .nav-links .nav-link a:hover {
     width: 100%;
     color: var(--infoColor);
 }
 
+// NOTE Home Section
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". .";
+}
+
+
 //NOTE Media Querry
 @media screen and (max-width: 880px) {
-    header .nav-links .nav-link:nth-child(6),header .nav-links .nav-link:nth-child(7){
+
+    header .nav-links .nav-link:nth-child(6),
+    header .nav-links .nav-link:nth-child(7) {
         display: none;
     }
 }
 
-@media screen and (max-width:800px) {
-    
-}
+@media screen and (max-width:800px) {}

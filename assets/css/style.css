@@ -17,9 +17,8 @@
 
 body,
 html {
-  background-image: url("../image/bg.svg");
+  background: url("../image/bg.svg") no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   color: var(--secondaryColor);
   font-family: 'Quicksand', sans-serif;
 }
@@ -104,13 +103,27 @@ header .nav-links .nav-link a:after {
   border-radius: 2px;
 }
 
-header .nav-links .nav-link a:hover::after, header .nav-links .nav-link a:hover {
+header .nav-links .nav-link a:hover::after,
+header .nav-links .nav-link a:hover {
   width: 100%;
   color: var(--infoColor);
 }
 
+.home-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+      grid-template-areas: ". .";
+}
+
 @media screen and (max-width: 880px) {
-  header .nav-links .nav-link:nth-child(6), header .nav-links .nav-link:nth-child(7) {
+  header .nav-links .nav-link:nth-child(6),
+  header .nav-links .nav-link:nth-child(7) {
     display: none;
   }
 }

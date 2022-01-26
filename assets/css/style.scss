@@ -40,6 +40,27 @@ li {
     margin: 0 auto;
 }
 
+.title {
+    position: relative;
+    margin-block: 20px;
+}
+
+.heading {
+    font-size: 1.7rem;
+    color: var(--infoColor);
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -60px;
+    width: 50px;
+    height: 4px;
+    background: var(--infoColor);
+    transform-origin: left;
+}
+
 /*NOTE Header */
 
 header {
@@ -48,7 +69,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100px;
+    height: 10vh;
 }
 
 header .logo {
@@ -103,14 +124,66 @@ header .nav-links .nav-link a:hover {
 
 // NOTE Home Section
 .home-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        ". .";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
 }
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+
+    .home-right .avatar-card {
+        backdrop-filter: blur(9px) saturate(100%);
+        -webkit-backdrop-filter: blur(9px) saturate(100%);
+        background-color: rgba(24, 32, 56, 0.59);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        padding: 15px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+
+        img {
+            width: 100%;
+            max-width: 450px;
+            min-width: 250px;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+    }
+
+    .home-left {
+        color: var(--primaryColor);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 50%;
+        h1 {
+            font-size: 5rem;
+        }
+
+        h3 {
+            font-weight: 400;
+            color: var(--secondaryColor);
+            font-size: 2rem;
+        }
+
+        .home-btn {
+            padding: 20px;
+            backdrop-filter: blur(22px) saturate(100%);
+            -webkit-backdrop-filter: blur(22px) saturate(100%);
+            background-color: rgba(24, 32, 56, 0.81);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+
+    }
+}
+
+
+
 
 
 //NOTE Media Querry
@@ -122,4 +195,8 @@ header .nav-links .nav-link a:hover {
     }
 }
 
-@media screen and (max-width:800px) {}
+@media screen and (max-width:800px) {
+    header .nav-links {
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+:root {
+    --bgPrimary: #0E1630;
+    --bgSecondary: #182038;
+    --primaryColor: #fff;
+    --secondaryColor: #9ca9c9;
+    --infoColor: #ef4782;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background-color: var(--bgPrimary);
+    color: var(--secondaryColor);
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*NOTE Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+header .logo {
+    margin-inline: 10px;
+    font-size: 1.4rem;
+}
+
+header .logo span {
+    color: var(--infoColor);
+}
+
+header .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--secondaryColor);
+}
+
+header .nav-links .nav-link a {
+    color: var(--secondaryColor);
+    position: relative;
+}
+header .nav-links .nav-link a::before,
+header .nav-links .nav-link a::after{
+    transition: all .5s;
+}
+header .nav-links .nav-link{
+    margin-inline-end:10px ;
+}
+header .nav-links .nav-link a:after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    margin: auto;
+    width: 0%;
+    content: "";
+    color: transparent;
+    background: var(--infoColor);
+    height: 4px;
+    border-radius: 2px;
+}
+header .nav-links .nav-link a:hover::after,header .nav-links .nav-link a:hover{
+    width: 80%;
+    color: var(--infoColor);
+}
+
+//NOTE Media Querry
+@media screen and (max-width: 880px) {
+    header .nav-links .nav-link:nth-child(6),header .nav-links .nav-link:nth-child(7){
+        display: none;
+    }
+}

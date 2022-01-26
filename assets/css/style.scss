@@ -17,7 +17,9 @@
 
 body,
 html {
-    background-color: var(--bgPrimary);
+    background-image: url("../image/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--secondaryColor);
     font-family: 'Quicksand', sans-serif;
 }
@@ -97,4 +99,8 @@ header .nav-links .nav-link a:hover::after,header .nav-links .nav-link a:hover{
     header .nav-links .nav-link:nth-child(6),header .nav-links .nav-link:nth-child(7){
         display: none;
     }
+}
+
+@media screen and (max-width:800px) {
+    
 }

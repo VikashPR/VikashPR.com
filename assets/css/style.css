@@ -17,7 +17,9 @@
 
 body,
 html {
-  background-color: var(--bgPrimary);
+  background-image: url("../image/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--secondaryColor);
   font-family: 'Quicksand', sans-serif;
 }

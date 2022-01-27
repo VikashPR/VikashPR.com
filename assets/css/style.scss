@@ -157,9 +157,6 @@ header .nav-links .nav-link a:hover {
 // NOTE Home Section
 
 /* Intro */
-.home-container {
-}
-
 .intro-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,18 +176,18 @@ header .nav-links .nav-link a:hover {
 
     .home-nav {
         position: relative;
-        left: 0;
-        right: 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
         backdrop-filter: blur(24px);
         border-radius: 10px 10px 0px 0px;
-        background-image: url(../image/navBar.svg);
+        background: rgba(35, 37, 38, 0.8);
+        backdrop-filter: blur(24px);
+        border-radius: 10px 10px 0px 0px;
         height: 70px;
-        .dots{
-            display: none;
-        }
-
+        padding-right: 20px;
         .nav-social {
-            display: none;
+            display:flex;
 
             .social-item {
                 background: rgba(255, 255, 255, 0.08);
@@ -200,13 +197,41 @@ header .nav-links .nav-link a:hover {
                 display: flex;
                 align-items: center;
                 min-width: 70px;
+                max-width:100px;
                 justify-content: space-between;
                 margin-inline: 5px;
-
+                height:40px;
                 img {
                     width: 20px;
                     margin-right: 4px;
                 }
+            }
+        }
+        .dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+
+            .dot {
+                margin: 6px;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+            }
+
+            .dot:nth-child(1) {
+                background: #ED6A5E;
+                border: 0.6px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .dot:nth-child(2) {
+                background: #F4BF4E;
+                border: 0.6px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .dot:nth-child(3) {
+                background: #62C554;
             }
         }
     }
@@ -283,11 +308,6 @@ header .nav-links .nav-link a:hover {
     }
 }
 
-@media screen and (max-width: 950px) {
-    .intro-wrapper .home-nav .nav-social {
-        display: none;
-    }
-}
 
 @media screen and (max-width:800px) {
     html {
@@ -297,7 +317,10 @@ header .nav-links .nav-link a:hover {
     header .nav-links {
         display: none;
     }
-  
+
+    .intro-wrapper .home-nav .nav-social {
+        display: none;
+    }
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -307,43 +330,24 @@ header .nav-links .nav-link a:hover {
             'left-column'
         ;
     }
+
     .btn {
         backdrop-filter: none;
         background-color: rgba(24, 32, 56, 0.9);
     }
+
     .intro-wrapper {
         backdrop-filter: none;
         text-align: center;
-    .home-nav{
-        background: rgba(35, 37, 38, 0.918);
-        background-image:none;
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
-        .dots{
+
+        .home-nav {
+            background: rgba(35, 37, 38, 0.918);
+            background-image: none;
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin-left: 20px;
-            .dot{
-                margin: 6px;
-                height: 16px;
-                width: 16px;
-                border-radius: 50%;
-            }
-            .dot:nth-child(1){
-                background: #ED6A5E;
-            border: 0.6px solid rgba(0, 0, 0, 0.1);
-            }
-            .dot:nth-child(2){
-                background: #F4BF4E;
-                border: 0.6px solid rgba(0, 0, 0, 0.1);
-            }
-            .dot:nth-child(3){
-                background: #62C554;
-            }
+            justify-content: space-between;
         }
-    }
+
         .home-right {
             .avatar-card {
                 display: flex;
@@ -356,15 +360,19 @@ header .nav-links .nav-link a:hover {
                 }
             }
         }
+
         .home-left {
             margin-left: 0;
             margin-top: 10px;
+
             .home-btns {
                 justify-content: center;
+
                 .btn {
                     width: 140px;
                 }
             }
+
             .heading::after {
                 display: none;
             }

@@ -43,7 +43,7 @@ li {
 }
 
 .heading {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--infoColor);
 }
@@ -51,7 +51,7 @@ li {
 .heading::after {
   content: '';
   position: absolute;
-  top: 16px;
+  top: 12px;
   left: -60px;
   width: 50px;
   height: 4px;
@@ -62,7 +62,7 @@ li {
 }
 
 .btn {
-  width: 190px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,6 +84,10 @@ li {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   background-color: rgba(24, 32, 56, 0.9);
   border: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+.btn i {
+  margin-inline: 10px;
 }
 
 .btn:hover {
@@ -112,7 +116,7 @@ header {
           align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  height: 10vh;
+  height: 15vh;
 }
 
 header .logo {
@@ -169,6 +173,10 @@ header .nav-links .nav-link a:hover::after,
 header .nav-links .nav-link a:hover {
   width: 100%;
   color: var(--primaryColor);
+}
+
+.home-container {
+  height: 85vh;
 }
 
 /* Intro */
@@ -366,6 +374,95 @@ header .nav-links .nav-link a:hover {
   margin-top: 70px;
 }
 
+.about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .about-right {
+  margin: 40px;
+  position: relative;
+}
+
+.about-container .about-right .avatar-card img {
+  width: 100%;
+  max-width: 400px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.about-container .about-right::before {
+  content: 'yes, its me';
+  text-transform: capitalize;
+  position: absolute;
+  left: -60px;
+  top: -30px;
+}
+
+.about-container .about-right::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  width: 70px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.about-container .about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 50%;
+  margin: 50px;
+}
+
+.about-container .about-left h3 {
+  font-size: 1.6rem;
+  color: var(--primaryColor);
+  margin-block: 10px;
+}
+
+.about-container .about-left p {
+  font-size: 1.1rem;
+  color: var(--secondaryColor);
+  margin-block: 10px;
+}
+
+.about-container .about-left .about-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-container .about-left .about-btns .btn:nth-child(1) i {
+  color: #ff330f;
+}
+
+.about-container .about-left .about-btns .btn:nth-child(2) i {
+  color: #0fe29c;
+}
+
 @media screen and (max-width: 900px) {
   header .nav-links .nav-link:nth-child(6),
   header .nav-links .nav-link:nth-child(7) {
@@ -392,6 +489,10 @@ header .nav-links .nav-link a:hover {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
     background-color: rgba(24, 32, 56, 0.9);
+    min-width: 150px;
+  }
+  .btn i {
+    margin-inline: 5px;
   }
   .intro-wrapper {
     -webkit-backdrop-filter: none;
@@ -443,6 +544,29 @@ header .nav-links .nav-link a:hover {
   }
   .intro-wrapper .home-left .heading::after {
     display: none;
+  }
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-container .about-left {
+    width: 80%;
+  }
+  .about-container .about-left .about-btns {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .about-container .about-right::before {
+    left: -20px;
+    top: -30px;
+  }
+  .about-container .about-right::after {
+    top: 30px;
+    left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

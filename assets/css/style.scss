@@ -47,6 +47,8 @@ li {
 }
 
 .heading {
+    position: absolute;
+    top: 30px;
     font-size: 1.7rem;
     font-weight: 500;
     color: var(--infoColor);
@@ -310,7 +312,7 @@ header .nav-links .nav-link a:hover {
 .about-container{
     width: 100%;
     display:flex;
-    justify-content: space-around;
+
     flex-direction: column;
     .about-wrapper{
         display: flex;
@@ -397,6 +399,9 @@ header .nav-links .nav-link a:hover {
     .title {
         position: relative;
         margin-left: 80px;
+    }
+    .heading{
+        top: -20px;
     }
         
     .heading::after {

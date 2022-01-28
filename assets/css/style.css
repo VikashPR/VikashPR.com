@@ -579,7 +579,7 @@ header .nav-links .nav-link a:hover {
     width: 80%;
   }
   .about-wrapper .about-left {
-    width: 80%;
+    width: 100%;
   }
   .about-wrapper .about-left .about-btns {
     -webkit-box-align: center;

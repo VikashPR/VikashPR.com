@@ -43,11 +43,11 @@ li {
 
 .title {
     position: relative;
-    margin-block: 20px;
+    margin-left: 50px;
 }
 
 .heading {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: var(--infoColor);
 }
@@ -55,7 +55,7 @@ li {
 .heading::after {
     content: '';
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: -60px;
     width: 50px;
     height: 4px;
@@ -310,8 +310,12 @@ header .nav-links .nav-link a:hover {
 .about-container{
     width: 100%;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    .about-wrapper{
+        display: flex;
+        align-items: center;
+    }
     .about-right{
         margin: 40px;
         position: relative;
@@ -375,7 +379,6 @@ header .nav-links .nav-link a:hover {
 }
 
 @media screen and (max-width: 900px) {
-
     header .nav-links .nav-link:nth-child(6),
     header .nav-links .nav-link:nth-child(7) {
         display: none;
@@ -391,7 +394,22 @@ header .nav-links .nav-link a:hover {
     header .nav-links {
         display: none;
     }
-
+    .title {
+        position: relative;
+        margin-left: 80px;
+    }
+        
+    .heading::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: -60px;
+        width: 50px;
+        height: 4px;
+        background: var(--infoColor);
+        transform-origin: left;
+        border-radius: 5px;
+    }
     .intro-wrapper .home-nav .nav-social {
         display: none;
     }
@@ -452,14 +470,18 @@ header .nav-links .nav-link a:hover {
             }
 
             .heading::after {
-                display: none;
+                left: 25px;
+                top: 8px;
             }
         }
     }
 
     // About 
     .about-container{
-        flex-direction: column;
+        .about-wrapper{
+            flex-direction: column-reverse;
+            width: 100%;
+        
         .about-left{
             width: 80%;
             .about-btns{
@@ -467,6 +489,7 @@ header .nav-links .nav-link a:hover {
                 margin: 0 auto;
             }
         }
+
         .about-right::before {
             left: -20px;
             top: -30px;
@@ -476,6 +499,7 @@ header .nav-links .nav-link a:hover {
             top: 30px;
             left: 10px;
         }
+    }
     }
 
 }

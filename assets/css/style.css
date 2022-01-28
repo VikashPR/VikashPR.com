@@ -39,11 +39,11 @@ li {
 
 .title {
   position: relative;
-  margin-block: 20px;
+  margin-left: 50px;
 }
 
 .heading {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: var(--infoColor);
 }
@@ -51,7 +51,7 @@ li {
 .heading::after {
   content: '';
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: -60px;
   width: 50px;
   height: 4px;
@@ -379,9 +379,18 @@ header .nav-links .nav-link a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-container .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -477,6 +486,22 @@ header .nav-links .nav-link a:hover {
   header .nav-links {
     display: none;
   }
+  .title {
+    position: relative;
+    margin-left: 80px;
+  }
+  .heading::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -60px;
+    width: 50px;
+    height: 4px;
+    background: var(--infoColor);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    border-radius: 5px;
+  }
   .intro-wrapper .home-nav .nav-social {
     display: none;
   }
@@ -543,28 +568,30 @@ header .nav-links .nav-link a:hover {
     width: 140px;
   }
   .intro-wrapper .home-left .heading::after {
-    display: none;
+    left: 25px;
+    top: 8px;
   }
-  .about-container {
+  .about-container .about-wrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
   }
-  .about-container .about-left {
+  .about-container .about-wrapper .about-left {
     width: 80%;
   }
-  .about-container .about-left .about-btns {
+  .about-container .about-wrapper .about-left .about-btns {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
   }
-  .about-container .about-right::before {
+  .about-container .about-wrapper .about-right::before {
     left: -20px;
     top: -30px;
   }
-  .about-container .about-right::after {
+  .about-container .about-wrapper .about-right::after {
     top: 30px;
     left: 10px;
   }

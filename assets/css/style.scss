@@ -38,7 +38,7 @@ li {
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
-    
+
 }
 
 .title {
@@ -82,8 +82,9 @@ li {
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     background-color: rgba(24, 32, 56, 0.9);
     border: 2px solid rgba(255, 255, 255, 0.125);
-    i{
-        margin-inline:10px ;
+
+    i {
+        margin-inline: 10px;
     }
 }
 
@@ -162,9 +163,10 @@ header .nav-links .nav-link a:hover {
 }
 
 // NOTE Home Section
-.home-container{
+.home-container {
     height: 85vh;
 }
+
 /* Intro */
 .intro-wrapper {
     display: grid;
@@ -185,7 +187,7 @@ header .nav-links .nav-link a:hover {
 
     .home-nav {
         position: relative;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         backdrop-filter: blur(24px);
@@ -195,8 +197,9 @@ header .nav-links .nav-link a:hover {
         border-radius: 10px 10px 0px 0px;
         height: 70px;
         padding-right: 20px;
+
         .nav-social {
-            display:flex;
+            display: flex;
 
             .social-item {
                 background: rgba(255, 255, 255, 0.08);
@@ -206,16 +209,18 @@ header .nav-links .nav-link a:hover {
                 display: flex;
                 align-items: center;
                 min-width: 70px;
-                max-width:100px;
+                max-width: 100px;
                 justify-content: space-between;
                 margin-inline: 5px;
-                height:40px;
+                height: 40px;
+
                 img {
                     width: 20px;
                     margin-right: 4px;
                 }
             }
         }
+
         .dots {
             display: flex;
             align-items: center;
@@ -290,6 +295,11 @@ header .nav-links .nav-link a:hover {
                 color: rgb(15, 226, 156);
             }
         }
+
+        .heading {
+            position: relative;
+            top: -10px;
+        }
     }
 }
 
@@ -308,30 +318,35 @@ header .nav-links .nav-link a:hover {
     align-content: center;
     margin-top: 70px;
 }
+
 // NOTE About Section
-.about-container{
+.about-container {
     width: 100%;
-    display:flex;
+    display: flex;
 
     flex-direction: column;
-    .about-wrapper{
+
+    .about-wrapper {
         display: flex;
         align-items: center;
     }
-    .about-right{
+
+    .about-right {
         margin: 40px;
         position: relative;
-        .avatar-card{
-        img{
-            width: 100%;
-            max-width: 400px;
-            border-bottom-right-radius: 40px;
-            border-top-right-radius: 40px;
-            border-top-left-radius: 40px;
-        }
 
-    } 
+        .avatar-card {
+            img {
+                width: 100%;
+                max-width: 400px;
+                border-bottom-right-radius: 40px;
+                border-top-right-radius: 40px;
+                border-top-left-radius: 40px;
+            }
+
+        }
     }
+
     .about-right::before {
         content: 'yes, its me';
         text-transform: capitalize;
@@ -339,7 +354,7 @@ header .nav-links .nav-link a:hover {
         left: -60px;
         top: -30px;
     }
-    
+
     .about-right::after {
         content: '';
         position: absolute;
@@ -351,36 +366,132 @@ header .nav-links .nav-link a:hover {
         transform-origin: right;
         transform: rotate(30deg);
     }
-    .about-left{
+
+    .about-left {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
         width: 50%;
         margin: 50px;
-        h3{
+
+        h3 {
             font-size: 1.6rem;
-            color:var(--primaryColor);
+            color: var(--primaryColor);
             margin-block: 10px;
         }
-        p{
+
+        p {
             font-size: 1.1rem;
             color: var(--secondaryColor);
             margin-block: 10px;
         }
-        .about-btns{
-            display:flex;
-            .btn:nth-child(1) i{
+
+        .about-btns {
+            display: flex;
+
+            .btn:nth-child(1) i {
                 color: rgb(255, 51, 15);
             }
-            .btn:nth-child(2) i{
+
+            .btn:nth-child(2) i {
                 color: rgb(15, 226, 156);
             }
         }
     }
 }
 
+// NOTE Skill section
+.skill-container {
+
+    display: flex;
+    flex-direction: column;
+
+    .skill-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        margin: 50px;
+        .skill-left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-block: 10px;
+
+            h3 {
+                font-size: 1.6rem;
+                color: var(--primaryColor);
+                margin-block: 10px;
+            }
+    
+                p {
+                    font-size: 1.1rem;
+                    color: var(--secondaryColor);
+                    margin-block: 10px;
+                }
+        }
+        .skill-right {
+            display: flex;
+            flex-wrap: wrap;
+            .tech-card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                position: relative;
+                width: 80px;
+                height: 80px;
+                color: var(--infoColor);
+                background: #171F38;
+                margin: 20px;
+                border-radius: 10px;
+                border-bottom: 0px solid var(--infoColor);
+                transition: all 0.3s ease-in-out;
+                .toolTip {
+                    visibility: hidden;
+                    width: 120px;
+                    font-size: 1rem;
+                    background: #171F38;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 110%;
+                    left: 50%;
+                    margin-left: -60px;
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .toolTip::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }
+            }
+
+            .tech-card:hover {
+                border-bottom: 10px solid var(--infoColor);
+                .toolTip {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
+
     header .nav-links .nav-link:nth-child(6),
     header .nav-links .nav-link:nth-child(7) {
         display: none;
@@ -396,14 +507,16 @@ header .nav-links .nav-link a:hover {
     header .nav-links {
         display: none;
     }
+
     .title {
         position: relative;
         margin-left: 80px;
     }
-    .heading{
+
+    .heading {
         top: -20px;
     }
-        
+
     .heading::after {
         content: '';
         position: absolute;
@@ -415,9 +528,11 @@ header .nav-links .nav-link a:hover {
         transform-origin: left;
         border-radius: 5px;
     }
+
     .intro-wrapper .home-nav .nav-social {
         display: none;
     }
+
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -431,9 +546,10 @@ header .nav-links .nav-link a:hover {
     .btn {
         backdrop-filter: none;
         background-color: rgba(24, 32, 56, 0.9);
-        min-width:150px;
-        i{
-            margin-inline:5px ;
+        min-width: 150px;
+
+        i {
+            margin-inline: 5px;
         }
     }
 
@@ -474,37 +590,98 @@ header .nav-links .nav-link a:hover {
                 }
             }
 
+            .title {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+
             .heading::after {
-                left: 26px;
-                top: 8px;
+                display: none;
             }
         }
     }
 
     // About 
-    .about-container{
-        .about-wrapper{
+    .about-container {
+        .about-wrapper {
             flex-direction: column-reverse;
             width: 100%;
-        
-        .about-left{
-            width: 80%;
-            .about-btns{
-                align-items: center;
-                margin: 0 auto;
+
+            .about-left {
+                width: 80%;
+
+                .about-btns {
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+
+            .about-right::before {
+                left: -20px;
+                top: -30px;
+            }
+
+            .about-right::after {
+                top: 30px;
+                left: 10px;
             }
         }
+    }
 
-        .about-right::before {
-            left: -20px;
-            top: -30px;
+    // Skill section
+    .skill-container .skill-wrapper
+    {
+        flex-direction: column;
+    .skill-left{
+        width: 100%;
+        margin-block: 10px;
+    }
+    .skill-right{
+        justify-content: center;
+        width: 90vw;
+        margin: 20px;
+        .tech-card {
+            width: 100%;
+            width: 60px;
+            height: 60px;
+            .toolTip {
+                visibility: hidden;
+                width: 80px;
+                font-size: 1rem;
+                background: #171F38;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 110%;
+                left: 50%;
+                margin-left: -40px;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .toolTip::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
         }
-        
-        .about-right::after {
-            top: 30px;
-            left: 10px;
+        .tech-card:hover {
+            border-bottom: 5px solid var(--infoColor);
+            .toolTip {
+                visibility: visible;
+                opacity: 1;
+            }
         }
     }
-    }
+}
+    
 
 }

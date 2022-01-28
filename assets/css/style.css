@@ -351,6 +351,11 @@ header .nav-links .nav-link a:hover {
   color: #0fe29c;
 }
 
+.intro-wrapper .home-left .heading {
+  position: relative;
+  top: -10px;
+}
+
 .home-nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -472,6 +477,129 @@ header .nav-links .nav-link a:hover {
   color: #0fe29c;
 }
 
+.skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-container .skill-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px;
+}
+
+.skill-container .skill-wrapper .skill-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-block: 10px;
+}
+
+.skill-container .skill-wrapper .skill-left h3 {
+  font-size: 1.6rem;
+  color: var(--primaryColor);
+  margin-block: 10px;
+}
+
+.skill-container .skill-wrapper .skill-left p {
+  font-size: 1.1rem;
+  color: var(--secondaryColor);
+  margin-block: 10px;
+}
+
+.skill-container .skill-wrapper .skill-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: var(--infoColor);
+  background: #171F38;
+  margin: 20px;
+  border-radius: 10px;
+  border-bottom: 0px solid var(--infoColor);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card .toolTip {
+  visibility: hidden;
+  width: 120px;
+  font-size: 1rem;
+  background: #171F38;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card .toolTip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card:hover {
+  border-bottom: 10px solid var(--infoColor);
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 900px) {
   header .nav-links .nav-link:nth-child(6),
   header .nav-links .nav-link:nth-child(7) {
@@ -570,9 +698,12 @@ header .nav-links .nav-link a:hover {
   .intro-wrapper .home-left .home-btns .btn {
     width: 140px;
   }
+  .intro-wrapper .home-left .title {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
   .intro-wrapper .home-left .heading::after {
-    left: 26px;
-    top: 8px;
+    display: none;
   }
   .about-container .about-wrapper {
     -webkit-box-orient: vertical;
@@ -597,6 +728,63 @@ header .nav-links .nav-link a:hover {
   .about-container .about-wrapper .about-right::after {
     top: 30px;
     left: 10px;
+  }
+  .skill-container .skill-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skill-container .skill-wrapper .skill-left {
+    width: 100%;
+    margin-block: 10px;
+  }
+  .skill-container .skill-wrapper .skill-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90vw;
+    margin: 20px;
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card {
+    width: 100%;
+    width: 60px;
+    height: 60px;
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card .toolTip {
+    visibility: hidden;
+    width: 80px;
+    font-size: 1rem;
+    background: #171F38;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card .toolTip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card:hover {
+    border-bottom: 5px solid var(--infoColor);
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

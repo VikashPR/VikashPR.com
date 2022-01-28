@@ -571,27 +571,27 @@ header .nav-links .nav-link a:hover {
     left: 25px;
     top: 8px;
   }
-  .about-wrapper {
+  .about-container .about-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    width: 80%;
-  }
-  .about-wrapper .about-left {
     width: 100%;
   }
-  .about-wrapper .about-left .about-btns {
+  .about-container .about-wrapper .about-left {
+    width: 80%;
+  }
+  .about-container .about-wrapper .about-left .about-btns {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
   }
-  .about-wrapper .about-right::before {
+  .about-container .about-wrapper .about-right::before {
     left: -20px;
     top: -30px;
   }
-  .about-wrapper .about-right::after {
+  .about-container .about-wrapper .about-right::after {
     top: 30px;
     left: 10px;
   }

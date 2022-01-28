@@ -429,6 +429,7 @@ header .nav-links .nav-link a:hover {
         .skill-right {
             display: flex;
             flex-wrap: wrap;
+            width: 50%;
             .tech-card {
                 display: flex;
                 align-items: center;
@@ -438,7 +439,7 @@ header .nav-links .nav-link a:hover {
                 width: 80px;
                 height: 80px;
                 background: #171F38;
-                margin: 20px;
+                margin: 8px;
                 border-radius: 10px;
                 border-bottom: 0px solid var(--infoColor);
                 transition: all 0.3s ease-in-out;
@@ -498,7 +499,7 @@ header .nav-links .nav-link a:hover {
 
 @media screen and (max-width:800px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     header .nav-links {

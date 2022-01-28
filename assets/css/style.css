@@ -533,6 +533,7 @@ header .nav-links .nav-link a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 50%;
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card {
@@ -550,7 +551,7 @@ header .nav-links .nav-link a:hover {
   width: 80px;
   height: 80px;
   background: #171F38;
-  margin: 20px;
+  margin: 8px;
   border-radius: 10px;
   border-bottom: 0px solid var(--infoColor);
   -webkit-transition: all 0.3s ease-in-out;
@@ -611,7 +612,7 @@ header .nav-links .nav-link a:hover {
 
 @media screen and (max-width: 800px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   header .nav-links {
     display: none;

@@ -501,7 +501,6 @@ header .nav-links .nav-link a:hover {
 }
 
 .skill-container .skill-wrapper .skill-left {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

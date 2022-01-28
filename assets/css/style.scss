@@ -477,10 +477,9 @@ header .nav-links .nav-link a:hover {
     }
 
     // About 
-    .about-container{
         .about-wrapper{
             flex-direction: column-reverse;
-            width: 100%;
+            width: 80%;
         
         .about-left{
             width: 80%;
@@ -501,5 +500,3 @@ header .nav-links .nav-link a:hover {
         }
     }
     }
-
-}

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
 :root {
     --bgPrimary: #0E1630;
@@ -438,7 +437,6 @@ header .nav-links .nav-link a:hover {
                 position: relative;
                 width: 80px;
                 height: 80px;
-                color: var(--infoColor);
                 background: #171F38;
                 margin: 20px;
                 border-radius: 10px;
@@ -446,20 +444,23 @@ header .nav-links .nav-link a:hover {
                 transition: all 0.3s ease-in-out;
                 .toolTip {
                     visibility: hidden;
-                    width: 120px;
+                    width: 100%;
+                    min-width: 100px;
                     font-size: 1rem;
-                    background: #171F38;
-                    color: #fff;
+                    background: #eb4a4a;
+                    color: var(--primaryColor);
                     text-align: center;
                     border-radius: 6px;
-                    padding: 5px 0;
+                    padding: 10px;
                     position: absolute;
                     z-index: 1;
                     bottom: 110%;
                     left: 50%;
-                    margin-left: -60px;
+                    margin-left: -50px;
                     opacity: 0;
                     transition: all 0.3s ease-in-out;
+                    font-weight: 600;
+                    transform: translateY(-20px);
                 }
 
                 .toolTip::after {
@@ -470,7 +471,7 @@ header .nav-links .nav-link a:hover {
                     margin-left: -5px;
                     border-width: 5px;
                     border-style: solid;
-                    border-color: #555 transparent transparent transparent;
+                    border-color: #eb4a4a transparent transparent transparent;
                 }
             }
 
@@ -479,6 +480,7 @@ header .nav-links .nav-link a:hover {
                 .toolTip {
                     visibility: visible;
                     opacity: 1;
+                    transform: translateY(0px);
                 }
             }
         }

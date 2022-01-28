@@ -17,8 +17,7 @@
 
 body,
 html {
-  background: url("../image/bg.svg") no-repeat center center fixed;
-  background-size: cover;
+  background: var(--bgPrimary);
   color: var(--secondaryColor);
   font-family: 'Quicksand', sans-serif;
 }

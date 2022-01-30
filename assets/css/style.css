@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bgSecondary);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eb4a4a;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: var(--infoColor) var(--bgSecondary);
+    scrollbar-width: thin;
+  }
+}
+
 :root {
   --bgPrimary: #0E1630;
   --bgSecondary: #182038;

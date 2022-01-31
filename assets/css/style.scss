@@ -1101,16 +1101,9 @@ footer .footer-bottom {
 
     // Portfolio section
     .portfolio-container {
-        display: flex;
         flex-direction: column;
-
         .portfolio-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
             margin: 50px 20px;
-
             .portfolio-filter {
                 flex-direction: column;
                 .nav-links {
@@ -1120,27 +1113,11 @@ footer .footer-bottom {
             }
 
             .portfolio-gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 100%;
-
                 .project-card {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    background: #171F38;
-                    border-radius: 10px;
                     width:100%; 
                     max-width:350px;
-
                     padding: 20px;
                     margin: 10px;
-
-                    .project-btns {
-                        
-                    }
                 }
             }
         }

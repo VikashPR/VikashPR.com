@@ -585,15 +585,16 @@ header .nav-links .nav-link a:hover {
                 align-items: center;
                 justify-content:center;
                 border-radius:5px;
-                border: 1px solid transparent;
+                border: 2px solid transparent;
                 color: var(--primaryColor);
-                -webkit-transition: all 0.4s ease-in-out;
-                transition: all 0.4s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 padding:5px;
+                cursor:pointer;
             }
             i:hover{
-                border: 1px solid var(--infoColor);
-                color: var(--infoColor);
+                border: 2px solid var(--infoColor);
+                color: #eb4a4a;
 
             }
         }
@@ -605,13 +606,14 @@ header .nav-links .nav-link a:hover {
         justify-content: center;
         width: 50%;
 
-        form {
+        .form {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-
+            width:100%;
             input {
-                width: 500px;
+                width: 100%;
+                max-width:550px;
                 height: 65px;
                 border-radius: 10px;
                 padding: 0 10px;
@@ -625,7 +627,8 @@ header .nav-links .nav-link a:hover {
             }
 
             textarea {
-                width: 500px;
+                width: 100%;
+                max-width:550px;
                 height: 200px;
                 border-radius: 10px;
                 padding: 0 10px;
@@ -719,7 +722,6 @@ header .nav-links .nav-link a:hover {
     .btn {
         backdrop-filter: none;
         background-color: rgba(24, 32, 56, 0.9);
-        min-width: 150px;
 
         i {
             margin-inline: 5px;
@@ -759,7 +761,8 @@ header .nav-links .nav-link a:hover {
                 justify-content: center;
 
                 .btn {
-                    width: 140px;
+                    width: 100%;
+                    max-width:160px;
                 }
             }
 
@@ -864,5 +867,29 @@ header .nav-links .nav-link a:hover {
         }
     }
 
+    // Contact me section
+    .contact-container{
+        .contact-wrapper {
+            flex-direction: column;
 
+            .contact-left {
+                width: 100%;
+                margin-block: 10px;
+                align-items: center;
+            }
+
+            .contact-right {
+                width: 100%;
+                margin-block: 10px;
+                .form{
+                align-items: center;
+                .btn{
+                    width:100%;
+                    max-width:120px;
+                    align-self: flex-start;
+                }
+                }
+            }
+        }
+    }
 }

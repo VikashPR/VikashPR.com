@@ -737,16 +737,17 @@ header .nav-links .nav-link a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   color: var(--primaryColor);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 5px;
+  cursor: pointer;
 }
 
 .contact-container .contact-left .social-media i:hover {
-  border: 1px solid var(--infoColor);
-  color: var(--infoColor);
+  border: 2px solid var(--infoColor);
+  color: #eb4a4a;
 }
 
 .contact-container .contact-right {
@@ -762,7 +763,7 @@ header .nav-links .nav-link a:hover {
   width: 50%;
 }
 
-.contact-container .contact-right form {
+.contact-container .contact-right .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,10 +773,12 @@ header .nav-links .nav-link a:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
 }
 
-.contact-container .contact-right form input {
-  width: 500px;
+.contact-container .contact-right .form input {
+  width: 100%;
+  max-width: 550px;
   height: 65px;
   border-radius: 10px;
   padding: 0 10px;
@@ -788,8 +791,9 @@ header .nav-links .nav-link a:hover {
   color: var(--primaryColor);
 }
 
-.contact-container .contact-right form textarea {
-  width: 500px;
+.contact-container .contact-right .form textarea {
+  width: 100%;
+  max-width: 550px;
   height: 200px;
   border-radius: 10px;
   padding: 0 10px;
@@ -804,15 +808,15 @@ header .nav-links .nav-link a:hover {
   letter-spacing: 1px;
 }
 
-.contact-container .contact-right form textarea:focus,
-.contact-container .contact-right form input:focus {
+.contact-container .contact-right .form textarea:focus,
+.contact-container .contact-right .form input:focus {
   -webkit-box-shadow: 0 0 5px 0 #f83277cc inset, 0 0 10px 1px #f83277cc;
           box-shadow: 0 0 5px 0 #f83277cc inset, 0 0 10px 1px #f83277cc;
   outline: none;
   border: 2px solid #fd3a7f;
 }
 
-.contact-container .contact-right form .btn {
+.contact-container .contact-right .form .btn {
   width: 100%;
   max-width: 140px;
   -webkit-user-select: none;
@@ -821,7 +825,7 @@ header .nav-links .nav-link a:hover {
           user-select: none;
 }
 
-.contact-container .contact-right form .btn i {
+.contact-container .contact-right .form .btn i {
   color: #1e54eb;
 }
 
@@ -870,7 +874,6 @@ header .nav-links .nav-link a:hover {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
     background-color: rgba(24, 32, 56, 0.9);
-    min-width: 150px;
   }
   .btn i {
     margin-inline: 5px;
@@ -921,7 +924,8 @@ header .nav-links .nav-link a:hover {
             justify-content: center;
   }
   .intro-wrapper .home-left .home-btns .btn {
-    width: 140px;
+    width: 100%;
+    max-width: 160px;
   }
   .intro-wrapper .home-left .title {
     margin-left: 0px;
@@ -1014,6 +1018,34 @@ header .nav-links .nav-link a:hover {
   .skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
     visibility: visible;
     opacity: 1;
+  }
+  .contact-container .contact-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-container .contact-wrapper .contact-left {
+    width: 100%;
+    margin-block: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-container .contact-wrapper .contact-right {
+    width: 100%;
+    margin-block: 10px;
+  }
+  .contact-container .contact-wrapper .contact-right .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-container .contact-wrapper .contact-right .form .btn {
+    width: 100%;
+    max-width: 120px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */

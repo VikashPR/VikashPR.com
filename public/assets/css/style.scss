@@ -29,6 +29,7 @@
     --primaryColor: #fff;
     --secondaryColor: #9ca9c9;
     --infoColor: #ef4782;
+    // --infoColor2: #f50a5c;
 }
 
 * {
@@ -596,8 +597,13 @@ footer .footer-bottom {
 
             li {
                 margin-block: 10px;
-
+                display:flex;
+                align-items:center;
+                justify-content:flex-start;
                 i {
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
                     background: #3d1724;
                     color: var(--infoColor);
                     padding: 10px;

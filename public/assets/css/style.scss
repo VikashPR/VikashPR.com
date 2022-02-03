@@ -44,6 +44,7 @@ html {
     color: var(--secondaryColor);
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 
 a {

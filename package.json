@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node docs/assets/js/script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/vikash2806/vikash2806_Portfolio/issues"
   },
-  "homepage": "https://github.com/vikash2806/vikash2806_Portfolio#readme"
+  "homepage": "https://github.com/vikash2806/vikash2806_Portfolio#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
 }

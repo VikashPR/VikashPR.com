@@ -288,8 +288,10 @@
                         <input type="hidden" name="_subject" value="New submission!">
                         <input type="hidden" name="_template" value="table">
                         <textarea placeholder="Message" name="message" id="" cols="25" rows="10" required></textarea>
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/docs/thanks.html">
-                        <button type="submit" class="btn">Send<i class="fa-solid fa-paper-plane"></i></button>
+                        <input type="hidden" name="_next" value="https://vikash2806-dev.web.app/thanks.html">
+                        <button type="submit" onclick="playSuccess()" class="btn submit--btn">Send<i
+                                class="fa-solid fa-paper-plane"></i></button>
+                        <audio id="audio" src="./assets/sounds/success.mp3"></audio>
                     </form>
                 </div>
             </div>

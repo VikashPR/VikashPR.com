@@ -1171,6 +1171,95 @@ footer .footer-bottom .heart {
           transform: scale(0.95);
 }
 
+.thankyoucontent .wrapper-1 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thankyoucontent .wrapper-2 {
+  padding: 30px;
+  text-align: center;
+}
+
+.thankyoucontent h1 {
+  font-family: 'Raleway', Arial Black, Sans-Serif;
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #fafafa;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.thankyoucontent .wrapper-2 p {
+  margin: 0;
+  font-size: 1.3em;
+  color: #fafafa;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.thankyoucontent .go-home {
+  max-width: 200px;
+  padding: 20px 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px auto;
+  background: #e83890;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.thankyoucontent .go-home:hover {
+  opacity: 0.9;
+}
+
+.thankyoucontent .go-home {
+  font-family: 'Raleway', Arial Black;
+  font-size: 1rem;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.thankyoucontent .footer-like {
+  margin-top: auto;
+  background: #1f2682;
+  padding: 6px;
+  text-align: center;
+}
+
+.thankyoucontent .footer-like p {
+  margin: 0;
+  padding: 4px;
+  color: #fafafa;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+.thankyoucontent .footer-like p a {
+  text-decoration: none;
+  color: #5892FF;
+  font-weight: 600;
+}
+
+.thankyoucontent .footer-like p a:hover {
+  color: #FFF;
+}
+
 @media screen and (max-width: 900px) {
   header .nav-links .nav-link:nth-child(6),
   header .nav-links .nav-link:nth-child(7) {
@@ -1424,6 +1513,28 @@ footer .footer-bottom .heart {
     max-width: 350px;
     padding: 20px;
     margin: 10px;
+  }
+}
+
+@media (min-width: 360px) {
+  .thankyoucontent h1 {
+    font-size: 4.5em;
+  }
+  .thankyoucontent .go-home {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .thankyoucontent {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .thankyoucontent .wrapper-1 {
+    height: initial;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

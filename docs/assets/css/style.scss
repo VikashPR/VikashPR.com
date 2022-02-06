@@ -20,7 +20,6 @@
         scrollbar-color: var(--infoColor) var(--bgSecondary);
         scrollbar-width: thin;
     }
-
 }
 
 :root {
@@ -105,7 +104,7 @@ li {
     border: 2px solid rgba(255, 255, 255, 0.125);
     cursor: pointer;
     user-select: none;
-
+    color:var(--primaryColor);
     i {
         margin-inline: 10px;
     }

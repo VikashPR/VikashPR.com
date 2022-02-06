@@ -1,0 +1,22 @@
+{
+  "name": "vikash-portfolio2",
+  "version": "1.0.0",
+  "description": "Vikash's Personal Portfolio site.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikash2806/vikash2806_Portfolio.git"
+  },
+  "author": "Vikash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikash2806/vikash2806_Portfolio/issues"
+  },
+  "homepage": "https://github.com/vikash2806/vikash2806_Portfolio#readme"
+}

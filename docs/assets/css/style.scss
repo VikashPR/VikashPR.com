@@ -647,36 +647,42 @@ footer .footer-bottom {
             }
         }
 
-        .social-media {
-            display: flex;
-            align-items: center;
-            width: 70%;
-            margin-block: 2em;
-            justify-content: space-between;
+        // .social-media {
+        //     display: flex;
+        //     align-items: center;
+        //     width: 70%;
+        //     margin-block: 2em;
+        //     justify-content: space-between;
 
-            i {
-                margin-right: 20px;
-                font-size: 1.6rem;
-                height: 40px;
-                width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 5px;
-                border: 2px solid transparent;
-                color: var(--primaryColor);
-                -webkit-transition: all 0.5s ease-in-out;
-                transition: all 0.5s ease-in-out;
-                padding: 5px;
-                cursor: pointer;
-            }
+        //     i {
+        //         margin-right: 20px;
+        //         font-size: 1.6rem;
+        //         height: 40px;
+        //         width: 40px;
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         border-radius: 5px;
+        //         border: 2px solid transparent;
+        //         color: var(--primaryColor);
+        //         -webkit-transition: all 0.5s ease-in-out;
+        //         transition: all 0.5s ease-in-out;
+        //         padding: 5px;
+        //         cursor: pointer;
+        //     }
 
-            i:hover {
-                border: 2px solid var(--infoColor);
-                color: #eb4a4a;
+        //     i:hover {
+        //         border: 2px solid var(--infoColor);
+        //         color: #eb4a4a;
 
-            }
-        }
+        //     }
+        // }
+        #map {
+            height: 250px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+          }
     }
 
     .contact-right {

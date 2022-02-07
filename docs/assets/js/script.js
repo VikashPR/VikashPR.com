@@ -15,7 +15,7 @@ function initMap() {
     mapId:  "8f70b5d2bcbdcb70"
   });
   const image =
-   'https://raw.githubusercontent.com/vikash2806/vikash2806_Portfolio/d92b0850ce04eae55a963ddd13bdde38d214e359/docs/assets/image/vikash-location-mark.svg';
+   'https://raw.githubusercontent.com/vikash2806/vikash2806_Portfolio/d92b0850ce04eae55a963ddd13bdde38d214e359/docs/assets/image/map-marker.svg';
   const beachMarker = new google.maps.Marker({
     position: { lat: 11.47006207135922, lng: 78.35548061779133 },
     map,

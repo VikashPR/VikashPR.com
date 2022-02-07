@@ -10,12 +10,18 @@ function playSuccess(){
 // Australia.
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
+    zoom: 7,
     center: { lat: 11.47006207135922, lng: 78.35548061779133 },
-    mapId:  "8f70b5d2bcbdcb70"
+    mapId:  "8f70b5d2bcbdcb70",
+    disableDefaultUI: true,
+    zoomControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    fullscreenControl: false
   });
-  const image =
-   'https://raw.githubusercontent.com/vikash2806/vikash2806_Portfolio/d92b0850ce04eae55a963ddd13bdde38d214e359/docs/assets/image/map-marker.svg';
+  const image = 'https://raw.githubusercontent.com/vikash2806/vikash2806_Portfolio/bf3f90d26eb1beb6041bd51e2a18e8bb369a377e/docs/assets/image/map-marker.svg';
   const beachMarker = new google.maps.Marker({
     position: { lat: 11.47006207135922, lng: 78.35548061779133 },
     map,

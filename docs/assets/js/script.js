@@ -1,3 +1,17 @@
+// redirect timer in Thanks page
+var counterElt = document.getElementById("counter");
+function decreaseCounter() {
+  var counter = Number(counterElt.textContent);
+  if (counter > 1) {
+    counterElt.textContent = counter - 1;
+  } else {
+    clearInterval(intervalId);
+    var titre = document.getElementById("redirect");
+    titre.click();
+  }
+}
+var intervalId = setInterval(decreaseCounter, 1000);
+
 // Submit Button audio effect
 let audio = document.querySelector('#audio');
 
@@ -5,9 +19,10 @@ function playSuccess(){
     audio.play();
 }
 
+
+
 // Google maps 
-// This example adds a marker to indicate the position of Bondi Beach in Sydney,
-// Australia.
+
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7,
@@ -28,17 +43,5 @@ function initMap() {
     icon: image,
   });
 }
-// // redirect timer in Thanks page
-// var counterElt = document.getElementById("counter");
-// function decreaseCounter() {
-//   var counter = Number(counterElt.textContent);
-//   if (counter > 1) {
-//     counterElt.textContent = counter - 1;
-//   } else {
-//     clearInterval(intervalId);
-//     var titre = document.getElementById("redirect");
-//     titre.click();
-//   }
-// }
-// var intervalId = setInterval(decreaseCounter, 1000);
+
 

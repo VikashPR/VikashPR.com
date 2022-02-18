@@ -349,7 +349,7 @@ footer .footer-bottom .heart {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
   backdrop-filter: blur(6px) saturate(90%);
   -webkit-backdrop-filter: blur(6px) saturate(90%);
   background-color: rgba(24, 32, 56, 0.719);
@@ -370,10 +370,10 @@ footer .footer-bottom .heart {
           justify-content: space-between;
   -webkit-backdrop-filter: blur(24px);
           backdrop-filter: blur(24px);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
   background: rgba(35, 37, 38, 0.8);
   backdrop-filter: blur(24px);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
   height: 70px;
   padding-right: 20px;
 }
@@ -709,7 +709,7 @@ footer .footer-bottom .heart {
   background: #171F38;
   margin: 8px;
   border-radius: 10px;
-  border-bottom: 0 solid var(--infoColor);
+  border-bottom: 0px solid var(--infoColor);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -745,7 +745,7 @@ footer .footer-bottom .heart {
   margin-left: 10px;
   border-width: 10px;
   border-style: solid;
-  border-color: #eb4a4a transparent transparent;
+  border-color: #eb4a4a transparent transparent transparent;
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card:hover {
@@ -755,8 +755,8 @@ footer .footer-bottom .heart {
 .skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .contact-container {
@@ -1218,7 +1218,7 @@ footer .footer-bottom .heart {
 
 .thankyoucontent .go-home {
   max-width: 200px;
-  padding: 20px;
+  padding: 20px 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 20px auto;
@@ -1378,7 +1378,7 @@ footer .footer-bottom .heart {
     max-width: 160px;
   }
   .intro-wrapper .home-left .title {
-    margin-left: 0;
+    margin-left: 0px;
     margin-top: 10px;
   }
   .intro-wrapper .home-left .heading::after {
@@ -1460,7 +1460,7 @@ footer .footer-bottom .heart {
     margin-left: 7px;
     border-width: 7px;
     border-style: solid;
-    border-color: #eb4a4a transparent transparent;
+    border-color: #eb4a4a transparent transparent transparent;
   }
   .skill-container .skill-wrapper .skill-right .tech-card:hover {
     border-bottom: 5px solid var(--infoColor);
@@ -1545,3 +1545,4 @@ footer .footer-bottom .heart {
     margin-top: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */

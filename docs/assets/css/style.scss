@@ -270,7 +270,7 @@ footer .footer-bottom {
     ;
     margin: 30px;
     user-select: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0px 0px;
     backdrop-filter: blur(6px) saturate(90%);
     -webkit-backdrop-filter: blur(6px) saturate(90%);
     background-color: rgba(24, 32, 56, 0.719);
@@ -283,10 +283,10 @@ footer .footer-bottom {
         align-items: center;
         justify-content: space-between;
         backdrop-filter: blur(24px);
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0px 0px;
         background: rgba(35, 37, 38, 0.8);
         backdrop-filter: blur(24px);
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0px 0px;
         height: 70px;
         padding-right: 20px;
 
@@ -541,7 +541,7 @@ footer .footer-bottom {
                 background: #171F38;
                 margin: 8px;
                 border-radius: 10px;
-                border-bottom: 0 solid var(--infoColor);
+                border-bottom: 0px solid var(--infoColor);
                 transition: all 0.3s ease-in-out;
 
                 .toolTip {
@@ -573,7 +573,7 @@ footer .footer-bottom {
                     margin-left: 10px;
                     border-width: 10px;
                     border-style: solid;
-                    border-color: #eb4a4a transparent transparent;
+                    border-color: #eb4a4a transparent transparent transparent;
                 }
             }
 
@@ -583,7 +583,7 @@ footer .footer-bottom {
                 .toolTip {
                     visibility: visible;
                     opacity: 1;
-                    transform: translateY(0);
+                    transform: translateY(0px);
                 }
             }
         }
@@ -975,7 +975,7 @@ footer .footer-bottom {
       }
       .go-home{
         max-width:200px;
-        padding:20px;
+        padding:20px 20px;
         justify-content:space-around;
         margin:20px auto;
         background: #e83890;
@@ -1134,7 +1134,7 @@ footer .footer-bottom {
             }
 
             .title {
-                margin-left: 0;
+                margin-left: 0px;
                 margin-top: 10px;
             }
 
@@ -1219,7 +1219,7 @@ footer .footer-bottom {
                     margin-left: 7px;
                     border-width: 7px;
                     border-style: solid;
-                    border-color: #eb4a4a transparent transparent;
+                    border-color: #eb4a4a transparent transparent transparent;
                 }
             }
 

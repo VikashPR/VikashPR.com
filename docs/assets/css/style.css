@@ -1003,11 +1003,16 @@ footer .footer-bottom .heart {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   width: 100%;
   max-width: 400px;
+  min-width: 250px;
   border-radius: 10px;
   background-color: #171f38;
   height: 100%;

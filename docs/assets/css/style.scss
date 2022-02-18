@@ -792,10 +792,9 @@ footer .footer-bottom {
             align-items:center;
             justify-content: space-evenly;
             width: 100%;
-            transition:all 1s ease-in-out;
 
             .card {
-                transition:all 1s ease-in-out;
+                transition:all 0.2s ease-in-out;
                 width:100%;
                 max-width: 400px;
                 min-width: 250px;
@@ -806,11 +805,48 @@ footer .footer-bottom {
 
                 .card-img {
                     width: 100%;
-
+                    position:relative;
+                    transition:all 0.2s ease;
+                    cursor: pointer;
                     img {
                         max-width: 100%;
                         border-top-right-radius: 10px;
                         border-top-left-radius: 10px;
+                    }
+                    .project-details{
+                        position:absolute;
+                        height:99%;
+                        width:100%;
+                        opacity:0;
+                        background:#000000b2;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        transition:all 0.4s ease-in-out;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        flex-direction:column;
+                        .details-title{
+                        font-family: Cubano;
+                        color: var(--primaryColor);
+                        }
+                        .details-subtitle{
+                        color: var(--secondaryColor);
+                        }
+                        ul{
+                            display:flex;
+                            li{
+                                margin:10px;
+                                font-size:1.5rem;
+                                a{
+                                color: var(--primaryColor);
+                                transition:all 0.3s ease;
+                                }
+                            }
+                            li:hover a{
+                                color:var(--infoColor);
+                            }
+                        }
                     }
                 }
 
@@ -846,13 +882,21 @@ footer .footer-bottom {
                         border-radius: 2px;
                         background: #444e56;
                         font-weight: 600;
-                        margin: 0.25em 0.1em;
+                        margin: 0.25em 0.2em;
                     }
                 }
+                
+            }
+            .card:hover{
+                    transform: translateY(-3px);
+            }
+            .card-img:hover .project-details{
+                opacity:1;
             }
         }
     }
 }
+
 
 // NOTE Thank You page
 .thankyoucontent {

@@ -34,6 +34,20 @@
     --secondaryColor: #9ca9c9;
     --infoColor: #ef4782;
     // --infoColor2: #f50a5c;
+    --tagJsBg: #f0db50;
+    --tagJsColor: #000000;
+    --tagFirebaseBg:#ffcb2b;
+    --tagFirebaseColor:#12181a;
+    --tagCssBg:#f954be;
+    --tagCssColor:#313244;
+    --tagVuejsBg:#41b883;
+    --tagVuejsColor:#36495e;
+    --tagGoogleMapBg:#33a668;
+    --tagGoogleMapColor:#f8d844;
+    --tagDiscordjsBg:#020f08;
+    --tagDiscordjsColor:#5865f2;
+    --tagHtmlBg:#ff4b18;
+    --tagHtmlColor:#12181a;
 }
 
 * {
@@ -882,7 +896,33 @@ footer .footer-bottom {
                         border-radius: 2px;
                         background: #444e56;
                         font-weight: 600;
+                        font-size:0.9rem;
                         margin: 0.25em 0.2em;
+                    }
+                    // Custom Tags
+                    .tag-js{
+                        background: var(--tagJsBg);
+                        color:var(--tagJsColor);
+                    }
+                    .tag-firebase{
+                        background:var(--tagFirebaseBg);
+                        color:var(--tagFirebaseColor);
+                    }
+                    .tag-discordjs{
+                        background:var(--tagDiscordjsBg);
+                        color:var(--tagDiscordjsColor);
+                    }
+                    .tag-html{
+                        background:var(--tagHtmlBg);
+                        color:var(--tagHtmlColor);
+                    }
+                    .tag-vuejs{
+                        background:var(--tagVuejsBg);
+                        color:var(--tagVuejsColor);
+                    }
+                    .tag-css{
+                        background:var(--tagCssBg);
+                        color:var(--tagCssColor);
                     }
                 }
                 

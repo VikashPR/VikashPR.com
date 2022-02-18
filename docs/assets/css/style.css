@@ -905,6 +905,7 @@ footer .footer-bottom .heart {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  max-width: 550px;
 }
 
 .contact-container .contact-right .form input {
@@ -956,10 +957,16 @@ footer .footer-bottom .heart {
 .contact-container .contact-right .form .btn {
   width: 100%;
   max-width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin: 0;
 }
 
 .contact-container .contact-right .form .btn i {

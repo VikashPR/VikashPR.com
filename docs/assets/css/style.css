@@ -1562,8 +1562,8 @@ footer .footer-bottom .heart {
   .contact-container .contact-wrapper .contact-right .form .btn {
     width: 100%;
     max-width: 120px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .portfolio-container {
     -webkit-box-orient: vertical;

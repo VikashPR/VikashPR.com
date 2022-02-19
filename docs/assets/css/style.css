@@ -35,18 +35,18 @@
   --infoColor2: #f50a5c;
   --tagJsBg: #f0db50;
   --tagJsColor: #000000;
-  --tagFirebaseBg:#ffcb2b;
-  --tagFirebaseColor:#12181a;
-  --tagCssBg:#f954be;
-  --tagCssColor:#313244;
-  --tagVuejsBg:#41b883;
-  --tagVuejsColor:#36495e;
-  --tagGoogleMapBg:#33a668;
-  --tagGoogleMapColor:#f8d844;
-  --tagDiscordjsBg:#020f08;
-  --tagDiscordjsColor:#5865f2;
-  --tagHtmlBg:#ff4b18;
-  --tagHtmlColor:#12181a;
+  --tagFirebaseBg: #ffcb2b;
+  --tagFirebaseColor: #12181a;
+  --tagCssBg: #f954be;
+  --tagCssColor: #313244;
+  --tagVuejsBg: #41b883;
+  --tagVuejsColor: #36495e;
+  --tagGoogleMapBg: #33a668;
+  --tagGoogleMapColor: #f8d844;
+  --tagDiscordjsBg: #020f08;
+  --tagDiscordjsColor: #5865f2;
+  --tagHtmlBg: #ff4b18;
+  --tagHtmlColor: #12181a;
 }
 
 * {
@@ -369,7 +369,7 @@ footer .footer-bottom .heart {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   backdrop-filter: blur(6px) saturate(90%);
   -webkit-backdrop-filter: blur(6px) saturate(90%);
   background-color: rgba(24, 32, 56, 0.719);
@@ -390,10 +390,10 @@ footer .footer-bottom .heart {
           justify-content: space-between;
   -webkit-backdrop-filter: blur(24px);
           backdrop-filter: blur(24px);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   background: rgba(35, 37, 38, 0.8);
   backdrop-filter: blur(24px);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   height: 70px;
   padding-right: 20px;
 }
@@ -477,12 +477,80 @@ footer .footer-bottom .heart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-.intro-wrapper .home-right .avatar-card img {
-  width: 100%;
-  max-width: 350px;
-  min-width: 250px;
+.intro-wrapper .home-right .avatar-card .bb::before,
+.intro-wrapper .home-right .avatar-card .bb::after,
+.intro-wrapper .home-right .avatar-card .bb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.intro-wrapper .home-right .avatar-card .bb {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  background: url("../image/avatar.png") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
+  color: var(--infoColor);
+  -webkit-box-shadow: inset 0 0 0 1px #ef4782b6;
+          box-shadow: inset 0 0 0 1px #ef4782b6;
+}
+
+.intro-wrapper .home-right .avatar-card .bb::before,
+.intro-wrapper .home-right .avatar-card .bb::after {
+  content: "";
+  z-index: -1;
+  margin: -5%;
+  -webkit-box-shadow: inset 0 0 0 2px;
+          box-shadow: inset 0 0 0 2px;
+  -webkit-animation: clipMe 8s linear infinite;
+          animation: clipMe 8s linear infinite;
+}
+
+.intro-wrapper .home-right .avatar-card .bb::before {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.intro-wrapper .home-right .avatar-card .bb:hover::after,
+.intro-wrapper .home-right .avatar-card .bb:hover::before {
+  background-color: #d1618f2f;
+}
+
+@-webkit-keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 386px, 3.5px, 0px);
+  }
+  25% {
+    clip: rect(0px, 3.5px, 386px, 0px);
+  }
+  50% {
+    clip: rect(382px, 386px, 386px, 0px);
+  }
+  75% {
+    clip: rect(0px, 386px, 386px, 382px);
+  }
+}
+
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 386px, 3.5px, 0px);
+  }
+  25% {
+    clip: rect(0px, 3.5px, 386px, 0px);
+  }
+  50% {
+    clip: rect(382px, 386px, 386px, 0px);
+  }
+  75% {
+    clip: rect(0px, 386px, 386px, 382px);
+  }
 }
 
 .intro-wrapper .home-left {
@@ -729,7 +797,7 @@ footer .footer-bottom .heart {
   background: #171f38;
   margin: 8px;
   border-radius: 10px;
-  border-bottom: 0px solid var(--infoColor);
+  border-bottom: 0 solid var(--infoColor);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -765,7 +833,7 @@ footer .footer-bottom .heart {
   margin-left: 10px;
   border-width: 10px;
   border-style: solid;
-  border-color: #eb4a4a transparent transparent transparent;
+  border-color: #eb4a4a transparent transparent;
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card:hover {
@@ -775,8 +843,8 @@ footer .footer-bottom .heart {
 .skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .contact-container {
@@ -1231,7 +1299,7 @@ footer .footer-bottom .heart {
 
 .thankyoucontent .go-home {
   max-width: 200px;
-  padding: 20px 20px;
+  padding: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 20px auto;
@@ -1359,23 +1427,10 @@ footer .footer-bottom .heart {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .intro-wrapper .home-right .avatar-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .intro-wrapper .home-right .avatar-card img {
+  .intro-wrapper .home-right .avatar-card .bb {
+    height: 250px;
     width: 250px;
+    background: url("../image/avatar.png") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
   }
   .intro-wrapper .home-left {
     margin-left: 0;
@@ -1391,7 +1446,7 @@ footer .footer-bottom .heart {
     max-width: 160px;
   }
   .intro-wrapper .home-left .title {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 10px;
   }
   .intro-wrapper .home-left .heading::after {
@@ -1473,7 +1528,7 @@ footer .footer-bottom .heart {
     margin-left: 7px;
     border-width: 7px;
     border-style: solid;
-    border-color: #eb4a4a transparent transparent transparent;
+    border-color: #eb4a4a transparent transparent;
   }
   .skill-container .skill-wrapper .skill-right .tech-card:hover {
     border-bottom: 5px solid var(--infoColor);

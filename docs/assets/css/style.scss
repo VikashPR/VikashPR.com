@@ -48,6 +48,8 @@
     --tagDiscordjsColor: #5865f2;
     --tagHtmlBg: #ff4b18;
     --tagHtmlColor: #12181a;
+    --tagHackerrankBg: #00e472;
+    --tagHackerrankColor: #000000;
 }
 
 * {
@@ -138,6 +140,51 @@ li {
     box-shadow: 0 0 5px 0 #f83277cc inset, 0 0 10px 1px #f83277cc;
     -webkit-transform: scale(0.98);
     transform: scale(0.98);
+}
+
+// Custom Tags
+.tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.2em 0.5em 0.3em;
+    border-radius: 2px;
+    background: #444e56;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0.25em 0.2em;
+}
+.tag-js {
+    background: var(--tagJsBg) ;
+    color: var(--tagJsColor);
+}
+
+.tag-firebase {
+    background: var(--tagFirebaseBg);
+    color: var(--tagFirebaseColor);
+}
+
+.tag-discordjs {
+    background: var(--tagDiscordjsBg);
+    color: var(--tagDiscordjsColor);
+}
+
+.tag-html {
+    background: var(--tagHtmlBg);
+    color: var(--tagHtmlColor);
+}
+
+.tag-vuejs {
+    background: var(--tagVuejsBg);
+    color: var(--tagVuejsColor);
+}
+
+.tag-css {
+    background: var(--tagCssBg);
+    color: var(--tagCssColor);
+}
+.tag-hackerrank{
+    background: var(--tagHackerrankBg);
+    color:var(--tagHackerrankColor);
 }
 
 /*NOTE Header */
@@ -953,48 +1000,6 @@ footer .footer-bottom {
                     flex-wrap: wrap;
                     margin-block: 10px;
                     width: 100%;
-
-                    span {
-                        display: inline-block;
-                        border-radius: 3px;
-                        padding: 0.2em 0.5em 0.3em;
-                        border-radius: 2px;
-                        background: #444e56;
-                        font-weight: 600;
-                        font-size: 0.9rem;
-                        margin: 0.25em 0.2em;
-                    }
-
-                    // Custom Tags
-                    .tag-js {
-                        background: var(--tagJsBg);
-                        color: var(--tagJsColor);
-                    }
-
-                    .tag-firebase {
-                        background: var(--tagFirebaseBg);
-                        color: var(--tagFirebaseColor);
-                    }
-
-                    .tag-discordjs {
-                        background: var(--tagDiscordjsBg);
-                        color: var(--tagDiscordjsColor);
-                    }
-
-                    .tag-html {
-                        background: var(--tagHtmlBg);
-                        color: var(--tagHtmlColor);
-                    }
-
-                    .tag-vuejs {
-                        background: var(--tagVuejsBg);
-                        color: var(--tagVuejsColor);
-                    }
-
-                    .tag-css {
-                        background: var(--tagCssBg);
-                        color: var(--tagCssColor);
-                    }
                 }
 
             }
@@ -1017,19 +1022,21 @@ footer .footer-bottom {
 
     .education-wrapper {
         display: flex;
-        flex-direction: column;
+        width:100%;
+        justify-content: space-between;
+        align-items:center;
         margin-top: 50px;
 
         ul.timeline {
             margin: 2.5em 0;
             padding: 0;
-            display: inline-block;
             max-width:600px;
             .item-title{
-                font-size:1rem;
-                text-transform: uppercase;
-                font-family:Cubano;
-                letter-spacing: 1.5px;
+                display:flex;
+                align-items:center;
+                .issuer-logo{
+                    max-width:30px;
+                }
             }
         }
 
@@ -1075,7 +1082,7 @@ footer .footer-bottom {
                 margin-block: 10px;
             }
 
-            span {
+            .year {
                 display: inline-block;
                 margin-block: 10px;
                 padding: 10px;
@@ -1083,6 +1090,7 @@ footer .footer-bottom {
                 background: var(--bgSecondary);
                 color: var(--primaryColor);
             }
+
         }
         .timeline-details{
             margin:10px;

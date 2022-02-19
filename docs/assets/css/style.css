@@ -47,6 +47,8 @@
   --tagDiscordjsColor: #5865f2;
   --tagHtmlBg: #ff4b18;
   --tagHtmlColor: #12181a;
+  --tagHackerrankBg: #00e472;
+  --tagHackerrankColor: #000000;
 }
 
 * {
@@ -151,6 +153,52 @@ li {
           box-shadow: 0 0 5px 0 #f83277cc inset, 0 0 10px 1px #f83277cc;
   -webkit-transform: scale(0.98);
   transform: scale(0.98);
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  background: #444e56;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0.25em 0.2em;
+}
+
+.tag-js {
+  background: var(--tagJsBg);
+  color: var(--tagJsColor);
+}
+
+.tag-firebase {
+  background: var(--tagFirebaseBg);
+  color: var(--tagFirebaseColor);
+}
+
+.tag-discordjs {
+  background: var(--tagDiscordjsBg);
+  color: var(--tagDiscordjsColor);
+}
+
+.tag-html {
+  background: var(--tagHtmlBg);
+  color: var(--tagHtmlColor);
+}
+
+.tag-vuejs {
+  background: var(--tagVuejsBg);
+  color: var(--tagVuejsColor);
+}
+
+.tag-css {
+  background: var(--tagCssBg);
+  color: var(--tagCssColor);
+}
+
+.tag-hackerrank {
+  background: var(--tagHackerrankBg);
+  color: var(--tagHackerrankColor);
 }
 
 /*NOTE Header */
@@ -1210,47 +1258,6 @@ footer .footer-bottom .heart {
   width: 100%;
 }
 
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags span {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0.2em 0.5em 0.3em;
-  border-radius: 2px;
-  background: #444e56;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin: 0.25em 0.2em;
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-js {
-  background: var(--tagJsBg);
-  color: var(--tagJsColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-firebase {
-  background: var(--tagFirebaseBg);
-  color: var(--tagFirebaseColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-discordjs {
-  background: var(--tagDiscordjsBg);
-  color: var(--tagDiscordjsColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-html {
-  background: var(--tagHtmlBg);
-  color: var(--tagHtmlColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-vuejs {
-  background: var(--tagVuejsBg);
-  color: var(--tagVuejsColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-tags .tag-css {
-  background: var(--tagCssBg);
-  color: var(--tagCssColor);
-}
-
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -1274,25 +1281,33 @@ footer .footer-bottom .heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 50px;
 }
 
 .education-container .education-wrapper ul.timeline {
   margin: 2.5em 0;
   padding: 0;
-  display: inline-block;
   max-width: 600px;
 }
 
 .education-container .education-wrapper ul.timeline .item-title {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-family: Cubano;
-  letter-spacing: 1.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.education-container .education-wrapper ul.timeline .item-title .issuer-logo {
+  max-width: 30px;
 }
 
 .education-container .education-wrapper ul.timeline li {
@@ -1335,7 +1350,7 @@ footer .footer-bottom .heart {
   margin-block: 10px;
 }
 
-.education-container .education-wrapper ul.timeline li .timestamp span {
+.education-container .education-wrapper ul.timeline li .timestamp .year {
   display: inline-block;
   margin-block: 10px;
   padding: 10px;

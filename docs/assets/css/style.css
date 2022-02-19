@@ -1260,6 +1260,106 @@ footer .footer-bottom .heart {
   opacity: 1;
 }
 
+.education-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.education-container .education-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.education-container .education-wrapper ul.timeline {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.education-container .education-wrapper ul.timeline .item-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: Cubano;
+  letter-spacing: 1.5px;
+}
+
+.education-container .education-wrapper ul.timeline li {
+  list-style: none;
+  margin: auto;
+  margin-left: 10em;
+  min-height: 50px;
+  border-left: 1px solid #fff;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.education-container .education-wrapper ul.timeline li::before {
+  position: absolute;
+  left: -19px;
+  top: -10px;
+  content: " ";
+  border: 8px solid white;
+  border-radius: 500%;
+  background: #eb4a4a;
+  height: 20px;
+  width: 20px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.education-container .education-wrapper ul.timeline li:hover::before {
+  border-color: var(--bgSecondary);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.education-container .education-wrapper ul.timeline li .timestamp {
+  width: 100%;
+}
+
+.education-container .education-wrapper ul.timeline li .timestamp h3 {
+  font-size: 1.2rem;
+  color: var(--infoColor);
+  margin-block: 10px;
+}
+
+.education-container .education-wrapper ul.timeline li .timestamp span {
+  display: inline-block;
+  margin-block: 10px;
+  padding: 10px;
+  font-weight: 800;
+  background: var(--bgSecondary);
+  color: var(--primaryColor);
+}
+
+.education-container .education-wrapper .timeline-details {
+  margin: 10px;
+}
+
+.education-container .education-wrapper .timeline-details p {
+  color: var(--primaryColor);
+  margin: 5px;
+  font-size: 0.9rem;
+  display: list-item;
+  list-style-type: disc;
+}
+
+.education-container .education-wrapper .item-title {
+  color: #fff;
+}
+
 .thankyoucontent .wrapper-1 {
   width: 100%;
   height: 100vh;
@@ -1597,3 +1697,4 @@ footer .footer-bottom .heart {
     margin-top: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */

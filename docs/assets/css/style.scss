@@ -1010,6 +1010,98 @@ footer .footer-bottom {
     }
 }
 
+// NOTE Education Section
+.education-container {
+    display: flex;
+    flex-direction: column;
+
+    .education-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        ul.timeline {
+            margin: 2.5em 0;
+            padding: 0;
+            display: inline-block;
+            max-width:600px;
+            .item-title{
+                font-size:1rem;
+                text-transform: uppercase;
+                font-family:Cubano;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        ul.timeline li {
+            list-style: none;
+            margin: auto;
+            margin-left: 10em;
+            min-height: 50px;
+            border-left: 1px solid #fff;
+            padding: 0 0 50px 30px;
+            position: relative;
+        }
+
+        ul.timeline li:last-child {
+            // border-left: 0;
+        }
+
+        ul.timeline li::before {
+            position: absolute;
+            left: -19px;
+            top: -10px;
+            content: " ";
+            border: 8px solid rgba(255, 255, 255, 1);
+            border-radius: 500%;
+            background: #eb4a4a;
+            height: 20px;
+            width: 20px;
+            transition: all 400ms ease-in-out;
+        }
+
+        ul.timeline li:hover::before {
+            border-color: var(--bgSecondary);
+            transition: all 500ms ease-in-out;
+        }
+
+        ul.timeline li .timestamp {
+            width: 100%;
+            
+
+            h3 {
+                font-size: 1.2rem;
+                color: var(--infoColor);
+                margin-block: 10px;
+            }
+
+            span {
+                display: inline-block;
+                margin-block: 10px;
+                padding: 10px;
+                font-weight: 800;
+                background: var(--bgSecondary);
+                color: var(--primaryColor);
+            }
+        }
+        .timeline-details{
+            margin:10px;
+            p{
+                color:var(--primaryColor);
+                margin:5px;
+                font-size:0.9rem;
+                display:list-item;
+                list-style-type: disc;
+            }
+        }
+        .item-title {
+            color: #fff;
+        }
+    }
+}
+
+
+
 
 // NOTE Thank You page
 .thankyoucontent {
@@ -1181,10 +1273,10 @@ footer .footer-bottom {
 
         .home-right {
             .avatar-card {
-                .bb{
-                    height:250px;
-                    width:250px;
-                background: url("../image/avatar.png") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
+                .bb {
+                    height: 250px;
+                    width: 250px;
+                    background: url("../image/avatar.png") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
 
                 }
             }

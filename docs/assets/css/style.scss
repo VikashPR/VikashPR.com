@@ -50,6 +50,10 @@
     --tagHtmlColor: #12181a;
     --tagHackerrankBg: #00e472;
     --tagHackerrankColor: #000000;
+    --tagPrograminghubBg: #1612ec;
+    --tagPrograminghubColor: #ffff;
+    --tagCppBg: #004ba1;
+    --tagCppColor: #ffffff;
 }
 
 * {
@@ -153,8 +157,9 @@ li {
     font-size: 0.9rem;
     margin: 0.25em 0.2em;
 }
+
 .tag-js {
-    background: var(--tagJsBg) ;
+    background: var(--tagJsBg);
     color: var(--tagJsColor);
 }
 
@@ -182,9 +187,20 @@ li {
     background: var(--tagCssBg);
     color: var(--tagCssColor);
 }
-.tag-hackerrank{
+
+.tag-hackerrank {
     background: var(--tagHackerrankBg);
-    color:var(--tagHackerrankColor);
+    color: var(--tagHackerrankColor);
+}
+
+.tag-programinghub {
+    background: var(--tagPrograminghubBg);
+    color: var(--tagPrograminghubColor);
+}
+
+.tag-cpp {
+    background: var(--tagCppBg);
+    color: var(--tagCppColor);
 }
 
 /*NOTE Header */
@@ -1022,20 +1038,22 @@ footer .footer-bottom {
 
     .education-wrapper {
         display: flex;
-        width:100%;
+        width: 100%;
         justify-content: space-between;
-        align-items:center;
         margin-top: 50px;
 
         ul.timeline {
             margin: 2.5em 0;
             padding: 0;
-            max-width:600px;
-            .item-title{
-                display:flex;
-                align-items:center;
-                .issuer-logo{
-                    max-width:30px;
+            width: 50%;
+            height: 100%;
+
+            .item-title {
+                display: flex;
+                align-items: center;
+
+                .issuer-logo {
+                    max-width: 30px;
                 }
             }
         }
@@ -1074,7 +1092,7 @@ footer .footer-bottom {
 
         ul.timeline li .timestamp {
             width: 100%;
-            
+
 
             h3 {
                 font-size: 1.2rem;
@@ -1092,24 +1110,24 @@ footer .footer-bottom {
             }
 
         }
-        .timeline-details{
-            margin:10px;
-            p{
-                color:var(--primaryColor);
-                margin:5px;
-                font-size:0.9rem;
-                display:list-item;
+
+        .timeline-details {
+            margin: 10px;
+
+            p {
+                color: var(--primaryColor);
+                margin: 5px;
+                font-size: 0.9rem;
+                display: list-item;
                 list-style-type: disc;
             }
         }
+
         .item-title {
             color: #fff;
         }
     }
 }
-
-
-
 
 // NOTE Thank You page
 .thankyoucontent {
@@ -1440,6 +1458,24 @@ footer .footer-bottom {
             margin: 50px 20px;
         }
     }
+
+    // Educatoin sectoin 
+    .education-container {
+        .education-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+
+            ul.timeline {
+                width: 100%;
+
+                li {
+                    margin-left: 50px;
+                }
+            }
+
+        }
+    }
+
 }
 
 @media (min-width: 360px) {

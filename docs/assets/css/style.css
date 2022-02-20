@@ -49,6 +49,10 @@
   --tagHtmlColor: #12181a;
   --tagHackerrankBg: #00e472;
   --tagHackerrankColor: #000000;
+  --tagPrograminghubBg: #1612ec;
+  --tagPrograminghubColor: #ffff;
+  --tagCppBg: #004ba1;
+  --tagCppColor: #ffffff;
 }
 
 * {
@@ -199,6 +203,16 @@ li {
 .tag-hackerrank {
   background: var(--tagHackerrankBg);
   color: var(--tagHackerrankColor);
+}
+
+.tag-programinghub {
+  background: var(--tagPrograminghubBg);
+  color: var(--tagPrograminghubColor);
+}
+
+.tag-cpp {
+  background: var(--tagCppBg);
+  color: var(--tagCppColor);
 }
 
 /*NOTE Header */
@@ -1285,16 +1299,14 @@ footer .footer-bottom .heart {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 50px;
 }
 
 .education-container .education-wrapper ul.timeline {
   margin: 2.5em 0;
   padding: 0;
-  max-width: 600px;
+  width: 50%;
+  height: 100%;
 }
 
 .education-container .education-wrapper ul.timeline .item-title {
@@ -1688,6 +1700,21 @@ footer .footer-bottom .heart {
   }
   .portfolio-container .portfolio-wrapper {
     margin: 50px 20px;
+  }
+  .education-container .education-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .education-container .education-wrapper ul.timeline {
+    width: 100%;
+  }
+  .education-container .education-wrapper ul.timeline li {
+    margin-left: 50px;
   }
 }
 

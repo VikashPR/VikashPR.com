@@ -15,6 +15,15 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "VikashPR",
+      "name": "Vikash2806",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69889418?v=4",
+      "profile": "http://vikash2806-dev.web.app",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

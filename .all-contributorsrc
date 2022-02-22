@@ -23,7 +23,8 @@
       "profile": "http://vikash2806-dev.web.app",
       "contributions": [
         "code",
-        "design"
+        "design",
+        "test"
       ]
     }
   ],

@@ -13,7 +13,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://vikash2806-dev.web.app"><img src="https://avatars.githubusercontent.com/u/69889418?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vikash2806</b></sub></a><br /><a href="https://github.com/VikashPR/VikashPR.com/commits?author=VikashPR" title="Code">💻</a> <a href="#design-VikashPR" title="Design">🎨</a> <a href="https://github.com/VikashPR/VikashPR.com/commits?author=VikashPR" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://vikash2806-dev.web.app"><img src="https://avatars.githubusercontent.com/u/69889418?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vikash2806</b></sub></a><br /><a href="https://github.com/VikashPR/VikashPR.com/commits?author=VikashPR" title="Code">💻</a> <a href="#design-VikashPR" title="Design">🎨</a> <a href="https://github.com/VikashPR/VikashPR.com/commits?author=VikashPR" title="Tests">⚠️</a> <a href="#content-VikashPR" title="Content">🖋</a></td>
   </tr>
 </table>
 

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -553,7 +552,7 @@ footer .footer-bottom .heart {
   width: 350px;
   height: 350px;
   margin: auto;
-  background: url("../image/avatar.png") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
+  background: url("../image/avatar.webp") no-repeat 50%/90% rgba(0, 0, 0, 0.1);
   color: var(--infoColor);
   -webkit-box-shadow: inset 0 0 0 1px #ef4782b6;
           box-shadow: inset 0 0 0 1px #ef4782b6;

@@ -125,8 +125,8 @@ li {
   padding: 15px 20px;
   border-radius: 10px;
   border: 2px solid var(--infoColor);
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+  -webkit-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   font-size: 1.2rem;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
@@ -147,7 +147,7 @@ li {
 }
 
 .btn:hover {
-  background-color: rgba(25, 34, 58, 0.849);
+  background-color: rgba(32, 41, 65, 0.952);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 

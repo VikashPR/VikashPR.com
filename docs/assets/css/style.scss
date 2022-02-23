@@ -1069,14 +1069,11 @@ footer .footer-bottom {
             padding: 0 0 50px 30px;
             position: relative;
         }
-        .certificate-item{
-            display:flex;
+
+        .certificate-item {
+            display: flex;
             align-items: center;
             justify-content: flex-start;
-        }
-
-        ul.timeline li:last-child {
-            // border-left: 0;
         }
 
         ul.timeline li::before {
@@ -1134,74 +1131,104 @@ footer .footer-bottom {
             color: #fff;
         }
 
-        .certificate-preview{
-            position:relative;
-            .modal{
-                position:fixed;
-                top:50%;
-                left:50%;
-                transform:translate(-50%,-50%) scale(0);
-                z-index:9;
-                background-color:var(--bgSecondary);
+        .certificate-preview1::before {
+            content: 'click to view';
+            text-transform: capitalize;
+            position: absolute;
+            right: -60px;
+            top: -20px;
+        }
+    
+        .certificate-preview1::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: -10px;
+            width: 70px;
+            height: 2px;
+            background: #fff;
+            transform-origin: right;
+            transform: rotate(-30deg);
+        }
+        
+        .certificate-preview {
+            position: relative;
+
+            .modal {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                z-index: 9;
+                background-color: var(--bgSecondary);
                 width: 800px;
                 border-radius: 10px;
                 max-width: 90%;
                 font-family: Cubano;
                 transition: all 0.2s ease-in-out;
             }
-            .preview-modal{
-                width:400px;
-                max-width:80%;
+
+            .preview-modal {
+                width: 400px;
+                max-width: 80%;
                 margin: 10px;
             }
-            .modal.active{
-                transform:translate(-50%,-50%) scale(1)
+
+            .modal.active {
+                transform: translate(-50%, -50%) scale(1)
             }
-            .modal-header{
-                display:flex;
-                justify-content:space-between;
+
+            .modal-header {
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
-                width:100%;
-                padding:15px;
+                width: 100%;
+                padding: 15px;
                 // position:absolute;
                 border-radius: 10px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
-                color:var(--primaryColor);
+                color: var(--primaryColor);
                 cursor: pointer;
-                transition:all 0.3s ease-in-out;
-                background:#20232ad3;
-                h3{
-                    margin-inline-end:10px;
+                transition: all 0.3s ease-in-out;
+                background: #20232ad3;
+
+                h3 {
+                    margin-inline-end: 10px;
                 }
-                i{
-                    font-size:2rem;
+
+                i {
+                    font-size: 2rem;
                 }
             }
-            .modal-header:hover{
-                background:#20232a;
+
+            .modal-header:hover {
+                background: #20232a;
             }
-            .modal-img img{
+
+            .modal-img img {
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 // border-radius:10px;
                 max-width: 100%;
             }
         }
-        #overlay{
-            position:fixed;
-            opacity:0;
-            top:0;
-            left:0;
-            bottom:0;
-            right:0;
-            background-color:rgba(49, 49, 56, 0.5);
-            pointer-events:none;
-            transition:all 0.3s ease-in-out;
+
+        #overlay {
+            position: fixed;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(49, 49, 56, 0.5);
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
         }
-        #overlay.active{
-            opacity:1;
-            pointer-events:all;
+
+        #overlay.active {
+            opacity: 1;
+            pointer-events: all;
         }
     }
 }

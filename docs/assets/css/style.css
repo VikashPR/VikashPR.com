@@ -1396,6 +1396,28 @@ footer .footer-bottom .heart {
   color: #fff;
 }
 
+.education-container .education-wrapper .certificate-preview1::before {
+  content: 'click to view';
+  text-transform: capitalize;
+  position: absolute;
+  right: -60px;
+  top: -20px;
+}
+
+.education-container .education-wrapper .certificate-preview1::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  width: 70px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
 .education-container .education-wrapper .certificate-preview {
   position: relative;
 }

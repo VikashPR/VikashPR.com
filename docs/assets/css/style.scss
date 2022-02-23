@@ -116,7 +116,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 2px solid var(--infoColor);
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
@@ -124,8 +124,8 @@ li {
     margin-inline-end: 10px;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    background-color: rgba(24, 32, 56, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.125);
+    background-color: rgba(25, 34, 58, 0.849);
+    border: 1px solid rgba(25, 34, 58, 0.849);
     cursor: pointer;
     user-select: none;
     color: var(--primaryColor);
@@ -136,12 +136,13 @@ li {
 }
 
 .btn:hover {
-    box-shadow: 0 0 10px 0 #f83278 inset, 0 0 20px 2px #f13275;
-    border: 2px solid #fd3a7f;
+    // box-shadow: 0 0 10px 0 #f83278 inset, 0 0 20px 2px #f13275;
+    // border: 2px solid #fd3a7f;
+    background-color: rgba(25, 34, 58, 0.849);
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .btn:active {
-    box-shadow: 0 0 5px 0 #f83277cc inset, 0 0 10px 1px #f83277cc;
     -webkit-transform: scale(0.98);
     transform: scale(0.98);
 }

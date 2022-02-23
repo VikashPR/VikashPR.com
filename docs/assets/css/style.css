@@ -1400,21 +1400,22 @@ footer .footer-bottom .heart {
   content: 'click to view';
   text-transform: capitalize;
   position: absolute;
-  right: -60px;
-  top: -20px;
+  left: -40px;
+  top: -40px;
 }
 
 .education-container .education-wrapper .certificate-preview1::after {
   content: '';
   position: absolute;
-  right: -10px;
+  top: 20px;
+  left: 10px;
   width: 70px;
   height: 2px;
   background: #fff;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .education-container .education-wrapper .certificate-preview {

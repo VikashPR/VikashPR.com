@@ -1135,19 +1135,20 @@ footer .footer-bottom {
             content: 'click to view';
             text-transform: capitalize;
             position: absolute;
-            right: -60px;
-            top: -20px;
+            left: -40px;
+            top: -40px;
         }
     
         .certificate-preview1::after {
             content: '';
             position: absolute;
-            right: -10px;
+            top:20px;
+            left: 10px;
             width: 70px;
             height: 2px;
             background: #fff;
             transform-origin: right;
-            transform: rotate(-30deg);
+            transform: rotate(30deg);
         }
         
         .certificate-preview {

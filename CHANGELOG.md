@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.0...v1.2.1) (2022-02-23)
+
+
+### Features
+
+* button design update ([15aa4c6](https://github.com/vikash2806/vikash2806_Portfolio/commit/15aa4c65e80623657857905dc2ded85f6b61ad19))
+* gitattributes file add ([c0655d3](https://github.com/vikash2806/vikash2806_Portfolio/commit/c0655d300160b3cae6b4592f786bf028cd4900b3))
+* readme fix ([7f79aa6](https://github.com/vikash2806/vikash2806_Portfolio/commit/7f79aa6769670dac16c89a350ad35dbe94b192c2))
+* readme init ([455d79f](https://github.com/vikash2806/vikash2806_Portfolio/commit/455d79fc10cafcd41a7c5c645f5cf32c4c54730e))
+* Readme init ([2767672](https://github.com/vikash2806/vikash2806_Portfolio/commit/27676728a86dba136aa3460cb62db028677a11ee))
+
+
+### Bug Fixes
+
+* contributor update ([42ce13a](https://github.com/vikash2806/vikash2806_Portfolio/commit/42ce13a367392955804253f361c120b9ab3e8eaa))
+* contributors modified ([802acb9](https://github.com/vikash2806/vikash2806_Portfolio/commit/802acb9620389ff763be1af33bbb2b52db1d0242))
+* Gitattributes file root update ([e21d0bb](https://github.com/vikash2806/vikash2806_Portfolio/commit/e21d0bb03e6772e90ae35f9f6d19ca1e96ec3bdd))
+* Markdown fix ([24545f3](https://github.com/vikash2806/vikash2806_Portfolio/commit/24545f3af3e933ccfe8dffb42db84c46d394f5a1))
+* readme update ([356ab2a](https://github.com/vikash2806/vikash2806_Portfolio/commit/356ab2a6dde92c0065629ecc85aea212ed292a13))
+
 ## [1.2.0](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.1.0...v1.2.0) (2022-02-21)
 
 

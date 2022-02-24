@@ -115,7 +115,6 @@ li {
     align-items: center;
     padding: 15px 20px;
     border-radius: 10px;
-    border: 2px solid var(--infoColor);
     -webkit-transition: .2s cubic-bezier(0.3, 0, 0.5, 1);
     transition: .2s cubic-bezier(0.3, 0, 0.5, 1);
     font-size: 1.2rem;
@@ -148,7 +147,6 @@ li {
 // Custom Tags
 .tag {
     display: inline-block;
-    border-radius: 3px;
     padding: 0.2em 0.5em 0.3em;
     border-radius: 2px;
     background: #444e56;
@@ -385,7 +383,6 @@ footer .footer-bottom {
         'left-column right-column';
     margin: 30px;
     user-select: none;
-    border-radius: 10px 10px 0 0;
     backdrop-filter: blur(6px) saturate(90%);
     -webkit-backdrop-filter: blur(6px) saturate(90%);
     background-color: rgba(24, 32, 56, 0.719);
@@ -397,11 +394,9 @@ footer .footer-bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        backdrop-filter: blur(24px);
         border-radius: 10px 10px 0 0;
         background: rgba(35, 37, 38, 0.8);
         backdrop-filter: blur(24px);
-        border-radius: 10px 10px 0 0;
         height: 70px;
         padding-right: 20px;
 
@@ -479,19 +474,19 @@ footer .footer-bottom {
 
                 0%,
                 100% {
-                    clip: rect(0px, 386px, 3.5px, 0px);
+                    clip: rect(0, 386px, 3.5px, 0);
                 }
 
                 25% {
-                    clip: rect(0px, 3.5px, 386px, 0px);
+                    clip: rect(0, 3.5px, 386px, 0);
                 }
 
                 50% {
-                    clip: rect(382px, 386px, 386px, 0px);
+                    clip: rect(382px, 386px, 386px, 0);
                 }
 
                 75% {
-                    clip: rect(0px, 386px, 386px, 382px);
+                    clip: rect(0, 386px, 386px, 382px);
                 }
             }
         }
@@ -842,11 +837,9 @@ footer .footer-bottom {
                 max-width: 550px;
                 height: 65px;
                 border-radius: 10px;
-                padding: 0 10px;
                 margin-block: 15px;
                 padding: 20px;
                 background: #171f38;
-                border: none;
                 font-size: 1.1rem;
                 font-weight: 300;
                 color: var(--primaryColor);
@@ -859,11 +852,9 @@ footer .footer-bottom {
                 max-width: 550px;
                 height: 200px;
                 border-radius: 10px;
-                padding: 0 10px;
                 margin-block: 15px;
                 padding: 20px;
                 background: #171f38;
-                border: none;
                 font-size: 1.1rem;
                 font-family: 'Roboto', sans-serif;
                 color: var(--primaryColor);
@@ -1266,6 +1257,11 @@ footer .footer-bottom {
     }
 
     .go-home {
+        font-family: 'Raleway', Arial Black;
+        font-size: 1rem;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         max-width: 200px;
         padding: 20px;
         justify-content: space-around;
@@ -1282,13 +1278,6 @@ footer .footer-bottom {
         opacity: 0.9;
     }
 
-    .go-home {
-        font-family: 'Raleway', Arial Black;
-        font-size: 1rem;
-        font-weight: 700 !important;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
 
     .footer-like {
         margin-top: auto;
@@ -1369,15 +1358,6 @@ footer .footer-bottom {
         display: none;
     }
 
-    .intro-wrapper {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'nav-wrapper'
-            'right-column'
-            'right-column'
-            'left-column';
-    }
-
     .btn {
         backdrop-filter: none;
         background-color: rgba(24, 32, 56, 0.9);
@@ -1388,6 +1368,12 @@ footer .footer-bottom {
     }
 
     .intro-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'nav-wrapper'
+            'right-column'
+            'right-column'
+            'left-column';
         backdrop-filter: none;
         text-align: center;
 

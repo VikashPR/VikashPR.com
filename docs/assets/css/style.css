@@ -123,7 +123,6 @@ li {
           align-items: center;
   padding: 15px 20px;
   border-radius: 10px;
-  border: 2px solid var(--infoColor);
   -webkit-transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   font-size: 1.2rem;
@@ -157,7 +156,6 @@ li {
 
 .tag {
   display: inline-block;
-  border-radius: 3px;
   padding: 0.2em 0.5em 0.3em;
   border-radius: 2px;
   background: #444e56;
@@ -461,7 +459,6 @@ footer .footer-bottom .heart {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 10px 10px 0 0;
   backdrop-filter: blur(6px) saturate(90%);
   -webkit-backdrop-filter: blur(6px) saturate(90%);
   background-color: rgba(24, 32, 56, 0.719);
@@ -480,12 +477,10 @@ footer .footer-bottom .heart {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-backdrop-filter: blur(24px);
-          backdrop-filter: blur(24px);
   border-radius: 10px 10px 0 0;
   background: rgba(35, 37, 38, 0.8);
-  backdrop-filter: blur(24px);
-  border-radius: 10px 10px 0 0;
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
   height: 70px;
   padding-right: 20px;
 }
@@ -582,32 +577,32 @@ footer .footer-bottom .heart {
 @-webkit-keyframes clipMe {
   0%,
   100% {
-    clip: rect(0px, 386px, 3.5px, 0px);
+    clip: rect(0, 386px, 3.5px, 0);
   }
   25% {
-    clip: rect(0px, 3.5px, 386px, 0px);
+    clip: rect(0, 3.5px, 386px, 0);
   }
   50% {
-    clip: rect(382px, 386px, 386px, 0px);
+    clip: rect(382px, 386px, 386px, 0);
   }
   75% {
-    clip: rect(0px, 386px, 386px, 382px);
+    clip: rect(0, 386px, 386px, 382px);
   }
 }
 
 @keyframes clipMe {
   0%,
   100% {
-    clip: rect(0px, 386px, 3.5px, 0px);
+    clip: rect(0, 386px, 3.5px, 0);
   }
   25% {
-    clip: rect(0px, 3.5px, 386px, 0px);
+    clip: rect(0, 3.5px, 386px, 0);
   }
   50% {
-    clip: rect(382px, 386px, 386px, 0px);
+    clip: rect(382px, 386px, 386px, 0);
   }
   75% {
-    clip: rect(0px, 386px, 386px, 382px);
+    clip: rect(0, 386px, 386px, 382px);
   }
 }
 
@@ -1040,11 +1035,9 @@ footer .footer-bottom .heart {
   max-width: 550px;
   height: 65px;
   border-radius: 10px;
-  padding: 0 10px;
   margin-block: 15px;
   padding: 20px;
   background: #171f38;
-  border: none;
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--primaryColor);
@@ -1058,11 +1051,9 @@ footer .footer-bottom .heart {
   max-width: 550px;
   height: 200px;
   border-radius: 10px;
-  padding: 0 10px;
   margin-block: 15px;
   padding: 20px;
   background: #171f38;
-  border: none;
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
   color: var(--primaryColor);
@@ -1545,6 +1536,11 @@ footer .footer-bottom .heart {
 }
 
 .thankyoucontent .go-home {
+  font-family: 'Raleway', Arial Black;
+  font-size: 1rem;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   max-width: 200px;
   padding: 20px;
   -ms-flex-pack: distribute;
@@ -1561,14 +1557,6 @@ footer .footer-bottom .heart {
 
 .thankyoucontent .go-home:hover {
   opacity: 0.9;
-}
-
-.thankyoucontent .go-home {
-  font-family: 'Raleway', Arial Black;
-  font-size: 1rem;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .thankyoucontent .footer-like {
@@ -1643,11 +1631,6 @@ footer .footer-bottom .heart {
   .intro-wrapper .home-nav .nav-social {
     display: none;
   }
-  .intro-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'nav-wrapper' 'right-column' 'right-column' 'left-column';
-  }
   .btn {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
@@ -1657,6 +1640,9 @@ footer .footer-bottom .heart {
     margin-inline: 5px;
   }
   .intro-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'nav-wrapper' 'right-column' 'right-column' 'left-column';
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
     text-align: center;

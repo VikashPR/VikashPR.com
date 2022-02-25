@@ -38,12 +38,33 @@
 // }
 // var intervalId = setInterval(decreaseCounter, 1000);
 
-// Submit Button audio effect
-let audio = document.querySelector('#audio');
 
-function playSuccess(){
-    audio.play();
-}
+// Submit Button audio effect
+let audioSuccess = document.querySelector('#audioSuccess');
+let audioError = document.querySelector('#audioError');
+let form = document.querySelector('#form');
+let name = document.querySelector('#name');
+let email = document.querySelector('#email');
+let message = document.querySelector('#message');
+let submitBtn = document.querySelector('#submit-btn');
+const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+submitBtn.addEventListener('click', function(){
+  let nameValue = name.value;
+  let emailValue = email.value;
+  let messageValue = message.value;
+  if (nameValue == "" || emailValue == "" || messageValue == ""){
+    audioError.play();
+  }
+  else if(!emailValue.match(mailFormat)){
+    audioError.play();
+  }
+
+})
+
+form.addEventListener("submit", function(){
+    audioSuccess.play();
+});
+
 
 // Certificate preview
 const openModalButton1 = document.querySelector('[data-modal-target1]')

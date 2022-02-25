@@ -514,16 +514,17 @@
                         <!-- <img id="map" src="./assets/image/map.png" alt=""> -->
                 </div>
                 <div class="contact-right">
-                    <form class="form" action="https://formsubmit.co/vikashrajendran2806@gmail.com" method="POST">
-                        <input placeholder="Your name" type="text" name="name" required>
-                        <input placeholder="Email Address" type="email" name="email" required>
+                    <form class="form" id="form" action="https://formsubmit.co/vikashrajendran2806@gmail.com" method="POST">
+                        <input id="name" placeholder="Your name" type="text" name="name" required>
+                        <input id="email" placeholder="Email Address" type="email" name="email" required>
                         <input type="hidden" name="_subject" value="New submission!">
                         <input type="hidden" name="_template" value="table">
-                        <textarea placeholder="Message" name="message" id="" cols="25" rows="10" required></textarea>
+                        <textarea id="message" placeholder="Message" name="message" cols="25" rows="10" required></textarea>
                         <input type="hidden" name="_next" value="https://vikash2806-dev.web.app/thanks.html">
-                        <button type="submit" onclick="playSuccess()" class="btn submit--btn">Send<i
+                        <button id="submit-btn" type="submit" class="btn submit--btn">Send<i
                                 class="fa-solid fa-paper-plane"></i></button>
-                        <audio id="audio" src="./assets/sounds/success.mp3"></audio>
+                        <audio id="audioSuccess" src="./assets/sounds/success.mp3"></audio>
+                        <audio id="audioError" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3"></audio>
                     </form>
                 </div>
             </div>

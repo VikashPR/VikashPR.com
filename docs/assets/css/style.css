@@ -851,6 +851,13 @@ footer .footer-bottom .heart {
           transform: translateY(0);
 }
 
+#map {
+  height: 100vh;
+  /* The height is 400 pixels */
+  width: 100vw;
+  /* The width is the width of the web page */
+}
+
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -945,13 +952,6 @@ footer .footer-bottom .heart {
   height: 40px;
   width: 40px;
   margin-right: 15px;
-}
-
-.contact-container .contact-left #map {
-  height: 250px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
 }
 
 .contact-container .contact-right {
@@ -1795,3 +1795,4 @@ footer .footer-bottom .heart {
     margin-top: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */

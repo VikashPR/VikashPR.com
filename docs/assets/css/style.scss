@@ -684,6 +684,12 @@ footer .footer-bottom {
         }
     }
 }
+#map {
+    height: 100vh;
+    /* The height is 400 pixels */
+    width: 100vw;
+    /* The width is the width of the web page */
+}
 
 // NOTE Contact Section
 .contact-container {
@@ -773,12 +779,6 @@ footer .footer-bottom {
 
         //     }
         // }
-        #map {
-            height: 250px;
-            /* The height is 400 pixels */
-            width: 100%;
-            /* The width is the width of the web page */
-        }
     }
 
     .contact-right {

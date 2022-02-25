@@ -1,4 +1,3 @@
-
 // // Google maps 
 // function initMap() {
 //   const map = new google.maps.Map(document.getElementById("map"), {
@@ -26,6 +25,7 @@
 
 // redirect timer in Thanks page
 var counterElt = document.getElementById("counter");
+
 function decreaseCounter() {
   var counter = Number(counterElt.textContent);
   if (counter > 1) {
@@ -48,21 +48,20 @@ let email = document.querySelector('#email');
 let message = document.querySelector('#message');
 let submitBtn = document.querySelector('#submit-btn');
 const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-submitBtn.addEventListener('click', function(){
+submitBtn.addEventListener('click', function () {
   let nameValue = name.value;
   let emailValue = email.value;
   let messageValue = message.value;
-  if (nameValue == "" || emailValue == "" || messageValue == ""){
+  if (nameValue == "" || emailValue == "" || messageValue == "") {
     audioError.play();
-  }
-  else if(!emailValue.match(mailFormat)){
+  } else if (!emailValue.match(mailFormat)) {
     audioError.play();
   }
 
 })
 
-form.addEventListener("submit", function(){
-    audioSuccess.play();
+form.addEventListener("submit", function () {
+  audioSuccess.play();
 });
 
 
@@ -112,3 +111,77 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+// Loading messages.
+function write(obj, sentence, i, cb) {
+  if (i != sentence.length) {
+    setTimeout(function () {
+      i++
+      obj.innerHTML = sentence.substr(0, i + 1) + ' <em aria-hidden="true"></em>';
+      write(obj, sentence, i, cb)
+    }, 50)
+  } else {
+    cb()
+  }
+}
+
+function erase(obj, cb, i) {
+  var sentence = obj.innerText;
+  if (sentence.length != 0) {
+    setTimeout(function () {
+      sentence = sentence.substr(0, sentence.length - 1)
+      obj.innerText = sentence;
+      erase(obj, cb);
+    }, 18 / (i * (i / 10000000)))
+  } else {
+    obj.innerText = " "
+    cb()
+  }
+}
+
+var typeline = document.querySelector("#typeline");
+
+function writeErase(obj, sentence, time, cb) {
+  write(obj, sentence, 0, function () {
+    setTimeout(function () {
+      erase(obj, cb)
+    }, time)
+  })
+}
+
+var sentences = [
+  "Loading loader...",
+  "Building a wall...",
+  "Downloading Downloader...",
+  "Debugging Debugger...",
+  "Updating Updater...",
+  "Installing Installer...",
+  "Proving P=NP...",
+  "Dividing by zero...",
+  "Cleaning up...",
+  "You seem like a nice person...",
+  "You're a nice person...",
+  "Let's hope it's worth the wait",
+  "If I’m not back in five minutes, just wait longer.",
+]
+var counter = 0;
+
+function loop() {
+  var sentence = sentences[counter % sentences.length]
+  writeErase(typeline, sentence, 1500, loop)
+  counter++
+}
+
+loop()
+
+
+// Pre loading code 
+
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".loading-wrapper").style.visibility = "visible";
+  } else {
+    document.querySelector(".loading-wrapper").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
+}

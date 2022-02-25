@@ -476,9 +476,6 @@ footer .footer-bottom .heart {
   display: inline-block;
   margin: 0 16px;
   z-index: 99;
-}
-
-.loading-wrapper .loader {
   --path: #9ca9c9;
   --dot: var(--infoColor);
   --duration: 3s;

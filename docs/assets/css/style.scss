@@ -391,14 +391,11 @@ footer .footer-bottom {
         position:absolute;
         bottom:45%;
     }
+
     .loader {
         display: inline-block;
         margin: 0 16px;
         z-index:99;
-
-    }
-
-    .loader {
         --path: #9ca9c9;
         --dot: var(--infoColor);
 

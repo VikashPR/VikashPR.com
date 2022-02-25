@@ -482,7 +482,6 @@ footer .footer-bottom .heart {
   width: 44px;
   height: 44px;
   position: relative;
-  margin: 50px;
 }
 
 .loading-wrapper .loader:before {
@@ -513,9 +512,6 @@ footer .footer-bottom .heart {
   stroke-width: 10px;
   stroke-linejoin: round;
   stroke-linecap: round;
-}
-
-.loading-wrapper .loader svg rect {
   stroke-dasharray: 192 64 192 64;
   stroke-dashoffset: 0;
   -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;

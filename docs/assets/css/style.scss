@@ -398,12 +398,10 @@ footer .footer-bottom {
         z-index:99;
         --path: #9ca9c9;
         --dot: var(--infoColor);
-
         --duration: 3s;
         width: 44px;
         height: 44px;
         position: relative;
-        margin: 50px;
     }
 
     .loader:before {
@@ -433,16 +431,12 @@ footer .footer-bottom {
         stroke-width: 10px;
         stroke-linejoin: round;
         stroke-linecap: round;
-        
-    }
-
-    .loader svg rect {
         stroke-dasharray: 192 64 192 64;
         stroke-dashoffset: 0;
         -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
         animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+        
     }
-
 
     @-webkit-keyframes pathRect {
         25% {

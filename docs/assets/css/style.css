@@ -250,6 +250,25 @@ li {
 }
 
 /*NOTE Header */
+.scroll-down header {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  -webkit-filter: drop-shadow(0 -10px 20px #2c395fa2);
+          filter: drop-shadow(0 -10px 20px #2c395fa2);
+}
+
+.menu-is-open {
+  overflow: hidden;
+}
+
+.menu-is-open header {
+  -webkit-filter: none;
+          filter: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,14 +279,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1350px;
-  margin: 0 auto;
-  height: 15vh;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 9999;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background: var(--bgPrimary);
+  font-weight: 600;
 }
 
 header .logo {
   margin-inline: 10px;
   font-size: 1.4rem;
+  margin-left: 10%;
 }
 
 header .logo span {
@@ -276,6 +304,7 @@ header .logo span {
 
 header .nav-links {
   width: 50%;
+  margin-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,18 +314,22 @@ header .nav-links {
   color: var(--secondaryColor);
 }
 
-header .nav-links .nav-link a {
+header .nav-links .nav-link a,
+.active a {
   color: var(--secondaryColor);
   position: relative;
 }
 
 header .nav-links .nav-link a::before,
-header .nav-links .nav-link a::after {
+header .nav-links .nav-link a::after,
+.active a::before,
+.active a::after {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header .nav-links .nav-link {
+header .nav-links .nav-link,
+.active {
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
 }
@@ -305,7 +338,6 @@ header .nav-links .nav-link a:after {
   position: absolute;
   bottom: -5px;
   left: 0;
-  right: 0;
   margin: auto;
   width: 0%;
   content: '';
@@ -317,7 +349,12 @@ header .nav-links .nav-link a:after {
 
 header .nav-links .nav-link a:hover::after,
 header .nav-links .nav-link a:hover {
-  width: 100%;
+  width: 80%;
+  color: var(--primaryColor);
+}
+
+header .nav-links .active a:after {
+  width: 80%;
   color: var(--primaryColor);
 }
 
@@ -637,7 +674,16 @@ footer .footer-bottom .heart {
 }
 
 .home-container {
-  height: 80vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .intro-wrapper {
@@ -651,7 +697,8 @@ footer .footer-bottom .heart {
       justify-content: space-around;
   position: relative;
   margin: 30px;
-  height: 90%;
+  height: 70%;
+  width: 90%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

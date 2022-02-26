@@ -27,6 +27,7 @@
     <title>Vikash2806</title>
 </head>
 
+
 <body>
     <div class="loading-wrapper">
         <div class="loader">
@@ -34,15 +35,16 @@
                 <rect x="8" y="8" width="64" height="64"></rect>
             </svg>
         </div>
-        <span id="typeline" ></span>
+        <span id="typeline"></span>
     </div>
-    <header id="Home">
+    <header>
         <div class="logo">
             <h1><a href="#">Vikash<span>PR</span></a></h1>
         </div>
         <ul class="nav-links">
-            <li class="nav-link"><a href="#Home">Home</a></li>
+            <li class="nav-link active"><a href="#Home">Home</a></li>
             <li class="nav-link"><a href="#About">About</a></li>
+            <li class="nav-link"><a href="#Education">Education</a></li>
             <li class="nav-link"><a href="#Skills">Skills</a></li>
             <li class="nav-link"><a href="#Portfolio">Portfolio</a></li>
             <li class="nav-link"><a href="#Contact">Contact Me</a></li>
@@ -51,7 +53,7 @@
         </ul>
     </header>
 
-    <section>
+    <section id="Home">
         <div class="main-container home-container">
             <div class="intro-wrapper">
                 <div class="home-nav">
@@ -86,8 +88,8 @@
                 </div>
                 <div class="home-right">
                     <figure class="swing">
-                        <img src="./assets/image/avatar.webp" alt="VikashPR avatar image" >
-                      </figure>
+                        <img src="./assets/image/avatar.webp" alt="VikashPR avatar image">
+                    </figure>
                 </div>
             </div>
         </div>
@@ -518,15 +520,17 @@
                                 class="fa-brands fa-stack-overflow"></i></a>
                         <i class="fa-brands fa-discord"></i>
                     </div> -->
-                        <!-- <img id="map" src="./assets/image/map.png" alt=""> -->
+                    <!-- <img id="map" src="./assets/image/map.png" alt=""> -->
                 </div>
                 <div class="contact-right">
-                    <form class="form" id="form" action="https://formsubmit.co/vikashrajendran2806@gmail.com" method="POST">
+                    <form class="form" id="form" action="https://formsubmit.co/vikashrajendran2806@gmail.com"
+                        method="POST">
                         <input id="name" placeholder="Your name" type="text" name="name" required>
                         <input id="email" placeholder="Email Address" type="email" name="email" required>
                         <input type="hidden" name="_subject" value="New submission!">
                         <input type="hidden" name="_template" value="table">
-                        <textarea id="message" placeholder="Message" name="message" cols="25" rows="10" required></textarea>
+                        <textarea id="message" placeholder="Message" name="message" cols="25" rows="10"
+                            required></textarea>
                         <input type="hidden" name="_next" value="https://vikash2806-dev.web.app/thanks.html">
                         <button id="submit-btn" type="submit" class="btn submit--btn">Send<i
                                 class="fa-solid fa-paper-plane"></i></button>

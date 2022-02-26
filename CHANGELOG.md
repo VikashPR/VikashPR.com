@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.1...v1.2.2) (2022-02-26)
+
+
+### Features
+
+* Certificate preview add [#22](https://github.com/vikash2806/vikash2806_Portfolio/issues/22) ([7c5ada0](https://github.com/vikash2806/vikash2806_Portfolio/commit/7c5ada05af3e0b83eb1a46ee46bd683ea1bb0b73))
+* Desktop nav bar add, nav active ([b0d26f7](https://github.com/vikash2806/vikash2806_Portfolio/commit/b0d26f70738a1c8761d3936d8ece0db633c8f2b3))
+* Error local audio file add ([116bc4a](https://github.com/vikash2806/vikash2806_Portfolio/commit/116bc4a9b805433ea815dd00ca7ea4e3a0d9e1b9))
+* form validation audio enhanced ([35bf309](https://github.com/vikash2806/vikash2806_Portfolio/commit/35bf309fba8ceac719d341447dd13d301b9eaa2c))
+* Loading Animation ([874bc3c](https://github.com/vikash2806/vikash2806_Portfolio/commit/874bc3cc35c009fb287897dea6477312f0e8c622)), closes [#30](https://github.com/vikash2806/vikash2806_Portfolio/issues/30)
+* mobile nav bar add | New Header [#19](https://github.com/vikash2806/vikash2806_Portfolio/issues/19) ([45097df](https://github.com/vikash2806/vikash2806_Portfolio/commit/45097dfa1f4448a9eb10c470e791da3cf70cef53))
+* new map page add ([c22b862](https://github.com/vikash2806/vikash2806_Portfolio/commit/c22b862af890923fca9b5eaa7095cf81d869e47f))
+
+
+### Bug Fixes
+
+* access lint error ([a6c6145](https://github.com/vikash2806/vikash2806_Portfolio/commit/a6c614599cc10f6fe3fdfedb87661ffa5d759e05))
+* alt tag add, unused code remove in style.scss ([d90abad](https://github.com/vikash2806/vikash2806_Portfolio/commit/d90abadc38a41b894799a583bccfa0d7587a877b))
+* btn theme fix ([96c901a](https://github.com/vikash2806/vikash2806_Portfolio/commit/96c901a1dbdfd3894f8d3d0c8d04ae761f572e5a))
+* certificate preview tool tip add ([a3f7b88](https://github.com/vikash2806/vikash2806_Portfolio/commit/a3f7b886cbe7ccb10c4199726352539cd5275036))
+* code factor error ([af457fd](https://github.com/vikash2806/vikash2806_Portfolio/commit/af457fd7317fbe6718e6bcf3854d0aacb4dfcc41))
+* code factor error ([12f0ad5](https://github.com/vikash2806/vikash2806_Portfolio/commit/12f0ad56bb1070dc005931501cbdaa12282a0e79))
+* codefactor error ([43f75df](https://github.com/vikash2806/vikash2806_Portfolio/commit/43f75df63c5fa58cf5fd94ae1ac6a406a6b649d9))
+* codefactor error ([cded3c4](https://github.com/vikash2806/vikash2806_Portfolio/commit/cded3c4bfc9ff89751e159e89b31316137b08ca3))
+* codfactor issue resolve ([3c0fc62](https://github.com/vikash2806/vikash2806_Portfolio/commit/3c0fc62b7f55994c0fac0ca1e6e5908f9bfe39de))
+* form redirect enable in thanks.html ([70a11f8](https://github.com/vikash2806/vikash2806_Portfolio/commit/70a11f89c5a13de2f6e862d4bfe4e8916e3c96d7))
+* googlee map remove ([cdff55d](https://github.com/vikash2806/vikash2806_Portfolio/commit/cdff55d5ec7da74898da1c92f6da09a0015c6bc9))
+* header,  footer style seperated ([2242395](https://github.com/vikash2806/vikash2806_Portfolio/commit/22423957f7472548484623dbd3f3a1d5b3072132))
+* license formate change ([427dff1](https://github.com/vikash2806/vikash2806_Portfolio/commit/427dff178996e629ab7c197ac01985d2d9fb1a09))
+* Lighthouse Perfomance ([0dae57c](https://github.com/vikash2806/vikash2806_Portfolio/commit/0dae57cdaffe930ac1937d9ab55c73805c49881f))
+* map img remove ([dfec6bc](https://github.com/vikash2806/vikash2806_Portfolio/commit/dfec6bcbaa51dc071906afe0cbf738c13cbbdd38))
+* map page remove ([82c7faa](https://github.com/vikash2806/vikash2806_Portfolio/commit/82c7faa4b5bcbe4ffd16b5fee44f1b710dfb08d7))
+* map z-index update ([a5e4fe6](https://github.com/vikash2806/vikash2806_Portfolio/commit/a5e4fe69e3a934e600dfbe2d82581ee0f2a23f33))
+* mobile view overflow fix ([264b3c0](https://github.com/vikash2806/vikash2806_Portfolio/commit/264b3c06cab2aea440f7d4b891056dede80489b8))
+* nav bar overlap under 1100px ([4bc58af](https://github.com/vikash2806/vikash2806_Portfolio/commit/4bc58af60ea7f96e22e7ed5726166865edf9530a))
+* old files remov ([4f9a23d](https://github.com/vikash2806/vikash2806_Portfolio/commit/4f9a23dec9a3fc0a0a691456af5bdfe282466b7e))
+
 ### [1.2.1](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.0...v1.2.1) (2022-02-23)
 
 

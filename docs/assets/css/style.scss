@@ -275,7 +275,7 @@ header {
 header .logo {
   margin-inline: 10px;
   font-size: 1.4rem;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 header .logo span {
@@ -283,8 +283,8 @@ header .logo span {
 }
 
 header .nav-links {
-  width: 50%;
-  margin-right: 10%;
+  width: 100%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-evenly;
   color: var(--secondaryColor);

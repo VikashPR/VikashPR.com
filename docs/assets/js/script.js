@@ -213,3 +213,22 @@ for (var i = 0; i < links.length; i++) {
     this.className += ' active';
   });
 }
+
+// mobile nav bar
+const nav = document.querySelector("#nav-links");
+const menu =  document.querySelector(".menu");
+const menuFont = document.querySelector("#menuFont");
+
+menu.addEventListener('click', () => {
+  const visibility = nav.getAttribute('data-visible');
+  if(visibility === 'false'){
+    nav.setAttribute('data-visible', 'true');
+    nav.setAttribute('aria-expanded', 'true');
+    menuFont.classList.add('fa-xmark');
+  }
+  else if(visibility === 'true'){
+    nav.setAttribute('aria-expanded', 'false');
+    nav.setAttribute('data-visible', 'false');
+    menuFont.classList.remove('fa-xmark');
+  }
+})

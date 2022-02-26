@@ -41,16 +41,20 @@
         <div class="logo">
             <h1><a href="#">Vikash<span>PR</span></a></h1>
         </div>
-        <ul class="nav-links">
-            <li class="nav-link active"><a href="#Home">Home</a></li>
-            <li class="nav-link"><a href="#About">About</a></li>
-            <li class="nav-link"><a href="#Education">Education</a></li>
-            <li class="nav-link"><a href="#Skills">Skills</a></li>
-            <li class="nav-link"><a href="#Portfolio">Portfolio</a></li>
-            <li class="nav-link"><a href="#Contact">Contact Me</a></li>
-            <li class="nav-link">|</li>
-            <li class="nav-link"><i class="fas fa-phone"></i> +91-93444-87074</li>
-        </ul>
+        <button class="menu" aria-controls="nav-links" aria-expanded="false"><i id="menuFont" class="fa-solid fa-bars"></i></button>
+        <!-- NOTE toggle this class in the menu bar ```fa-bars-staggered fa-xmark```  -->
+        <nav>
+            <ul class="nav-links" id="nav-links" data-visible="false">
+                <li class="nav-link active"><a href="#Home">Home</a></li>
+                <li class="nav-link"><a href="#About">About</a></li>
+                <li class="nav-link"><a href="#Education">Education</a></li>
+                <li class="nav-link"><a href="#Skills">Skills</a></li>
+                <li class="nav-link"><a href="#Portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#Contact">Contact Me</a></li>
+                <li class="nav-link mobi-rm">|</li>
+                <li class="nav-link mobi-rm"><i class="fas fa-phone"></i> +91-93444-87074</li>
+            </ul>
+        </nav>
     </header>
 
     <section id="Home">
@@ -62,6 +66,7 @@
                         <div class="dot yellow-dot"></div>
                         <div class="dot green-dot"></div>
                     </div>
+
                     <!-- <ul class="nav-social">
                         <li class="social-item"><img src="./assets/image/social/github.png" alt=""><a
                                 href="#">Github</a></li>
@@ -562,7 +567,7 @@
         </div>
     </footer>
     <!-- JavaScript File -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 
 </body>
 

@@ -1,4 +1,4 @@
-// // Google maps 
+// // Google maps
 // function initMap() {
 //   const map = new google.maps.Map(document.getElementById("map"), {
 //     zoom: 7,
@@ -20,11 +20,8 @@
 //   });
 // }
 
-
-
-
 // redirect timer in Thanks page
-var counterElt = document.getElementById("counter");
+var counterElt = document.getElementById('counter');
 
 function decreaseCounter() {
   var counter = Number(counterElt.textContent);
@@ -32,12 +29,11 @@ function decreaseCounter() {
     counterElt.textContent = counter - 1;
   } else {
     clearInterval(intervalId);
-    var titre = document.getElementById("redirect");
+    var titre = document.getElementById('redirect');
     titre.click();
   }
 }
 var intervalId = setInterval(decreaseCounter, 1000);
-
 
 // Submit Button audio effect
 let audioSuccess = document.querySelector('#audioSuccess');
@@ -52,75 +48,74 @@ submitBtn.addEventListener('click', function () {
   let nameValue = name.value;
   let emailValue = email.value;
   let messageValue = message.value;
-  if (nameValue == "" || emailValue == "" || messageValue == "") {
+  if (nameValue == '' || emailValue == '' || messageValue == '') {
     audioError.play();
   } else if (!emailValue.match(mailFormat)) {
     audioError.play();
   }
+});
 
-})
-
-form.addEventListener("submit", function () {
+form.addEventListener('submit', function () {
   audioSuccess.play();
 });
 
-
 // Certificate preview
-const openModalButton1 = document.querySelector('[data-modal-target1]')
-const openModalButton2 = document.querySelector('[data-modal-target2]')
-const openModalButton3 = document.querySelector('[data-modal-target3]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+const openModalButton1 = document.querySelector('[data-modal-target1]');
+const openModalButton2 = document.querySelector('[data-modal-target2]');
+const openModalButton3 = document.querySelector('[data-modal-target3]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 openModalButton1.addEventListener('click', () => {
-  const modal1 = document.querySelector("#modal1")
+  const modal1 = document.querySelector('#modal1');
   openModal(modal1);
-})
+});
 openModalButton2.addEventListener('click', () => {
-  const modal2 = document.querySelector("#modal2")
+  const modal2 = document.querySelector('#modal2');
   openModal(modal2);
-})
+});
 openModalButton3.addEventListener('click', () => {
-  const modal3 = document.querySelector("#modal3")
+  const modal3 = document.querySelector('#modal3');
   openModal(modal3);
-})
+});
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
 
-closeModalButtons.forEach(button => {
+closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 
 function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
 
 // Loading messages.
 function write(obj, sentence, i, cb) {
   if (i != sentence.length) {
     setTimeout(function () {
-      i++
-      obj.innerHTML = sentence.substr(0, i + 1) + ' <em aria-hidden="true"></em>';
-      write(obj, sentence, i, cb)
-    }, 50)
+      i++;
+      obj.innerHTML =
+        sentence.substr(0, i + 1) + ' <em aria-hidden="true"></em>';
+      write(obj, sentence, i, cb);
+    }, 50);
   } else {
-    cb()
+    cb();
   }
 }
 
@@ -128,60 +123,93 @@ function erase(obj, cb, i) {
   var sentence = obj.innerText;
   if (sentence.length != 0) {
     setTimeout(function () {
-      sentence = sentence.substr(0, sentence.length - 1)
+      sentence = sentence.substr(0, sentence.length - 1);
       obj.innerText = sentence;
       erase(obj, cb);
-    }, 18 / (i * (i / 10000000)))
+    }, 18 / (i * (i / 10000000)));
   } else {
-    obj.innerText = " "
-    cb()
+    obj.innerText = ' ';
+    cb();
   }
 }
 
-var typeline = document.querySelector("#typeline");
+var typeline = document.querySelector('#typeline');
 
 function writeErase(obj, sentence, time, cb) {
   write(obj, sentence, 0, function () {
     setTimeout(function () {
-      erase(obj, cb)
-    }, time)
-  })
+      erase(obj, cb);
+    }, time);
+  });
 }
 
 var sentences = [
-  "Loading loader...",
-  "Building a wall...",
-  "Downloading Downloader...",
-  "Debugging Debugger...",
-  "Updating Updater...",
-  "Installing Installer...",
-  "Proving P=NP...",
-  "Dividing by zero...",
-  "Cleaning up...",
-  "You seem like a nice person...",
+  'Loading loader...',
+  'Building a wall...',
+  'Downloading Downloader...',
+  'Debugging Debugger...',
+  'Updating Updater...',
+  'Installing Installer...',
+  'Proving P=NP...',
+  'Dividing by zero...',
+  'Cleaning up...',
+  'You seem like a nice person...',
   "You're a nice person...",
   "Let's hope it's worth the wait",
-  "If I’m not back in five minutes, just wait longer.",
-]
+  'If I’m not back in five minutes, just wait longer.',
+];
 var counter = 0;
 
 function loop() {
-  var sentence = sentences[counter % sentences.length]
-  writeErase(typeline, sentence, 1500, loop)
-  counter++
+  var sentence = sentences[counter % sentences.length];
+  writeErase(typeline, sentence, 1500, loop);
+  counter++;
 }
 
-loop()
+loop();
 
-
-// Pre loading code 
+// Pre loading code
 
 document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector(".loading-wrapper").style.visibility = "visible";
+  if (document.readyState !== 'complete') {
+    document.querySelector('body').style.visibility = 'hidden';
+    document.querySelector('.loading-wrapper').style.visibility = 'visible';
   } else {
-    document.querySelector(".loading-wrapper").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
+    document.querySelector('.loading-wrapper').style.display = 'none';
+    document.querySelector('body').style.visibility = 'visible';
   }
+};
+// Scroll Sticky nav
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove('scroll-up');
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
+    body.classList.remove('scroll-up');
+    body.classList.add('scroll-down');
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains('scroll-down')
+  ) {
+    body.classList.remove('scroll-down');
+    body.classList.add('scroll-up');
+  }
+  lastScroll = currentScroll;
+});
+
+// Nav active
+var header = document.querySelector('.nav-links');
+var links = header.querySelectorAll('.nav-link');
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function () {
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    this.className += ' active';
+  });
 }

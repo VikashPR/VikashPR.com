@@ -144,6 +144,7 @@ li {
       -ms-user-select: none;
           user-select: none;
   color: var(--primaryColor);
+  font-weight: 600;
 }
 
 .btn i {
@@ -700,6 +701,80 @@ footer .footer-bottom .heart {
           justify-content: center;
 }
 
+.home-container #scroll-down-animation {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.home-container #scroll-down-animation h2 {
+  font-size: 1.1rem;
+  color: var(--primaryColor);
+}
+
+.home-container #scroll-down-animation .mouse {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  height: 80px;
+  width: 50px;
+  position: relative;
+}
+
+.home-container #scroll-down-animation .move {
+  position: absolute;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: move 2s linear infinite;
+          animation: move 2s linear infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(-50%, 40px);
+            transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 80px);
+            transform: translate(-50%, 80px);
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(-50%, 40px);
+            transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, 80px);
+            transform: translate(-50%, 80px);
+    opacity: 0;
+  }
+}
+
 .intro-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -874,6 +949,96 @@ footer .footer-bottom .heart {
     -webkit-transform: rotate(-2deg);
             transform: rotate(-2deg);
   }
+}
+
+.scrollToTopBtn {
+  background-color: #182038;
+  border: none;
+  color: var(--infoColor);
+  cursor: pointer;
+  font-size: 1.3rem;
+  line-height: 48px;
+  width: 48px;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  /* and a transition */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.scroll-down-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.3rem;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+  background-color: #182038;
+  border: none;
+  color: var(--infoColor);
+  cursor: pointer;
+  line-height: 48px;
+  height: 48px;
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  40% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  40% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.hide-scroll-down {
+  opacity: 0;
 }
 
 .about-container {

@@ -23,3 +23,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## CodeFactor Rating
+[![CodeFactor](https://www.codefactor.io/repository/github/vikashpr/vikashpr.com/badge)](https://www.codefactor.io/repository/github/vikashpr/vikashpr.com)

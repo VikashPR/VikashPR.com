@@ -1962,6 +1962,9 @@ footer .footer-bottom .heart {
             align-items: center;
     margin: 0 auto;
   }
+  .about-container .about-wrapper .about-left .about-btns .btn {
+    width: 140px;
+  }
   .about-container .about-wrapper .about-right::before {
     left: -20px;
     top: -30px;
@@ -2119,3 +2122,4 @@ footer .footer-bottom .heart {
     margin-top: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */

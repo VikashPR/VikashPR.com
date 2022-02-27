@@ -232,3 +232,33 @@ menu.addEventListener('click', () => {
     menuFont.classList.remove('fa-xmark');
   }
 })
+
+// Scroll to top
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var rootElement = document.documentElement;
+var scrollDown = document.querySelector(".scroll-down-button");
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.95) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn");
+    // Hiding Scroll Down
+    scrollDown.classList.add("hide-scroll-down");
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn");
+    scrollDown.classList.remove("hide-scroll-down");
+
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+document.addEventListener("scroll", handleScroll);

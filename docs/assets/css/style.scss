@@ -52,6 +52,10 @@
     --tagPrograminghubColor: #ffff;
     --tagCppBg: #004ba1;
     --tagCppColor: #ffffff;
+    --tagMarkdownBg: rgb(0, 0, 0);
+    --tagMarkdownColor: #ffffff;
+    --tagGithubactionBg:#167bff;
+    --tagGithubactionColor:#dee6eb;
 }
 
 * {
@@ -205,6 +209,14 @@ li {
 .tag-cpp {
     background: var(--tagCppBg);
     color: var(--tagCppColor);
+}
+.tag-markdown{
+    background: var(--tagMarkdownBg);
+    color: var(--tagMarkdownColor);
+}
+.tag-githubaction{
+    background: var(--tagGithubactionBg);
+    color: var(--tagGithubactionColor);
 }
 
 .dots {
@@ -1241,6 +1253,9 @@ footer .footer-bottom {
                 color: var(--primaryColor);
                 margin-block: 10px;
             }
+            p{
+                width:50%;
+            }
         }
 
         .portfolio-gallery {
@@ -1931,7 +1946,14 @@ footer .footer-bottom {
 
         .portfolio-wrapper {
             margin: 10px 20px 50px;
+            .portfolio-filter{
+                flex-direction: column;
+                p{
+                    width:100%;
+                }
+            }
         }
+        
     }
 
     // Educatoin sectoin

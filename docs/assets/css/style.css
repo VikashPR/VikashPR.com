@@ -52,6 +52,10 @@
   --tagPrograminghubColor: #ffff;
   --tagCppBg: #004ba1;
   --tagCppColor: #ffffff;
+  --tagMarkdownBg: rgb(0, 0, 0);
+  --tagMarkdownColor: #ffffff;
+  --tagGithubactionBg:#167bff;
+  --tagGithubactionColor:#dee6eb;
 }
 
 * {
@@ -214,6 +218,16 @@ li {
 .tag-cpp {
   background: var(--tagCppBg);
   color: var(--tagCppColor);
+}
+
+.tag-markdown {
+  background: var(--tagMarkdownBg);
+  color: var(--tagMarkdownColor);
+}
+
+.tag-githubaction {
+  background: var(--tagGithubactionBg);
+  color: var(--tagGithubactionColor);
 }
 
 .dots {
@@ -1493,6 +1507,10 @@ footer .footer-bottom .heart {
   margin-block: 10px;
 }
 
+.portfolio-container .portfolio-wrapper .portfolio-filter p {
+  width: 50%;
+}
+
 .portfolio-container .portfolio-wrapper .portfolio-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2248,6 +2266,15 @@ footer .footer-bottom .heart {
   }
   .portfolio-container .portfolio-wrapper {
     margin: 10px 20px 50px;
+  }
+  .portfolio-container .portfolio-wrapper .portfolio-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio-container .portfolio-wrapper .portfolio-filter p {
+    width: 100%;
   }
   .education-container {
     padding-top: 50px;

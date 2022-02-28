@@ -2062,11 +2062,15 @@ footer .footer-bottom .heart {
   .btn i {
     margin-inline: 5px;
   }
+  .home-container #scroll-down-animation {
+    display: none;
+  }
   .intro-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    height: 80%;
   }
   .intro-wrapper .home-nav {
     background: rgba(35, 37, 38, 0.918);

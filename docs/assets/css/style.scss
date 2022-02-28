@@ -1748,8 +1748,14 @@ footer .footer-bottom {
         }
     }
 
+    .home-container{
+        #scroll-down-animation{
+            display:none;
+        }
+    }
     .intro-wrapper {
         flex-direction: column-reverse;
+        height:80%;
 
         .home-nav {
             background: rgba(35, 37, 38, 0.918);

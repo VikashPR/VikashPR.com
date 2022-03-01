@@ -1692,7 +1692,8 @@ footer .footer-bottom .heart {
 }
 
 .education-container .education-wrapper ul.timeline .item-title .issuer-logo {
-  max-width: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .education-container .education-wrapper ul.timeline li {
@@ -1774,10 +1775,11 @@ footer .footer-bottom .heart {
 
 .education-container .education-wrapper .certificate-preview1::before {
   content: 'click to view';
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: absolute;
   left: -40px;
   top: -40px;
+  font-weight: 700;
 }
 
 .education-container .education-wrapper .certificate-preview1::after {
@@ -1815,8 +1817,8 @@ footer .footer-bottom .heart {
 }
 
 .education-container .education-wrapper .certificate-preview .preview-modal {
-  width: 400px;
-  max-width: 80%;
+  width: 190px;
+  height: 143px;
   margin: 10px;
 }
 
@@ -2298,6 +2300,15 @@ footer .footer-bottom .heart {
   }
   .education-container .education-wrapper ul.timeline li {
     margin-left: 50px;
+  }
+  .education-container .education-wrapper ul.timeline .item-title .issuer-logo {
+    width: 25px;
+    height: 25px;
+  }
+  .education-container .education-wrapper .certificate-preview .preview-modal {
+    width: 130px;
+    height: auto;
+    margin: 10px;
   }
 }
 

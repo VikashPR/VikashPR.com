@@ -55,8 +55,8 @@
     --tagCppColor: #ffffff;
     --tagMarkdownBg: rgb(0, 0, 0);
     --tagMarkdownColor: #ffffff;
-    --tagGithubactionBg:#167bff;
-    --tagGithubactionColor:#dee6eb;
+    --tagGithubactionBg: #167bff;
+    --tagGithubactionColor: #dee6eb;
 }
 
 * {
@@ -211,11 +211,13 @@ li {
     background: var(--tagCppBg);
     color: var(--tagCppColor);
 }
-.tag-markdown{
+
+.tag-markdown {
     background: var(--tagMarkdownBg);
     color: var(--tagMarkdownColor);
 }
-.tag-githubaction{
+
+.tag-githubaction {
     background: var(--tagGithubactionBg);
     color: var(--tagGithubactionColor);
 }
@@ -276,6 +278,16 @@ li {
     }
 }
 
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -288,6 +300,7 @@ header {
     z-index: 9999;
     transition: all 300ms ease-in-out;
     font-weight: 600;
+    animation: 1s ease-out 0s 1 slideFromTop;
 }
 
 header .logo {
@@ -718,32 +731,72 @@ footer .footer-bottom {
         justify-content: center;
         color: var(--primaryColor);
 
+        .overflow {
+            overflow: hidden;
+        }
+
+        .overflow {
+            overflow-y: hidden;
+        }
+
         h1 {
             font-size: 4rem;
+            animation: drop-in 1s ease 200ms backwards;
         }
 
         h3 {
             font-size: 1.4rem;
             color: var(--secondaryColor);
             font-weight: 400;
+            animation: drop-in 1200ms ease 500ms backwards;
+        }
+
+        @keyframes drop-in {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+
+        @keyframes appear {
+            from {
+                filter: blur(5px);
+            }
+
+            to {
+                filter: blur(0px);
+            }
         }
 
         .home-btns {
             display: flex;
             margin-block: 10px;
-
+            .btn:nth-last-child(1){
+                animation: drop-in 1200ms ease 500ms backwards;
+            }
+            .btn:nth-last-child(2){
+                animation: drop-in 1000ms ease 300ms backwards;
+            }
             .btn:nth-child(1) i {
                 color: rgb(30, 84, 235);
+
             }
 
             .btn:nth-child(2) i {
                 color: rgb(15, 226, 156);
+
             }
         }
 
         .heading {
             position: relative;
             top: -10px;
+            animation: drop-in 0.8s ease 300ms backwards;
         }
     }
 
@@ -753,6 +806,7 @@ footer .footer-bottom {
         justify-content: center;
         height: 100%;
         margin-top: 70px;
+        animation: appear 1s ease 300ms backwards;
 
         .swing {
             transform-origin: center -20px;
@@ -792,7 +846,7 @@ footer .footer-bottom {
             width: 7px;
             height: 7px;
             top: -15px;
-            left: 52.5%;
+            left: 52%;
             z-index: 5;
             border-radius: 50%;
             background: rgb(248, 248, 248);
@@ -807,6 +861,7 @@ footer .footer-bottom {
                 transform: rotate(-2deg);
             }
         }
+
     }
 }
 
@@ -838,9 +893,10 @@ footer .footer-bottom {
     opacity: 1;
     transform: translateY(0);
 }
-.scroll-down-button{
+
+.scroll-down-button {
     position: fixed;
-    right:20px;
+    right: 20px;
     bottom: 20px;
     font-size: 1.3rem;
     animation: down 1.5s infinite;
@@ -850,41 +906,48 @@ footer .footer-bottom {
     color: var(--infoColor);
     cursor: pointer;
     line-height: 48px;
-    height:48px;
+    height: 48px;
     width: 48px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
     @keyframes down {
         0% {
-          transform: translate(0);
+            transform: translate(0);
         }
+
         20% {
-          transform: translateY(15px);
+            transform: translateY(15px);
         }
+
         40% {
-          transform: translate(0);
+            transform: translate(0);
         }
-      }
-      @-webkit-keyframes down {
-        0% {
-          transform: translate(0);
-        }
-        20% {
-          transform: translateY(15px);
-        }
-        40% {
-          transform: translate(0);
-        }
-      }
-      
-    }
-    .hide-scroll-down{
-      opacity:0;
     }
 
- 
+    @-webkit-keyframes down {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translateY(15px);
+        }
+
+        40% {
+            transform: translate(0);
+        }
+    }
+
+}
+
+.hide-scroll-down {
+    opacity: 0;
+}
+
+
 
 // NOTE About Section
 .about-container {
@@ -1020,10 +1083,12 @@ footer .footer-bottom {
                 border-radius: 10px;
                 border-bottom: 0 solid var(--infoColor);
                 transition: all 0.3s ease-in-out;
-                font-size:3rem;
-                img{
-                    width:48px;
+                font-size: 3rem;
+
+                img {
+                    width: 48px;
                 }
+
                 .toolTip {
                     visibility: hidden;
                     width: 100%;
@@ -1256,8 +1321,9 @@ footer .footer-bottom {
                 color: var(--primaryColor);
                 margin-block: 10px;
             }
-            p{
-                width:50%;
+
+            p {
+                width: 50%;
             }
         }
 
@@ -1393,8 +1459,8 @@ footer .footer-bottom {
                 align-items: center;
 
                 .issuer-logo {
-                    width:30px;
-                    height:30px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }
@@ -1474,7 +1540,7 @@ footer .footer-bottom {
             position: absolute;
             left: -40px;
             top: -40px;
-            font-weight:700;
+            font-weight: 700;
         }
 
         .certificate-preview1::after {
@@ -1507,8 +1573,8 @@ footer .footer-bottom {
             }
 
             .preview-modal {
-                width:190px;
-                height:143px;
+                width: 190px;
+                height: 143px;
                 margin: 10px;
             }
 
@@ -1768,14 +1834,15 @@ footer .footer-bottom {
         }
     }
 
-    .home-container{
-        #scroll-down-animation{
-            display:none;
+    .home-container {
+        #scroll-down-animation {
+            display: none;
         }
     }
+
     .intro-wrapper {
         flex-direction: column-reverse;
-        height:80%;
+        height: 80%;
 
         .home-nav {
             background: rgba(35, 37, 38, 0.918);
@@ -1957,14 +2024,16 @@ footer .footer-bottom {
 
         .portfolio-wrapper {
             margin: 10px 20px 50px;
-            .portfolio-filter{
+
+            .portfolio-filter {
                 flex-direction: column;
-                p{
-                    width:100%;
+
+                p {
+                    width: 100%;
                 }
             }
         }
-        
+
     }
 
     // Educatoin sectoin
@@ -1982,18 +2051,20 @@ footer .footer-bottom {
                 li {
                     margin-left: 50px;
                 }
-                .item-title{
-                    .issuer-logo{
-                        width:25px;
-                        height:25px;
+
+                .item-title {
+                    .issuer-logo {
+                        width: 25px;
+                        height: 25px;
                     }
-                } 
-                    
+                }
+
             }
-            .certificate-preview{
+
+            .certificate-preview {
                 .preview-modal {
-                    width:130px;
-                    height:auto;
+                    width: 130px;
+                    height: auto;
                     margin: 10px;
                 }
             }

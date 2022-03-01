@@ -11,7 +11,7 @@ jobs:
       uses: foo-software/lighthouse-check-action@master
       with:
         outputDirectory: /tmp/artifacts
-        urls: '../../docs/home.html'
+        urls: 'https://vikash2806-dev.web.app/home.html'
     - name: Upload artifacts
       uses: actions/upload-artifact@master
       with:

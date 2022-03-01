@@ -1228,7 +1228,6 @@ footer .footer-bottom .heart {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 3rem;
   position: relative;
   width: 80px;
   height: 80px;
@@ -1238,6 +1237,11 @@ footer .footer-bottom .heart {
   border-bottom: 0 solid var(--infoColor);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-size: 3rem;
+}
+
+.skill-container .skill-wrapper .skill-right .tech-card img {
+  width: 48px;
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card .toolTip {

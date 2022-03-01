@@ -1011,7 +1011,6 @@ footer .footer-bottom {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 3rem;
                 position: relative;
                 width: 80px;
                 height: 80px;
@@ -1020,7 +1019,10 @@ footer .footer-bottom {
                 border-radius: 10px;
                 border-bottom: 0 solid var(--infoColor);
                 transition: all 0.3s ease-in-out;
-
+                font-size:3rem;
+                img{
+                    width:48px;
+                }
                 .toolTip {
                     visibility: hidden;
                     width: 100%;

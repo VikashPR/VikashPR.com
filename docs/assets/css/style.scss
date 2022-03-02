@@ -741,14 +741,14 @@ footer .footer-bottom {
 
         h1 {
             font-size: 4rem;
-            animation: drop-in 1s ease 200ms backwards;
+            animation: drop-in 1.5s ease 600ms backwards;
         }
 
         h3 {
             font-size: 1.4rem;
             color: var(--secondaryColor);
             font-weight: 400;
-            animation: drop-in 1200ms ease 500ms backwards;
+            animation: drop-in 1.7s ease 700ms backwards;
         }
 
         @keyframes drop-in {
@@ -806,7 +806,7 @@ footer .footer-bottom {
         justify-content: center;
         height: 100%;
         margin-top: 70px;
-        animation: appear 1s ease 300ms backwards;
+        animation: appear 1.5s ease 300ms backwards;
 
         .swing {
             transform-origin: center -20px;
@@ -948,8 +948,6 @@ footer .footer-bottom {
 }
 
 
-
-// NOTE About Section
 .about-container {
     width: 100%;
     display: flex;

@@ -885,16 +885,16 @@ footer .footer-bottom .heart {
 
 .intro-wrapper .home-left h1 {
   font-size: 4rem;
-  -webkit-animation: drop-in 1s ease 200ms backwards;
-          animation: drop-in 1s ease 200ms backwards;
+  -webkit-animation: drop-in 1.5s ease 600ms backwards;
+          animation: drop-in 1.5s ease 600ms backwards;
 }
 
 .intro-wrapper .home-left h3 {
   font-size: 1.4rem;
   color: var(--secondaryColor);
   font-weight: 400;
-  -webkit-animation: drop-in 1200ms ease 500ms backwards;
-          animation: drop-in 1200ms ease 500ms backwards;
+  -webkit-animation: drop-in 1.7s ease 700ms backwards;
+          animation: drop-in 1.7s ease 700ms backwards;
 }
 
 @-webkit-keyframes drop-in {
@@ -989,8 +989,8 @@ footer .footer-bottom .heart {
           justify-content: center;
   height: 100%;
   margin-top: 70px;
-  -webkit-animation: appear 1s ease 300ms backwards;
-          animation: appear 1s ease 300ms backwards;
+  -webkit-animation: appear 1.5s ease 300ms backwards;
+          animation: appear 1.5s ease 300ms backwards;
   /* nail */
 }
 

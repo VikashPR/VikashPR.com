@@ -723,7 +723,7 @@ footer .footer-bottom .heart {
   padding: 4px;
   width: 140px;
   position: fixed;
-  right: -110px;
+  right: -100px;
   top: 50px;
   z-index: 1000;
   font: normal normal 10px Arial;
@@ -736,7 +736,7 @@ footer .footer-bottom .heart {
   color: #fff;
   padding: 10px 0;
   width: 40px;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .fl-fl:hover {

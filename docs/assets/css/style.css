@@ -2044,7 +2044,7 @@ footer .footer-bottom .heart {
   bottom: 0;
   right: 0;
   width: 100vw;
-  z-index: 1001;
+  z-index: 1000;
   background-color: rgba(49, 49, 56, 0.5);
   pointer-events: none;
   -webkit-transition: all 0.3s ease-in-out;

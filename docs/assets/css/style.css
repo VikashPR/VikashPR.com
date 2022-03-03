@@ -1240,8 +1240,10 @@ footer .footer-bottom .heart {
 }
 
 .about-container .about-right .avatar-card img {
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
+  height: 530px;
+  max-width: 100%;
+  max-height: 530px;
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -2318,6 +2320,15 @@ footer .footer-bottom .heart {
   }
   .about-container .about-wrapper .about-left .about-btns .btn {
     width: 140px;
+  }
+  .about-container .about-wrapper .about-right .avatar-card img {
+    width: 300px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 530px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
   }
   .about-container .about-wrapper .about-right::before {
     left: -20px;

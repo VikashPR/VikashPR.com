@@ -1,16 +1,5 @@
 ::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--bgSecondary);
-  border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #eb4a4a;
-  border-radius: 100vw;
-  margin-block: 0.5em;
+  width: 0px;
 }
 
 @supports (scrollbar-color: red blue) {
@@ -727,6 +716,85 @@ footer .footer-bottom .heart {
   }
 }
 
+.fl-fl {
+  background: #20232a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 140px;
+  position: fixed;
+  right: -100px;
+  top: 50px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px;
+  vertical-align: top;
+}
+
+.float-gh {
+  top: 160px;
+}
+
+.float-dc {
+  top: 215px;
+}
+
+.float-dc:hover .fa {
+  color: #5865F2;
+}
+
+.float-li {
+  top: 270px;
+}
+
+.float-li:hover .fa {
+  color: #0e76a8;
+}
+
+.float-tw {
+  top: 325px;
+}
+
+.float-tw:hover .fa {
+  color: #00acee;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-ig:hover .fa {
+  color: #DD2A7B;
+}
+
+.float-so {
+  top: 435px;
+}
+
+.float-so:hover .fa {
+  color: #ef8236;
+}
+
 .home-container {
   height: 100vh;
   display: -webkit-box;
@@ -905,8 +973,6 @@ footer .footer-bottom .heart {
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
   }
 }
 
@@ -918,8 +984,6 @@ footer .footer-bottom .heart {
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
   }
 }
 
@@ -929,8 +993,6 @@ footer .footer-bottom .heart {
             filter: blur(5px);
   }
   to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
 }
 
@@ -940,8 +1002,6 @@ footer .footer-bottom .heart {
             filter: blur(5px);
   }
   to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
 }
 
@@ -1905,7 +1965,6 @@ footer .footer-bottom .heart {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  z-index: 9;
   background-color: var(--bgSecondary);
   width: 800px;
   border-radius: 10px;
@@ -1913,6 +1972,7 @@ footer .footer-bottom .heart {
   font-family: Cubano;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  z-index: 1001;
 }
 
 .education-container .education-wrapper .certificate-preview .preview-modal {
@@ -1974,6 +2034,8 @@ footer .footer-bottom .heart {
   left: 0;
   bottom: 0;
   right: 0;
+  width: 100vw;
+  z-index: 1000;
   background-color: rgba(49, 49, 56, 0.5);
   pointer-events: none;
   -webkit-transition: all 0.3s ease-in-out;

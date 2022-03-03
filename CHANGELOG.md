@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.2...v1.2.3) (2022-03-03)
+
+
+### Features
+
+* About section mobile  button overflow ([efa4471](https://github.com/vikash2806/vikash2806_Portfolio/commit/efa4471369a737cbe8d125683e5ac1cd935034e8)), closes [#45](https://github.com/vikash2806/vikash2806_Portfolio/issues/45)
+* acceblity increase ([6feff84](https://github.com/vikash2806/vikash2806_Portfolio/commit/6feff84a62e7eb059137b8a94de33f9e4a574cd5))
+* code Factor rating badge update ([9dc446c](https://github.com/vikash2806/vikash2806_Portfolio/commit/9dc446cdc486e6222126437e93429c658b1c5838))
+* image prefomance increase in desktop ([2daf54f](https://github.com/vikash2806/vikash2806_Portfolio/commit/2daf54fd9a969ddfdd41095aeac4d82d46cde6d8))
+* Landing page post load animation add ([477f75c](https://github.com/vikash2806/vikash2806_Portfolio/commit/477f75c957cd612a84caf6544408bb17f379e91b))
+* perfomance github action add [#53](https://github.com/vikash2806/vikash2806_Portfolio/issues/53) ([423ab49](https://github.com/vikash2806/vikash2806_Portfolio/commit/423ab492a91c3d07be6bccb3f0e65646aa9158a3))
+* perfomance increase with lighthouse ([be921d0](https://github.com/vikash2806/vikash2806_Portfolio/commit/be921d0d2e07d1b752d503a0efbaf472e8a446b8))
+* portfolio project image add ([cdee6fc](https://github.com/vikash2806/vikash2806_Portfolio/commit/cdee6fc414d53a100a9bdc3ed4188854507153cf))
+* projects content add, 2 new css tag  [#50](https://github.com/vikash2806/vikash2806_Portfolio/issues/50) ([9c83f0b](https://github.com/vikash2806/vikash2806_Portfolio/commit/9c83f0baaf4bd319f29f8a29ee6b8314018903a4))
+* Scroll animation & landing page animation add ([8525926](https://github.com/vikash2806/vikash2806_Portfolio/commit/852592644c0db8cff8eba63ae05daf6de9b76c37)), closes [#55](https://github.com/vikash2806/vikash2806_Portfolio/issues/55)
+* scroll animation add in about sectoin ([b494091](https://github.com/vikash2806/vikash2806_Portfolio/commit/b494091b5379e955cffacaa3dd90d994b03e9ad0))
+* Scroll down, scroll up button ([6f55c0a](https://github.com/vikash2806/vikash2806_Portfolio/commit/6f55c0a52afc886bb3b9660a9740b696fc7bbc62)), closes [#23](https://github.com/vikash2806/vikash2806_Portfolio/issues/23)
+* Social media section [#58](https://github.com/vikash2806/vikash2806_Portfolio/issues/58) ([714a9ae](https://github.com/vikash2806/vikash2806_Portfolio/commit/714a9ae1eaa36deea0769b40007bfea1c6a3d9d5))
+
+
+### Bug Fixes
+
+* avatar2 image height witdh update ([e19d606](https://github.com/vikash2806/vikash2806_Portfolio/commit/e19d6066d9e076ff8e4edbed9e00ec1713f87ec7))
+* certificate overlay z-index ([7567bc8](https://github.com/vikash2806/vikash2806_Portfolio/commit/7567bc857150555ee8562820ea9db68dfa4a6ca9))
+* CertificatePreview img lighhouse height width ([c5e5116](https://github.com/vikash2806/vikash2806_Portfolio/commit/c5e511650e8b3142aac1fb69ae84577bfdaa7b6e))
+* codefactor issue ([fe9ffc7](https://github.com/vikash2806/vikash2806_Portfolio/commit/fe9ffc70d3b973ec18a50f64c5712a5eeecd4a06))
+* codefactor zero-unit ([ccb2d53](https://github.com/vikash2806/vikash2806_Portfolio/commit/ccb2d53872fbf42606ca4d59c524cd70ee07ab62))
+* countdown time increase ([71f29ba](https://github.com/vikash2806/vikash2806_Portfolio/commit/71f29ba62ec06c74605eb7f9ab4be83c1a2bb258))
+* educatio, skill section animation update ([413dcb2](https://github.com/vikash2806/vikash2806_Portfolio/commit/413dcb28540eef6ca3b4a76a54b8229395ef0ecf))
+* fl fix ([227bca6](https://github.com/vikash2806/vikash2806_Portfolio/commit/227bca6e6c5bd29c1e5f3ee50bc33f19e3d2329d))
+* home page animation timeing update ([8f1cb6c](https://github.com/vikash2806/vikash2806_Portfolio/commit/8f1cb6cbbfaee4385a40a7ed2625ffeda383fe50))
+* home section scrolldown btn, height in mobile ([d9de9ad](https://github.com/vikash2806/vikash2806_Portfolio/commit/d9de9ad545c7929d762a266ec32bce5fb391daef))
+* issuer logo path update ([625b472](https://github.com/vikash2806/vikash2806_Portfolio/commit/625b472be6aaa4d8c90f66707d3bf3aa8fc0a285))
+* mobile overflow z-index in certificat in AOS ([42a3e52](https://github.com/vikash2806/vikash2806_Portfolio/commit/42a3e52e26630c2be0c1a320eedb6b5e3469c60b))
+* perfomance actoin URL update ([0b219cb](https://github.com/vikash2806/vikash2806_Portfolio/commit/0b219cba0ea656c87e1410474f9ecb8be8f807d7))
+* thanks page disable ([25edf3f](https://github.com/vikash2806/vikash2806_Portfolio/commit/25edf3f77a1d5b5a79aa0b513e4e86b7c5b91ea3))
+* z-index duplicate remove ([145f00f](https://github.com/vikash2806/vikash2806_Portfolio/commit/145f00f03840e98c8878a7ba8a1f1caf30a98a3d))
+
 ### [1.2.2](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.1...v1.2.2) (2022-02-26)
 
 

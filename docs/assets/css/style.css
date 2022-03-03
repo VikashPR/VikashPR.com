@@ -973,8 +973,6 @@ footer .footer-bottom .heart {
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
   }
 }
 
@@ -986,8 +984,6 @@ footer .footer-bottom .heart {
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
   }
 }
 
@@ -997,8 +993,6 @@ footer .footer-bottom .heart {
             filter: blur(5px);
   }
   to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
 }
 
@@ -1008,8 +1002,6 @@ footer .footer-bottom .heart {
             filter: blur(5px);
   }
   to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
 }
 

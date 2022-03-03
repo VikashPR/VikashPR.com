@@ -1973,7 +1973,6 @@ footer .footer-bottom .heart {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  z-index: 9;
   background-color: var(--bgSecondary);
   width: 800px;
   border-radius: 10px;

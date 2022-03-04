@@ -3,75 +3,536 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Vikash PR - Coming soon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700,900'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./assets/css/comingSoon.css">
-    <!-- Fav icon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico">
 
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Dev Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+
+    <title>Vikash2806</title>
 </head>
 
+
 <body>
-    <!-- partial:index.partial.html -->
-    <div class="wrapper">
-        <header>
-            <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 318.5 100 125"
-                enable-background="new 0 318.5 100 100">
-                <path
-                    d="M88.888 349.937c-.109-.298-.405-.481-.718-.463-5.109.383-11.558.865-18.163 1.358l9.538-12.475c.182-.237.195-.563.033-.814-.162-.25-.46-.376-.756-.307-6.694 1.549-38.692 8.971-43.12 10.304l-6.457-5.539c-.108-.093-.241-.15-.382-.166l-6.908-.774-.053.006-.167.018-.126.032-.044.012-10.098 4.926c-.244.119-.398.366-.398.638 0 .271.155.518.399.637l10.442 5.075.226 3.224.007.024-.001.026 2.333 16.271.012.042.02.066.079.17.033.052.184.169.008.007.019.005.141.066 19.376 5.903 5.754 3.548 1.262 2.943-2.657 14.021c-.04.212.019.431.159.594.135.157.332.247.538.247l.025-.001c.154-.006 15.421-.557 16.007-.572.221-.006.45-.129.579-.308.243-.335.609-.843-4.467-17.763l-.05-.094-.026-.075c-.375-.606-3.278-5.282-4.554-7.092l31.722-23.125c.257-.187.358-.52.249-.816zm-20.773 1.036c-14.051 1.048-28.297 2.104-31.539 2.321l-.293-4.463c3.457-1.007 25.228-6.127 40.94-9.77l-9.108 11.912zm-17.659 29.556l-4.189-2.583 7.808-2.803-3.619 5.386zm-26.808-24.333l10.913-1.279-8.965 14.862-1.948-13.583zm12.112-.522l7.724 21.011-17.23-5.25 9.506-15.761zm-7.272-12.455l6.365 5.46.312 4.74-11.666 1.368-.856-12.224 5.845.656zm-15.092 3.47l7.845-3.827.554 7.909-8.399-4.082zm36.868 51.644l2.459-12.979 7.688-3.065c1.93 6.464 3.891 13.442 4.275 15.528-2.614.09-11.537.412-14.422.516zm2.215-14.407l-1.011-2.36 4.459-6.637c.893 1.301 2.583 3.965 3.894 6.069l-7.342 2.928zm3.106-10.83l-10.522 3.777-8.154-22.182c6.186-.423 39.375-2.906 48.886-3.618l-30.21 22.023z" />
+    <div class="loading-wrapper">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
             </svg>
-        </header>
+        </div>
+        <span id="typeline"></span>
+    </div>
+    <header>
+        <div class="logo">
+            <h1><a href="#">Vikash<span>PR</span></a></h1>
+        </div>
+        <button class="menu" aria-controls="nav-links" aria-expanded="false" aria-label="menu-icon"><i id="menuFont"
+                class="fa-solid fa-bars"></i></button>
+        <nav>
+            <ul class="nav-links" id="nav-links" data-visible="false">
+                <li class="nav-link active"><a href="#Home">Home</a></li>
+                <li class="nav-link"><a href="#About">About</a></li>
+                <li class="nav-link"><a href="#Education">Education</a></li>
+                <li class="nav-link"><a href="#Skills">Skills</a></li>
+                <li class="nav-link"><a href="#Portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#Contact">Contact Me</a></li>
+                <li class="nav-link mobi-rm">|</li>
+                <li class="nav-link mobi-rm"><i class="fas fa-phone"></i> +91-93444-87074</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="fl-fl float-gh">
+        <i class="fa fa-brands fa-github"></i>
+        <a href="https://github.com/vikashpr" target="_blank">Explore</a>
+    </div>
+    <div class="fl-fl float-dc">
+        <i class="fa fa-brands fa-discord"></i>
+        <a href="https://github.com/vikashpr" target="_blank">Join</a>
+    </div>
+    <div class="fl-fl float-li">
+        <i class="fa fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/vikash-pr-086b21193/" target="_blank">Connect</a>
+    </div>
+    <div class="fl-fl float-tw">
+        <i class="fa fa-brands fa-twitter"></i>
+        <a href="https://twitter.com/Vikash11430482" target="_blank">Follow</a>
+    </div>
+    <div class="fl-fl float-ig">
+        <i class="fa fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/viki_sam_/" target="_blank">Follow</a>
+    </div>
+    <div class="fl-fl float-so">
+        <i class="fa fa-brands fa-stack-overflow"></i>
+        <a href="https://stackoverflow.com/users/14201913/vikashpr" target="_blank">Find</a>
+    </div>
+    <section id="Home">
+        <div class="main-container home-container">
+            <div class="intro-wrapper">
+                <div class="home-nav">
+                    <div class="dots">
+                        <div class="dot red-dot"></div>
+                        <div class="dot yellow-dot"></div>
+                        <div class="dot green-dot"></div>
+                    </div>
 
-        <main class="content">
-            <h1>COMING SOON!</h1>
-
-            <div class="countdown">
-                <div class="countdown__days">
-                    <div class="number"></div>
-                    <span class>Days</span>
+                    <!-- <ul class="nav-social">
+                        <li class="social-item"><img src="./assets/image/social/github.png" alt=""><a
+                                href="#">Github</a></li>
+                        <li class="social-item"><img src="./assets/image/social/instagram.png" alt=""><a
+                                href="#">Instagram</a></li>
+                        <li class="social-item"><img src="./assets/image/social/linkedin.png" alt=""><a
+                                href="#">Linkedin</a></li>
+                        <li class="social-item"><img src="./assets/image/social/gmail.png" alt=""><a href="#">Mail</a>
+                        </li>
+                    </ul> -->
                 </div>
+                <div class="home-left">
+                    <div class="title overflow-y">
+                        <h2 class="heading">Vanakkam</h2>
+                    </div>
+                    <div class="overflow">
+                        <h1>I'M Vikash</h1>
+                    </div>
+                    <div class="overflow">
+                        <h3>Student & Developer</h3>
+                    </div>
 
-                <div class="countdown__hours">
-                    <div class="number"></div>
-                    <span class>Hours</span>
+                    <div class="home-btns overflow">
+                        <a class="btn contact-btn" href="#Contact">Contact Me <i class="far fa-paper-plane"></i></a>
+                        <a class="btn download-btn" href="#">Download CV <i class="fas fa-download"></i></a>
+
+                    </div>
                 </div>
-
-                <div class="countdown__minutes">
-                    <div class="number"></div>
-                    <span class>Minutes</span>
-                </div>
-
-                <div class="countdown__seconds">
-                    <div class="number"></div>
-                    <span class>Seconds</span>
+                <div class="home-right overflow">
+                    <figure class="swing">
+                        <img src="./assets/image/avatar.webp" alt="VikashPR avatar image">
+                    </figure>
                 </div>
             </div>
+            <a href="#About">
+                <div id="scroll-down-animation">
+                    <span class="mouse">
+                        <span class="move"></span>
+                    </span>
+                    <h2>Scroll down</h2>
+                </div>
+            </a>
+        </div>
+    </section>
 
-            <p>Vikash's Website is under construction.
-                We will be back with a awesome website soon.
-                Thank you for your patience.
-            </p>
-            <p>Get in touch!</p>
-        </main>
-
-        <footer>
-            <ul class="footer__links">
-                <li><a href="https://github.com/vikashpr"><span class="fa fa-github"></span></a></li>
-                <li><a href="https://www.instagram.com/viki_sam_/"><span class="fa fa-instagram"></span></a></li>
-                <li><a href="https://www.linkedin.com/in/vikash-pr-086b21193/"><span class="fa fa-linkedin"></span></a>
-                </li>
-                <li><a href="https://stackoverflow.com/users/14201913/vikashpr"><span
-                            class="fa fa-stack-overflow"></span></a></li>
-                <li><a href="mailto:vikashrajendran2806@gmail.com?subject=Review to portfolio"><span
-                            class="fa fa-envelope"></span></a></li>
-                <li><a href="https://twitter.com/Vikash11430482"><span class="fa fa-twitter"></span></a></li>
-            </ul>
-        </footer>
+    <div class="scroll-down-button">
+        <i class="fa-solid fa-angles-down"></i>
     </div>
-    <!-- partial -->
-    <script src="./assets/js/countDown.js"></script>
+
+
+    <section id="About">
+        <div class="main-container about-container">
+            <div class="title">
+                <h2 class="heading">About Me</h2>
+            </div>
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <h3 data-aos="fade-out" data-aos-duration="800" data-aos-delay="50">Hey, Good to see you here.</h3>
+                    <h3 data-aos="fade-out" data-aos-duration="800" data-aos-delay="100">I'm Vikash an UG Computer
+                        Science Student.</h3>
+                    <p data-aos="fade-out" data-aos-duration="800" data-aos-delay="150">I'm student by Profession,
+                        Developer by Passion an Athlete by obsession.</p>
+                    <p data-aos="fade-out" data-aos-duration="800" data-aos-delay="200">I am ambitious and driven. I
+                        thrive on challenge and constantly set goals for myself, So I have
+                        something to strive towards.I love meeting new people and learning about their lives and their
+                        backgrounds.</p>
+                    <p data-aos="fade-out" data-aos-duration="800" data-aos-delay="250">I'm fascinated about Bio
+                        Technologies and developing technologies on medical fields. If you have
+                        knowledge on Bio Technologies I'd love to hear from you. Shoot me a DM</p>
+                    <div class="radio">
+                    </div>
+                    <div class="about-btns">
+                        <a class="btn about-btn" href="#">Portfolio<i class="fas fa-briefcase"></i></a>
+                        <a class="btn download-btn" href="#">Download CV<i class="fas fa-download"></i></a></a>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="avatar-card" data-aos="fade-out" data-aos-duration="1500">
+                        <img src="./assets/image/avatar2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education section -->
+    <section id="Education">
+        <div class="main-container education-container">
+            <div class="title">
+                <h2 class="heading">Education</h2>
+            </div>
+            <div class="education-wrapper">
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="500">
+                            <h3>Pre School</h3>
+                            <span class="year">2006 - 2014</span>
+                        </div>
+                        <div class="item-title">Swami Matriculation Higher Secondary School & <br> SVB Modern School
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="1000">
+                            <h3>HIGH SCHOOL & MIDDLE SCHOOL</h3>
+                            <span class="year">2014 - 2020</span>
+                        </div>
+                        <div class="item-title">Senthil Public School, Salem / FIITJEE.</div>
+                        <div class="timeline-details">
+                            <p>CGPA: 79%</p>
+                            <p>Course: Computer Maths</p>
+                            <p>CBSE Board</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="1500">
+                            <h3>BACHELOR IN COMPUTER SCIENCE</h3>
+                            <span class="year">2020 - Present</span>
+                        </div>
+                        <div class="item-title">SRM Institute of Science & Technology, Chennai</div>
+                    </li>
+                </ul>
+                <ul class="timeline">
+                    <li class="timeline-item certificate-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="500">
+                            <h3>JavaScript Certificate</h3>
+                            <span class="year">July 2020</span>
+                            <span class="tag tag-js">#Javascript</span>
+                            <div class="item-title"><span class="tag tag-programinghub">#ProgramingHub</span> <img
+                                    class="issuer-logo" src="./assets/image/programingHubLogo.jpeg"
+                                    alt="issuer-programinHub"></div>
+                        </div>
+                        <div class="certificate-preview certificate-preview1">
+                            <img data-modal-target1="#modal" class="preview-modal"
+                                src="./assets/image/certificatePreview-1.webp" alt="">
+                            <div class="modal" id="modal1">
+                                <div class="modal-header">
+                                    <div class="dots" data-close-button>
+                                        <div class="dot red-dot"></div>
+                                        <div class="dot yellow-dot"></div>
+                                        <div class="dot green-dot"></div>
+                                    </div>
+                                    <h3>JavaScript Certificate</h3>
+                                </div>
+                                <div class="modal-img">
+                                    <img src="./assets/image/certificate-1.webp" loading="lazy"
+                                        alt="VikashPR's JavaScript certificate1">
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item certificate-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="1000">
+                            <h3>JavaScript Certificate</h3>
+                            <span class="year">Feb 2022</span>
+                            <span class="tag tag-js">#Javascript</span>
+                            <div class="item-title"><span class="tag tag-hackerrank">#HackerRank</span> <img
+                                    class="issuer-logo" src="./assets/image/hackerrankLogo.svg" alt="issuer-hackerrank">
+                            </div>
+                        </div>
+                        <div class="certificate-preview">
+                            <img data-modal-target2="#modal" class="preview-modal"
+                                src="./assets/image/certificatePreview-2.webp" alt="">
+                            <div class="modal" id="modal2">
+                                <div class="modal-header">
+                                    <div class="dots" data-close-button>
+                                        <div class="dot red-dot"></div>
+                                        <div class="dot yellow-dot"></div>
+                                        <div class="dot green-dot"></div>
+                                    </div>
+                                    <h3>JavaScript Certificate</h3>
+                                </div>
+                                <div class="modal-img">
+                                    <img src="./assets/image/certificate-2.webp" loading="lazy"
+                                        alt="VikashPR's JavaScript certificate2">
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item certificate-item">
+                        <div class="timestamp" data-aos="fade-in" data-aos-duration="1500">
+                            <h3>C++ Certificate</h3>
+                            <span class="year">Jan 2022</span>
+                            <span class="tag tag-cpp">#C++</span>
+                            <div class="item-title"><span class="tag tag-programinghub">#ProgramingHub</span> <img
+                                    class="issuer-logo" src="./assets/image/programingHubLogo.jpeg"
+                                    alt="issuer-programinHub"></div>
+                        </div>
+                        <div class="certificate-preview">
+                            <img data-modal-target3="#modal" class="preview-modal"
+                                src="./assets/image/certificatePreview-3.webp" alt="">
+                            <div class="modal" id="modal3">
+                                <div class="modal-header">
+                                    <div class="dots" data-close-button>
+                                        <div class="dot red-dot"></div>
+                                        <div class="dot yellow-dot"></div>
+                                        <div class="dot green-dot"></div>
+                                    </div>
+                                    <h3>C++ Certificate</h3>
+                                </div>
+                                <div class="modal-img">
+                                    <img src="./assets/image/certificate-3.webp" loading="lazy"
+                                        alt="VikashPR's C++ certificate">
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="main-container skill-container">
+            <div class="title">
+                <h2 class="heading">My Skills</h2>
+            </div>
+            <div class="skill-wrapper">
+                <div class="skill-left">
+                    <h3 data-aos="fade-in" data-aos-duration="500">Technologies that I work with</h3>
+                    <p data-aos="fade-in" data-aos-duration="1000">These are the technologies that I use in my projects
+                        on regular baiscs</p>
+                    <p data-aos="fade-in" data-aos-duration="1500">I'am updating myself with these technologies everyday
+                        and learning new technologies.</p>
+                </div>
+                <div class="skill-right">
+                    <div class="tech-card" data-aos="zoom-in">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span class="toolTip">HTML</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span class="toolTip">CSS</span>
+
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span class="toolTip">JavaScript</span>
+
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="devicon-sass-original colored">
+                        </i>
+                        <span class="toolTip">Sass</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="250">
+                        <i class="devicon-vuejs-plain colored"></i>
+                        <span class="toolTip">VueJs</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="devicon-nuxtjs-plain colored"></i>
+                        <span class="toolTip">NuxtJs</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="350">
+                        <i class="devicon-firebase-plain colored"></i>
+                        <span class="toolTip">Firebase</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="devicon-c-plain colored"></i>
+                        <span class="toolTip">C</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="450">
+                        <i class="devicon-cplusplus-plain colored"></i>
+                        <span class="toolTip">C++</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+                        <i class="devicon-arduino-plain colored"></i>
+                        <span class="toolTip">Arduino</span>
+                    </div>
+                    <div class="tech-card" data-aos="zoom-in" data-aos-delay="550">
+                        <i class="devicon-markdown-original colored"></i>
+                        <span class="toolTip">MarkDown</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio section -->
+    <section id="Portfolio">
+        <div class="main-container portfolio-container">
+            <div class="title">
+                <h2 class="heading">My Portfolio</h2>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="portfolio-filter">
+                    <h3>Some of my Distinguished works</h3>
+                    <p>To your notice: These projects are some of VikashPR's Distinguished projects. VikashPR's Github
+                        has the collection of all his works.</p>
+                </div>
+                <div class="portfolio-gallery">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="project-details">
+                                <h1 class="details-title">VikashPR.com</h1>
+                                <h3 class="details-subtitle">Project</h3>
+                                <ul>
+                                    <li><a href="https://github.com/VikashPR/VikashPR.com"><i
+                                                class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="https://vikash2806-dev.web.app/home.html"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="./assets/image/project1.png" loading="lazy" alt="VikashPR.com preview image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Portfolio Website</h3>
+                            <p>VikashPR.com is a portfolio website build to display Vikash's projects and skills.</p>
+                            <div class="card-tags">
+                                <span class="tag tag-js">#Javascript</span>
+                                <span class="tag tag-firebase">#Firebase</span>
+                                <span class="tag tag-html">#Html</span>
+                                <span class="tag tag-css">#Css</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="project-details">
+                                <h1 class="details-title">VikashPR</h1>
+                                <h3 class="details-subtitle">Project</h3>
+                                <ul>
+                                    <li><a href="https://github.com/VikashPR/VikashPR"><i
+                                                class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="https://github.com/VikashPR/VikashPR"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="./assets/image/project2.png" loading="lazy" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Github readme</h3>
+                            <p>VikashPR github readme is a custom made Readme.md page build to display VikashPR's github
+                                activities.</p>
+                            <div class="card-tags">
+                                <span class="tag tag-githubaction">#GithubAction</span>
+                                <span class="tag tag-markdown">#MarkDown</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="project-details">
+                                <h1 class="details-title">VikashPR theme dark</h1>
+                                <h3 class="details-subtitle">Project</h3>
+                                <ul>
+                                    <li><a href="https://github.com/VikashPR/VikashPR-Theme-Dark"><i
+                                                class="fa-brands fa-github"></i></a></li>
+                                    <li><a
+                                            href="https://marketplace.visualstudio.com/items?itemName=VikashPR.vikashpr-theme-dark"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="./assets/image/project3.png" loading="lazy" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">VSCode Theme</h3>
+                            <p>VikashPR dark theme is VikashPR's custom made VSCode theme extension.</p>
+                            <div class="card-tags">
+                                <span class="tag tag-js">#Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- Contact me section  -->
+    <section id="Contact">
+        <div class="main-container contact-container">
+            <div class="title">
+                <h2 class="heading">Contact Me</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <h3>Get in touch</h3>
+                    <p>I'd love to hear from you. Shoot me a DM</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i>Namakkal - TN - INDIA</li>
+                        <li><i class="fa-regular fa-envelope"></i>vikashrajendran2806@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i>+91 93444 87074</i></li>
+                    </ul>
+                    <!-- <div class="social-media">
+                        <a href="https://github.com/vikash2806"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vikash-pr-086b21193/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/viki_sam_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Vikash11430482"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://stackoverflow.com/users/14201913/vikash2806"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
+                        <i class="fa-brands fa-discord"></i>
+                    </div> -->
+                    <!-- <img id="map" src="./assets/image/map.png" alt=""> -->
+                </div>
+                <div class="contact-right">
+                    <form class="form" id="form" action="https://formsubmit.co/vikashrajendran2806@gmail.com"
+                        method="POST">
+                        <input id="name" placeholder="Your name" type="text" name="name" required>
+                        <input id="email" placeholder="Email Address" type="email" name="email" required>
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="hidden" name="_template" value="table">
+                        <textarea id="message" placeholder="Message" name="message" cols="25" rows="10"
+                            required></textarea>
+                        <input type="hidden" name="_next" value="https://vikashpr.com/thanks.html">
+                        <button id="submit-btn" type="submit" class="btn submit--btn">Send<i
+                                class="fa-solid fa-paper-plane"></i></button>
+                        <audio id="audioSuccess" src="./assets/sounds/success.mp3"></audio>
+                        <audio id="audioError" src="./assets/sounds/error.mp3"></audio>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section  -->
+    <footer>
+        <div class="footer-nav">
+            <div class="logo">
+                <h1><a href="#">Vikash<span>PR</span></a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#Home">Home</a></li>
+                <li class="nav-link"><a href="#About">About</a></li>
+                <li class="nav-link"><a href="#Skills">Skills</a></li>
+                <li class="nav-link"><a href="#Portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#Contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-bottom">
+            <p>&copy; VikashPR. All rights reserved | <i class="fas fa-heart heart"></i> Created by Vikash</p>
+        </div>
+    </footer>
+    <button class="scrollToTopBtn" aria-label="scroll-to-top"><i class="fa-solid fa-angles-up"></i></button>
+    <!-- JavaScript File -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js' ></script>
 
 </body>
 

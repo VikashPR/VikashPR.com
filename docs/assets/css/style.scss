@@ -77,7 +77,7 @@ html {
 }
 
 body {
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 a {
@@ -498,141 +498,141 @@ footer .footer-bottom {
 }
 
 // Loading animation
-.loading-wrapper {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    visibility: visible;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-    background: var(--primaryBg);
+// .loading-wrapper {
+//     height: 100%;
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     visibility: visible;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 99;
+//     background: var(--primaryBg);
 
-    #typeline {
-        position: absolute;
-        bottom: 45%;
-    }
+//     #typeline {
+//         position: absolute;
+//         bottom: 45%;
+//     }
 
-    .loader {
-        display: inline-block;
-        margin: 0 16px;
-        z-index: 99;
-        --path: #9ca9c9;
-        --dot: var(--infoColor);
-        --duration: 3s;
-        width: 44px;
-        height: 44px;
-        position: relative;
-    }
+//     .loader {
+//         display: inline-block;
+//         margin: 0 16px;
+//         z-index: 99;
+//         --path: #9ca9c9;
+//         --dot: var(--infoColor);
+//         --duration: 3s;
+//         width: 44px;
+//         height: 44px;
+//         position: relative;
+//     }
 
-    .loader:before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        position: absolute;
-        display: block;
-        background: var(--dot);
-        top: 37px;
-        left: 19px;
-        transform: translate(-18px, -18px);
-        -webkit-animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-    }
+//     .loader:before {
+//         content: '';
+//         width: 6px;
+//         height: 6px;
+//         border-radius: 50%;
+//         position: absolute;
+//         display: block;
+//         background: var(--dot);
+//         top: 37px;
+//         left: 19px;
+//         transform: translate(-18px, -18px);
+//         -webkit-animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+//         animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+//     }
 
-    .loader svg {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+//     .loader svg {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
 
-    .loader svg rect {
-        fill: none;
-        stroke: var(--path);
-        stroke-width: 10px;
-        stroke-linejoin: round;
-        stroke-linecap: round;
-        stroke-dasharray: 192 64 192 64;
-        stroke-dashoffset: 0;
-        -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-    }
+//     .loader svg rect {
+//         fill: none;
+//         stroke: var(--path);
+//         stroke-width: 10px;
+//         stroke-linejoin: round;
+//         stroke-linecap: round;
+//         stroke-dasharray: 192 64 192 64;
+//         stroke-dashoffset: 0;
+//         -webkit-animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+//         animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+//     }
 
-    @-webkit-keyframes pathRect {
-        25% {
-            stroke-dashoffset: 64;
-        }
+//     @-webkit-keyframes pathRect {
+//         25% {
+//             stroke-dashoffset: 64;
+//         }
 
-        50% {
-            stroke-dashoffset: 128;
-        }
+//         50% {
+//             stroke-dashoffset: 128;
+//         }
 
-        75% {
-            stroke-dashoffset: 192;
-        }
+//         75% {
+//             stroke-dashoffset: 192;
+//         }
 
-        100% {
-            stroke-dashoffset: 256;
-        }
-    }
+//         100% {
+//             stroke-dashoffset: 256;
+//         }
+//     }
 
-    @keyframes pathRect {
-        25% {
-            stroke-dashoffset: 64;
-        }
+//     @keyframes pathRect {
+//         25% {
+//             stroke-dashoffset: 64;
+//         }
 
-        50% {
-            stroke-dashoffset: 128;
-        }
+//         50% {
+//             stroke-dashoffset: 128;
+//         }
 
-        75% {
-            stroke-dashoffset: 192;
-        }
+//         75% {
+//             stroke-dashoffset: 192;
+//         }
 
-        100% {
-            stroke-dashoffset: 256;
-        }
-    }
+//         100% {
+//             stroke-dashoffset: 256;
+//         }
+//     }
 
-    @-webkit-keyframes dotRect {
-        25% {
-            transform: translate(0, 0);
-        }
+//     @-webkit-keyframes dotRect {
+//         25% {
+//             transform: translate(0, 0);
+//         }
 
-        50% {
-            transform: translate(18px, -18px);
-        }
+//         50% {
+//             transform: translate(18px, -18px);
+//         }
 
-        75% {
-            transform: translate(0, -36px);
-        }
+//         75% {
+//             transform: translate(0, -36px);
+//         }
 
-        100% {
-            transform: translate(-18px, -18px);
-        }
-    }
+//         100% {
+//             transform: translate(-18px, -18px);
+//         }
+//     }
 
-    @keyframes dotRect {
-        25% {
-            transform: translate(0, 0);
-        }
+//     @keyframes dotRect {
+//         25% {
+//             transform: translate(0, 0);
+//         }
 
-        50% {
-            transform: translate(18px, -18px);
-        }
+//         50% {
+//             transform: translate(18px, -18px);
+//         }
 
-        75% {
-            transform: translate(0, -36px);
-        }
+//         75% {
+//             transform: translate(0, -36px);
+//         }
 
-        100% {
-            transform: translate(-18px, -18px);
-        }
-    }
-}
+//         100% {
+//             transform: translate(-18px, -18px);
+//         }
+//     }
+// }
 
 // Social media icons
 .fl-fl {
@@ -1064,10 +1064,9 @@ footer .footer-bottom {
 
         .avatar-card {
             img {
-                width: 400px;
-                height: 530px;
+                width: 350px;
+                height: 100%;
                 max-width: 100%;
-                max-height: 530px;
                 border-bottom-right-radius: 40px;
                 border-top-right-radius: 40px;
                 border-top-left-radius: 40px;
@@ -2165,13 +2164,6 @@ footer .footer-bottom {
 
                 li {
                     margin-left: 50px;
-                }
-
-                .item-title {
-                    .issuer-logo {
-                        width: 25px;
-                        height: 25px;
-                    }
                 }
 
             }

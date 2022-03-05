@@ -1837,12 +1837,8 @@ footer .footer-bottom .heart {
 
 .education-container .education-wrapper .certificate-preview .preview-modal {
   width: 190px;
-  height: 134px;
+  height: 100%;
   margin: 10px;
-}
-
-.education-container .education-wrapper .certificate-preview .preview-modal2:nth-child(2) {
-  height: 143px;
 }
 
 .education-container .education-wrapper .certificate-preview .modal.active {

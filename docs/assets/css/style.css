@@ -914,10 +914,11 @@ footer .footer-bottom .heart {
   overflow-y: hidden;
 }
 
-.intro-wrapper .home-left h1 {
+.intro-wrapper .home-left span {
   font-size: 4rem;
   -webkit-animation: drop-in 1.5s ease 600ms backwards;
           animation: drop-in 1.5s ease 600ms backwards;
+  font-weight: bold;
 }
 
 .intro-wrapper .home-left h3 {

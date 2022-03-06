@@ -225,12 +225,12 @@ menu.addEventListener('click', () => {
   if(visibility === 'false'){
     nav.setAttribute('data-visible', 'true');
     nav.setAttribute('aria-expanded', 'true');
-    menuFont.classList.add('fa-xmark');
+    menuFont.classList.add('icon-xmark');
   }
   else if(visibility === 'true'){
     nav.setAttribute('aria-expanded', 'false');
     nav.setAttribute('data-visible', 'false');
-    menuFont.classList.remove('fa-xmark');
+    menuFont.classList.remove('icon-xmark');
   }
 })
 

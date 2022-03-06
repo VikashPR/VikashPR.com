@@ -749,11 +749,13 @@ footer .footer-bottom {
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 4px;
-    width: 140px;
+    width: 145px;
     position: fixed;
     right: -105px;
     top: 50px;
     z-index: 1000;
+    display:flex;
+    align-items:center;
     font: normal normal 10px Arial;
     -webkit-transition: all .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -moz-transition: all .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1978,7 +1980,10 @@ footer .footer-bottom {
         z-index: 999;
         transition: all 0.2s ease;
     }
-
+    // Socilal icons
+    .fl-fl {
+        display:none;
+    }
     header {
         position: absolute;
     }

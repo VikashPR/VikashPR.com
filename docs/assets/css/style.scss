@@ -36,18 +36,17 @@
 // icon font
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?r1qu1u');
-    src: url('../fonts/icomoon.eot?r1qu1u#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?r1qu1u') format('truetype'),
-        url('../fonts/icomoon.woff?r1qu1u') format('woff'),
-        url('../fonts/icomoon.svg?r1qu1u#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?utnwxf');
+    src:  url('../fonts/icomoon.eot?utnwxf#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?utnwxf') format('truetype'),
+      url('../fonts/icomoon.woff?utnwxf') format('woff'),
+      url('../fonts/icomoon.svg?utnwxf#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
@@ -56,88 +55,73 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
+  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-discord:before {
+  }
+  
+  .icon-code:before {
+    content: "\e912";
+  }
+  .icon-discord:before {
     content: "\e911";
-}
-
-.icon-bars:before {
+  }
+  .icon-bars:before {
     content: "\e90f";
-}
-
-.icon-xmark:before {
+  }
+  .icon-xmark:before {
     content: "\e910";
-}
-
-.icon-heart:before {
+  }
+  .icon-heart:before {
     content: "\e90e";
-}
-
-.icon-angles-down:before {
+  }
+  .icon-angles-down:before {
     content: "\e90b";
-}
-
-.icon-angles-up:before {
+  }
+  .icon-angles-up:before {
     content: "\e90c";
-}
-
-.icon-arrow-up-right-from-square:before {
+  }
+  .icon-arrow-up-right-from-square:before {
     content: "\e90d";
-}
-
-.icon-paper-plane-line:before {
+  }
+  .icon-paper-plane-line:before {
     content: "\1f303";
-}
-
-.icon-briefcase:before {
+  }
+  .icon-briefcase:before {
     content: "\e900";
-}
-
-.icon-download:before {
+  }
+  .icon-download:before {
     content: "\e901";
-}
-
-.icon-envelope:before {
+  }
+  .icon-envelope:before {
     content: "\e902";
-}
-
-.icon-github:before {
+  }
+  .icon-github:before {
     content: "\e903";
-}
-
-.icon-instagram:before {
+  }
+  .icon-instagram:before {
     content: "\e904";
-}
-
-.icon-linkedin:before {
+  }
+  .icon-linkedin:before {
     content: "\e905";
-}
-
-.icon-location-dot:before {
+  }
+  .icon-location-dot:before {
     content: "\e906";
-}
-
-.icon-paper-plane:before {
+  }
+  .icon-paper-plane:before {
     content: "\e907";
-}
-
-.icon-phone:before {
+  }
+  .icon-phone:before {
     content: "\e908";
-}
-
-.icon-stack-overflow:before {
+  }
+  .icon-stack-overflow:before {
     content: "\e909";
-}
-
-.icon-twitter:before {
+  }
+  .icon-twitter:before {
     content: "\e90a";
-}
-
+  }
+  
 
 :root {
     --bgPrimary: #0e1630;
@@ -560,8 +544,13 @@ footer .footer-bottom {
     justify-content: center;
     height: 80px;
     font-size: 1.1rem;
-
-    i {
+    
+    i:nth-child(1) {
+        color: var(--infoColor);
+        font-size: 1.3rem;
+        margin-inline: 5px;
+    }
+    i:nth-child(2) {
         color: red;
         font-size: 1.3rem;
         margin-inline: 5px;

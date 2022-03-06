@@ -30,7 +30,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -1371,7 +1372,8 @@ footer .footer-bottom .heart {
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card img {
-  width: 3rem;
+  width: 48px;
+  height: 48px;
 }
 
 .skill-container .skill-wrapper .skill-right .tech-card .toolTip {
@@ -2408,6 +2410,10 @@ footer .footer-bottom .heart {
     border-width: 7px;
     border-style: solid;
     border-color: #eb4a4a transparent transparent;
+  }
+  .skill-container .skill-wrapper .skill-right .tech-card img {
+    width: 36px;
+    height: 36px;
   }
   .skill-container .skill-wrapper .skill-right .tech-card:hover {
     border-bottom: 5px solid var(--infoColor);

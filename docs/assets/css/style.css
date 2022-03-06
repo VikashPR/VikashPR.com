@@ -1555,10 +1555,6 @@ footer .footer-bottom .heart {
   cursor: pointer;
 }
 
-.contact-container .contact-left .social-media i:hover {
-  border: 2px solid var(--infoColor);
-}
-
 .contact-container .contact-right {
   display: -webkit-box;
   display: -ms-flexbox;

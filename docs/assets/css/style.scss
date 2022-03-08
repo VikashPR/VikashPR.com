@@ -2050,11 +2050,9 @@ footer .footer-bottom {
                 width: 80%;
 
                 .about-btns {
-                    align-items: center;
-                    margin: 0 auto;
-
                     .btn {
-                        width: 140px;
+                        width:50%;
+                        max-width:140px;
                     }
                 }
             }
@@ -2169,6 +2167,12 @@ footer .footer-bottom {
                 width: 100%;
                 margin-block: 10px;
                 align-items: flex-start;
+
+                .social-media{
+                    i{
+                        margin-right:5px;
+                    }
+                }
             }
 
             .contact-right {

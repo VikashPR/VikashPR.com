@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.3...v1.3.0) (2022-03-08)
+
+
+### Features
+
+* Accessibility update ([5fa5cb7](https://github.com/vikash2806/vikash2806_Portfolio/commit/5fa5cb7763c893a71ca3ac5c2e1c7a0cebb8f66a))
+* Accessibility update [Home] ([844ef44](https://github.com/vikash2806/vikash2806_Portfolio/commit/844ef44cc9eea810f182865d22bbcdde74560deb))
+* cache control add ([946cfd4](https://github.com/vikash2806/vikash2806_Portfolio/commit/946cfd4e53ad6df2ffb4491f8bb687e18c7d37f7))
+* cache poicy update ([29098f4](https://github.com/vikash2806/vikash2806_Portfolio/commit/29098f4ddc98e6dd101c509253fd0705978553eb))
+* firebase cache policy remove ([2f6adf1](https://github.com/vikash2806/vikash2806_Portfolio/commit/2f6adf13e7119bcd510342c6ad53cfdd42cfd4a3))
+* firebase hosting action update ([8657e88](https://github.com/vikash2806/vikash2806_Portfolio/commit/8657e88fe9a36db351e36638e91a226a6e4e96ad))
+* firebase init ([9bc7360](https://github.com/vikash2806/vikash2806_Portfolio/commit/9bc73601129f1a17bc86656ce13a830cce6e975a))
+* get in touch link add ([de1f41e](https://github.com/vikash2806/vikash2806_Portfolio/commit/de1f41e205606da011c7fd20ad6c73dc4243c3b5))
+* google site verification add ([394e4b1](https://github.com/vikash2806/vikash2806_Portfolio/commit/394e4b19db25ef6aa10d9e3bd1526a440d4a9155))
+* google site verification file add ([5dbf94e](https://github.com/vikash2806/vikash2806_Portfolio/commit/5dbf94e05376dbdd85a54d838fd5c0594246b68e))
+* google verification meta tag add ([e2ecfcb](https://github.com/vikash2806/vikash2806_Portfolio/commit/e2ecfcbf614e0afcdefe4ff719591952bec293e8))
+* iconmoon font icons add ([a9970c4](https://github.com/vikash2806/vikash2806_Portfolio/commit/a9970c468c7f99824c2774ce873852ad59e777cf))
+* lang icons add ([8759d2d](https://github.com/vikash2806/vikash2806_Portfolio/commit/8759d2d53a89bffdfc18edfd520411cc83d0f0ff))
+* meta keyword add ([58a8f35](https://github.com/vikash2806/vikash2806_Portfolio/commit/58a8f35b141e1f20fb97789e248fed1bdd8b6c31))
+* meta tag add ([9548519](https://github.com/vikash2806/vikash2806_Portfolio/commit/9548519a717135720c6db10d972b9719818ec4b9))
+* page launch init ([fabb00c](https://github.com/vikash2806/vikash2806_Portfolio/commit/fabb00c6132bec3bd6660fac87f65b451e663b92))
+* perfomance increase ([bc23da3](https://github.com/vikash2806/vikash2806_Portfolio/commit/bc23da35511cddc70854a3d8b499bd8f3e535907))
+* perfomance increase ([8df49a8](https://github.com/vikash2806/vikash2806_Portfolio/commit/8df49a8131afca91845cf9ec6a318ea16876e87e))
+* perfomance update ([0824177](https://github.com/vikash2806/vikash2806_Portfolio/commit/08241771a5a7ac582c569053b4dee98fd69d1822))
+* perfomance update ([df65843](https://github.com/vikash2806/vikash2806_Portfolio/commit/df6584381096cd373deacf5664f4191b55f57cbd))
+* perfomance update ([c1da50f](https://github.com/vikash2806/vikash2806_Portfolio/commit/c1da50fb72bac011a89ca3b9b6ac0a9f2285dc51))
+* Quicksand font add ([4e11062](https://github.com/vikash2806/vikash2806_Portfolio/commit/4e110628f85f8fa7a54ef131cfea6c8a03dc1822))
+* Resume file add, downlad cv ([1a58b34](https://github.com/vikash2806/vikash2806_Portfolio/commit/1a58b341668e18725822fd90f45bce0003f01a56))
+* social icon  add in get in touch ([395f144](https://github.com/vikash2806/vikash2806_Portfolio/commit/395f14484502ae3111aaa33aa7ff22bfce8bf737))
+* social media section add in mobile ([e5669ad](https://github.com/vikash2806/vikash2806_Portfolio/commit/e5669ad9aa39f1382360a5ded9bd1e6433728f5b))
+* test deployment ([6eb6b7e](https://github.com/vikash2806/vikash2806_Portfolio/commit/6eb6b7e207905cffbf3b850bbc08769467e80d1a))
+* test update ([e844996](https://github.com/vikash2806/vikash2806_Portfolio/commit/e84499699a51ee60ab9824e7a32fc2a77b3722ef))
+* whatsup number link update ([514b271](https://github.com/vikash2806/vikash2806_Portfolio/commit/514b27185682162d5413edfec87c504d11ecad3b))
+
+
+### Bug Fixes
+
+* bug update ([6633ce7](https://github.com/vikash2806/vikash2806_Portfolio/commit/6633ce72e25fe4f07d1a479fcfc1f9d7fec4dd8b))
+* certificate overflow width ([a44cee5](https://github.com/vikash2806/vikash2806_Portfolio/commit/a44cee58c67f915016918f7398bab07ea1aa3adf))
+* firebase remove ([1dd9fcb](https://github.com/vikash2806/vikash2806_Portfolio/commit/1dd9fcbd9c5fcc2b379856e530a7b0eb93c51aef))
+* footer update ([d8be5e3](https://github.com/vikash2806/vikash2806_Portfolio/commit/d8be5e3138c60e7294c8353af56a9a227d75db8f))
+* main id update ([2e61f3a](https://github.com/vikash2806/vikash2806_Portfolio/commit/2e61f3a8722d8025409d6bd81e37d33d588d043a))
+* pakage json update ([8ee21af](https://github.com/vikash2806/vikash2806_Portfolio/commit/8ee21af6fd17e7f5c5e4fcd98e9b82445ce174d5))
+* social icon, about btns ([1f87712](https://github.com/vikash2806/vikash2806_Portfolio/commit/1f8771215d4f0bd6b612ca748341a37c931c55d3))
+* social media icon update1 ([babe057](https://github.com/vikash2806/vikash2806_Portfolio/commit/babe057dac14da3bf00b1b32a204beb23a58295d))
+* test run deployment ([1cf2d01](https://github.com/vikash2806/vikash2806_Portfolio/commit/1cf2d01ef4fc3346aed2bc1fecd4705a5951231e))
+* unused tag ([0727c40](https://github.com/vikash2806/vikash2806_Portfolio/commit/0727c40b21bb11c33a35f6a6eee52088a9079340))
+
 ### [1.2.3](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.2...v1.2.3) (2022-03-03)
 
 

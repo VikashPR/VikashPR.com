@@ -30,7 +30,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -1154,9 +1155,9 @@ footer .footer-bottom .heart {
 }
 
 .about-container .about-right .avatar-card img {
-  width: 350px;
-  height: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width)/attr(height);
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -1672,8 +1673,9 @@ footer .footer-bottom .heart {
 
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-img img {
   max-width: 100%;
-  width: 400px;
-  max-height: 255px;
+  /* or max-width: 100%; */
+  height: auto;
+  aspect-ratio: attr(width)/attr(height);
   height: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

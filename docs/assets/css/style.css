@@ -847,6 +847,14 @@ footer .footer-bottom .heart {
   color: var(--primaryColor);
 }
 
+.intro-wrapper .home-left .heading {
+  font-size: 2rem;
+}
+
+.intro-wrapper .home-left .heading::after {
+  top: 20px;
+}
+
 .intro-wrapper .home-left .overflow {
   overflow: hidden;
 }
@@ -856,7 +864,7 @@ footer .footer-bottom .heart {
 }
 
 .intro-wrapper .home-left h2 {
-  font-size: 4rem;
+  font-size: 1.8rem;
   -webkit-animation: drop-in 1.5s ease 600ms backwards;
           animation: drop-in 1.5s ease 600ms backwards;
 }

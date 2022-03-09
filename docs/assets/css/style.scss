@@ -872,7 +872,12 @@ footer .footer-bottom {
         flex-direction: column;
         justify-content: center;
         color: var(--primaryColor);
-
+        .heading{
+            font-size:2rem;
+        }
+        .heading::after{
+            top:20px;
+        }
         .overflow {
             overflow: hidden;
         }
@@ -882,7 +887,7 @@ footer .footer-bottom {
         }
 
         h2 {
-            font-size: 4rem;
+            font-size: 1.8rem;
             animation: drop-in 1.5s ease 600ms backwards;
         }
 

@@ -1155,8 +1155,6 @@ footer .footer-bottom .heart {
 }
 
 .about-container .about-right .avatar-card img {
-  width: 100%;
-  height: auto;
   aspect-ratio: attr(width)/attr(height);
   border-bottom-right-radius: 40px;
   border-top-right-radius: 40px;

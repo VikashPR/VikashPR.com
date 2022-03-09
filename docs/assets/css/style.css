@@ -136,7 +136,7 @@
   --tagFirebaseBg: #ffcb2b;
   --tagFirebaseColor: #12181a;
   --tagCssBg: #f954be;
-  --tagCssColor: #313244;
+  --tagCssColor: #2c2b2b;
   --tagVuejsBg: #41b883;
   --tagVuejsColor: #36495e;
   --tagGoogleMapBg: #33a668;
@@ -154,7 +154,7 @@
   --tagMarkdownBg: rgb(0, 0, 0);
   --tagMarkdownColor: #ffffff;
   --tagGithubactionBg: #167bff;
-  --tagGithubactionColor: #dee6eb;
+  --tagGithubactionColor: #141414;
 }
 
 * {
@@ -855,7 +855,7 @@ footer .footer-bottom .heart {
   overflow-y: hidden;
 }
 
-.intro-wrapper .home-left h1 {
+.intro-wrapper .home-left h2 {
   font-size: 4rem;
   -webkit-animation: drop-in 1.5s ease 600ms backwards;
           animation: drop-in 1.5s ease 600ms backwards;

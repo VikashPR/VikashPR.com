@@ -128,14 +128,14 @@
     --bgSecondary: #182038;
     --primaryColor: #fff;
     --secondaryColor: #9ca9c9;
-    --infoColor: #ef4782;
+    --infoColor: #ef4782; 
     --infoColor2: #f50a5c;
     --tagJsBg: #f0db50;
     --tagJsColor: #000000;
     --tagFirebaseBg: #ffcb2b;
     --tagFirebaseColor: #12181a;
     --tagCssBg: #f954be;
-    --tagCssColor: #313244;
+    --tagCssColor: #2c2b2b;
     --tagVuejsBg: #41b883;
     --tagVuejsColor: #36495e;
     --tagGoogleMapBg: #33a668;
@@ -153,7 +153,7 @@
     --tagMarkdownBg: rgb(0, 0, 0);
     --tagMarkdownColor: #ffffff;
     --tagGithubactionBg: #167bff;
-    --tagGithubactionColor: #dee6eb;
+    --tagGithubactionColor: #141414;
 }
 
 * {
@@ -881,7 +881,7 @@ footer .footer-bottom {
             overflow-y: hidden;
         }
 
-        h1 {
+        h2 {
             font-size: 4rem;
             animation: drop-in 1.5s ease 600ms backwards;
         }

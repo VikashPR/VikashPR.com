@@ -2242,7 +2242,7 @@ footer .footer-bottom .heart {
     max-width: 300px;
   }
   .intro-wrapper .home-right .swing img {
-    width: 100%;
+    aspect-ratio: attr(width)/attr(height);
   }
   .intro-wrapper .home-left {
     margin-left: 0;

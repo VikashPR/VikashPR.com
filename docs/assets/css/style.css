@@ -1672,6 +1672,9 @@ footer .footer-bottom .heart {
 
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-img img {
   max-width: 100%;
+  width: 400px;
+  max-height: 255px;
+  height: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }

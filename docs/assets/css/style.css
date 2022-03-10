@@ -1707,10 +1707,7 @@ footer .footer-bottom .heart {
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-img .project-details .details-title {
   font-family: Cubano;
   color: var(--primaryColor);
-}
-
-.portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-img .project-details .details-subtitle {
-  color: var(--secondaryColor);
+  font-size: 1.6rem;
 }
 
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-img .project-details ul {
@@ -1746,7 +1743,7 @@ footer .footer-bottom .heart {
 }
 
 .portfolio-container .portfolio-wrapper .portfolio-gallery .card .card-content .card-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--primaryColor);
   margin-block: 10px;
   font-family: Cubano;

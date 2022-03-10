@@ -1554,12 +1554,8 @@ footer .footer-bottom {
                         .details-title {
                             font-family: Cubano;
                             color: var(--primaryColor);
+                            font-size: 1.6rem;
                         }
-
-                        .details-subtitle {
-                            color: var(--secondaryColor);
-                        }
-
                         ul {
                             display: flex;
 
@@ -1586,7 +1582,7 @@ footer .footer-bottom {
                     padding: 20px;
 
                     .card-title {
-                        font-size: 1.6rem;
+                        font-size: 1.4rem;
                         color: var(--primaryColor);
                         margin-block: 10px;
                         font-family: Cubano;

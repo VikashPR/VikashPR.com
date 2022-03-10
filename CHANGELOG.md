@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.3.0...v1.3.1) (2022-03-10)
+
+
+### Bug Fixes
+
+* avatar2 made reponsive ([06e6bc0](https://github.com/vikash2806/vikash2806_Portfolio/commit/06e6bc01e378e6b71d5e68b93e2d8e0aeb9e8511))
+
 ## [1.3.0](https://github.com/vikash2806/vikash2806_Portfolio/compare/v1.2.3...v1.3.0) (2022-03-08)
 
 

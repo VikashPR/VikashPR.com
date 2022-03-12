@@ -69,28 +69,40 @@ This website is Open Source. Feel free to use this public template.
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-What things you need to install the software and how to install them.
+
+Fork the [repository](https://github.com/VikashPR/VikashPR.com) and clone it to your local machine.
+
+#### Clone the project
 
 ```
-Give examples
+git clone https://github.com/VikashPR/VikashPR.com.git
 ```
 
 ### Installing
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
-
 ```
-Give the example
+npm install
 ```
 
-And repeat
+And compile the Sass file in the `docs/assets/css/style.scss` directory using [LiveSass](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) Extension.
 
-```
-until finished
-```
+Open command pallet
 
-End with an example of getting some data out of the system or using it for a little demo.
+``Mac OS: ⌘ + ⇧ + P``
+
+``Windows: Ctrl + P``
+
+### Setup
+
+Fork the [repository](
+ and type `Live Sass: Watch Sass` to watch and compile the sass file.
+
+
+
+Preview the project in the browser with live server.
+
+Open the project in the browser.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
@@ -108,7 +120,8 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
+## 🚀 Deployment <a name = "deployment"></a>
+These instructions will get you a copy of the project up and running on a live system using firebase Hosting.
 ## 🎈 Usage <a name="usage"></a>
 Add notes about how to use the system.
 

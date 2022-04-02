@@ -1556,6 +1556,7 @@ footer .footer-bottom {
                             color: var(--primaryColor);
                             font-size: 1.6rem;
                         }
+
                         ul {
                             display: flex;
 
@@ -1813,6 +1814,18 @@ footer .footer-bottom {
             opacity: 1;
             pointer-events: all;
         }
+    }
+}
+
+// Chennai Hacks Certificate preview
+.pdf-home{
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    #pdf-render{
+        width:600px;
+        max-width:100%;
     }
 }
 

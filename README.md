@@ -104,7 +104,7 @@ Preview the project in the browser with live server.
 
 Open the project in the browser.
 
-## 🔧 Running the tests <a name = "tests"></a>
+<!-- ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
 
 ### Break down into end to end tests
@@ -118,9 +118,9 @@ Give an example
 Explain what these tests test and why
 
 ```
-Give an example
-```
-## 🚀 Deployment <a name = "deployment"></a>
+Give an example 
+```-->
+<!-- ## 🚀 Deployment <a name = "deployment"></a>
 These instructions will get you a copy of the project up and running on a live system using firebase Hosting.
 ## 🎈 Usage <a name="usage"></a>
 Add notes about how to use the system.
@@ -143,3 +143,4 @@ See also the list of [contributors](https://github.com/kylelobo/The-Documentatio
 - Hat tip to anyone whose code was used
 - Inspiration
 - References
+ -->

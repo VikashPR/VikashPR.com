@@ -1309,6 +1309,44 @@ footer .footer-bottom {
     }
 }
 
+// Achievements Section
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+
+    .achievements-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px;
+
+        .achievements-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-block: 10px;
+
+            h3 {
+                font-size: 1.6rem;
+                color: var(--primaryColor);
+                margin-block: 10px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                color: var(--secondaryColor);
+                margin-block: 10px;
+            }
+            .previewCertificate-btn{
+                i{
+                    color: #00e472;
+                }
+            }
+        }
+    }
+}
+
 // NOTE Contact Section
 .contact-container {
     display: flex;

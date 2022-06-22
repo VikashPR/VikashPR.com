@@ -1136,6 +1136,9 @@ footer .footer-bottom .heart {
   color: var(--secondaryColor);
   margin-block: 10px;
 }
+.achievements-container .achievements-wrapper .achievements-left .previewCertificate-btn {
+  margin-block: 10px;
+}
 .achievements-container .achievements-wrapper .achievements-left .previewCertificate-btn i {
   color: #00e472;
 }
@@ -1896,6 +1899,22 @@ footer .footer-bottom .heart {
   .skill-container .skill-wrapper .skill-right .tech-card:hover .toolTip {
     visibility: visible;
     opacity: 1;
+  }
+
+  .achievements-container {
+    padding-top: 50px;
+  }
+  .achievements-container .achievements-wrapper {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .achievements-container .achievements-wrapper .achievements-left {
+    width: 100%;
+    margin-block: 10px;
+    text-align: center;
+  }
+  .achievements-container .achievements-wrapper .achievements-left .previewCertificate-btn {
+    margin: auto;
   }
 
   .contact-container {

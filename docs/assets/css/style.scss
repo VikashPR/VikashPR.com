@@ -1339,6 +1339,7 @@ footer .footer-bottom {
                 margin-block: 10px;
             }
             .previewCertificate-btn{
+                margin-block:10px;
                 i{
                     color: #00e472;
                 }
@@ -2233,6 +2234,24 @@ footer .footer-bottom {
                         visibility: visible;
                         opacity: 1;
                     }
+                }
+            }
+        }
+    }
+    // Achievements 
+    .achievements-container {
+        padding-top: 50px;
+
+        .achievements-wrapper {
+            flex-direction: column;
+            margin-top: 10px;
+
+            .achievements-left {
+                width: 100%;
+                margin-block: 10px;
+                text-align: center;
+                .previewCertificate-btn{
+                    margin: auto;
                 }
             }
         }

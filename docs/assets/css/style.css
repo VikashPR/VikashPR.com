@@ -1667,11 +1667,9 @@ footer .footer-bottom .heart {
   html {
     font-size: 12px;
   }
-
   .scroll-down header {
     transform: initial;
   }
-
   .scroll-up header {
     filter: initial;
     backdrop-filter: initial;
@@ -1681,14 +1679,12 @@ footer .footer-bottom .heart {
     border-bottom-right-radius: 12px;
     border: initial;
   }
-
   .menu-is-open {
     overflow: initial;
   }
   .menu-is-open header {
     filter: initial;
   }
-
   .menu {
     display: flex;
     position: fixed;
@@ -1697,15 +1693,12 @@ footer .footer-bottom .heart {
     z-index: 999;
     transition: all 0.2s ease;
   }
-
   .fl-fl {
     display: none;
   }
-
   header {
     position: absolute;
   }
-
   header .nav-links {
     backdrop-filter: blur(4px) saturate(180%);
     -webkit-backdrop-filter: blur(4px) saturate(180%);
@@ -1721,29 +1714,23 @@ footer .footer-bottom .heart {
     transform: translateX(100%);
     transition: transform 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
-
   header .nav-links[data-visible=true] {
     transform: translateX(0);
   }
-
   .footer-nav {
     flex-direction: column;
     justify-content: space-around;
   }
-
   .footer-nav .nav-links {
     width: 90%;
   }
-
   .title {
     position: relative;
     margin-left: 80px;
   }
-
   .heading {
     top: -20px;
   }
-
   .heading::after {
     content: "";
     position: absolute;
@@ -1755,7 +1742,6 @@ footer .footer-bottom .heart {
     transform-origin: left;
     border-radius: 5px;
   }
-
   .btn {
     max-width: 90%;
     width: 160px;
@@ -1766,11 +1752,9 @@ footer .footer-bottom .heart {
   .btn i {
     margin-inline: 5px;
   }
-
   .home-container #scroll-down-animation {
     display: none;
   }
-
   .intro-wrapper {
     flex-direction: column-reverse;
     height: 80%;
@@ -1805,7 +1789,6 @@ footer .footer-bottom .heart {
   .intro-wrapper .home-left .heading::after {
     display: none;
   }
-
   .about-container {
     padding-top: 50px;
   }
@@ -1837,7 +1820,6 @@ footer .footer-bottom .heart {
     top: 30px;
     left: 10px;
   }
-
   .skill-container {
     padding-top: 50px;
   }
@@ -1900,7 +1882,6 @@ footer .footer-bottom .heart {
     visibility: visible;
     opacity: 1;
   }
-
   .achievements-container {
     padding-top: 50px;
   }
@@ -1916,7 +1897,6 @@ footer .footer-bottom .heart {
   .achievements-container .achievements-wrapper .achievements-left .previewCertificate-btn {
     margin: auto;
   }
-
   .contact-container {
     padding-top: 50px;
   }
@@ -1944,7 +1924,6 @@ footer .footer-bottom .heart {
     max-width: 120px;
     align-self: flex-end;
   }
-
   .portfolio-container {
     flex-direction: column;
     padding-top: 50px;
@@ -1958,7 +1937,6 @@ footer .footer-bottom .heart {
   .portfolio-container .portfolio-wrapper .portfolio-filter p {
     width: 100%;
   }
-
   .education-container {
     padding-top: 50px;
   }

@@ -34,17 +34,17 @@
     <section class="pdf-home">
         <canvas id="pdf-render"></canvas>
     </section>
-    
-    
+
+
 </body>
 <script src="./assets/js/chScript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.1.266/build/pdf.min.js"></script>
 
 <script>
     const url = "../assets/files/ChennaiHacksCertificate.pdf"
-    let pdfDoc = null,pageIsRendering = false;
+        let pdfDoc = null, pageIsRendering = false;
 
-    const scale = 1,canvas = document.querySelector('#pdf-render'),ctx = canvas.getContext("2d");
+        const scale = 1, canvas = document.querySelector('#pdf-render'), ctx = canvas.getContext("2d");
 
     // Render page
     const renderPage = num => {
@@ -55,16 +55,16 @@
             canvas.width = viewport.width
 
             const renderCtx = {
-                canvasContext : ctx,
+                canvasContext: ctx,
                 viewport
             }
-            page.render(renderCtx).promise.then(() =>{
+            page.render(renderCtx).promise.then(() => {
                 pageIsRendering = false;
             });
         });
     }
 
-    pdfjsLib.getDocument(url).promise.then(pdfDoc_ =>{
+        pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
         pdfDoc = pdfDoc_
         renderPage(1)
     });
@@ -74,7 +74,7 @@
     //     div.appendChild(document.createTextNode(err.message))
     //     document.querySelector('body').insertBefore(div,canvas)
     // })
-    
+
 </script>
 
 </html>

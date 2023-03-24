@@ -1,5 +1,13 @@
 import * as React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+import Layout from "../components/Layout";
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+    </Layout>
+  );
+};
+
+export default IndexPage;

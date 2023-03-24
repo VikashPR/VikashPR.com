@@ -1,0 +1,9 @@
+.heading {
+    color: red;
+    font-size: 3rem;
+
+    // Hover color change
+    &:hover {
+        color: blue;
+    }
+}

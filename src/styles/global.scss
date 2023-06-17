@@ -1,3 +1,12 @@
+:root {
+    --bgPrimary: #0e1630;
+    --bgSecondary: #182038;
+    --primaryColor: #fff;
+    --secondaryColor: #9ca9c9;
+    --infoColor: #ef4782;
+    --infoColor2: #f50a5c;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,5 +14,6 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: var(--bgPrimary) ;
+    color: var(--primaryColor);
 }

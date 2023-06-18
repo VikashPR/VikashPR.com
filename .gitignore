@@ -67,3 +67,6 @@ node_modules/
 
 # Zshrc
 .Zshrc
+
+# Cache
+.cache

@@ -1502,8 +1502,8 @@ footer .footer-bottom .heart {
   flex-direction: column;
 }
 .gallery-container .gallery-wrapper {
-  -moz-columns: 5 250px;
-       columns: 5 250px;
+  -moz-columns: 5 240px;
+       columns: 5 240px;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
   width: 90%;

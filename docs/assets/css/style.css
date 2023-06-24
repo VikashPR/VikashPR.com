@@ -1038,8 +1038,8 @@ footer .footer-bottom .heart {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
   margin: 50px;
+  flex-direction: column;
 }
 .achievements-container .achievements-wrapper .achievements-left {
   display: flex;

@@ -1508,6 +1508,53 @@ footer .footer-bottom {
     }
 }
 
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+
+    .gallery-wrapper {
+        columns: 5 240px;
+        column-gap: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        div {
+            width: 150px;
+            margin: 0 1.5rem 1.5rem 0;
+            display: inline-block;
+            width: 100%;
+            border: solid 2px black;
+            padding: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        div:hover img {
+            filter: grayscale(0);
+        }
+
+        div:hover {
+            border-color: var(--infoColor);
+        }
+
+        div img {
+            width: 100%;
+            filter: grayscale(100%);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        div p {
+            margin: 5px 0;
+            padding: 0;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+}
+
 // NOTE Education Section
 .education-container {
     display: flex;
@@ -1707,53 +1754,6 @@ footer .footer-bottom {
             opacity: 1;
             pointer-events: all;
         }
-    }
-}
-
-// Gallery section
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-
-    .gallery-wrapper {
-        columns: 5 240px;
-        column-gap: 1.5rem;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 100px;
-
-        div {
-            width: 150px;
-            margin: 0 1.5rem 1.5rem 0;
-            display: inline-block;
-            width: 100%;
-            border: solid 2px black;
-            padding: 5px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            transition: all 0.25s ease-in-out;
-        }
-                div:hover img {
-                    filter: grayscale(0);
-                }
-        
-                div:hover {
-                    border-color: var(--infoColor);
-                }
-        
-                div img {
-                    width: 100%;
-                    filter: grayscale(100%);
-                    border-radius: 5px;
-                    transition: all 0.25s ease-in-out;
-                }
-        
-                div p {
-                    margin: 5px 0;
-                    padding: 0;
-                    text-align: center;
-                    font-style: italic;
-                }
     }
 }
 

@@ -1190,9 +1190,11 @@ footer .footer-bottom {
                 color: var(--secondaryColor);
                 margin-block: 10px;
             }
-            .previewCertificate-btn{
-                margin-block:10px;
-                i{
+
+            .previewCertificate-btn {
+                margin-block: 10px;
+
+                i {
                     color: #00e472;
                 }
             }
@@ -1708,15 +1710,63 @@ footer .footer-bottom {
     }
 }
 
+// Gallery section
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+
+    .gallery-wrapper {
+        columns: 5 250px;
+        column-gap: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        div {
+            width: 150px;
+            margin: 0 1.5rem 1.5rem 0;
+            display: inline-block;
+            width: 100%;
+            border: solid 2px black;
+            padding: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+                div:hover img {
+                    filter: grayscale(0);
+                }
+        
+                div:hover {
+                    border-color: var(--infoColor);
+                }
+        
+                div img {
+                    width: 100%;
+                    filter: grayscale(100%);
+                    border-radius: 5px;
+                    transition: all 0.25s ease-in-out;
+                }
+        
+                div p {
+                    margin: 5px 0;
+                    padding: 0;
+                    text-align: center;
+                    font-style: italic;
+                }
+    }
+}
+
 // Chennai Hacks Certificate preview
-.pdf-home{
-    margin-top:100px;
-    display:flex;
+.pdf-home {
+    margin-top: 100px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    #pdf-render{
-        width:600px;
-        max-width:100%;
+
+    #pdf-render {
+        width: 600px;
+        max-width: 100%;
     }
 }
 
@@ -2090,6 +2140,7 @@ footer .footer-bottom {
             }
         }
     }
+
     // Achievements 
     .achievements-container {
         padding-top: 50px;
@@ -2102,7 +2153,8 @@ footer .footer-bottom {
                 width: 100%;
                 margin-block: 10px;
                 text-align: center;
-                .previewCertificate-btn{
+
+                .previewCertificate-btn {
                     margin: auto;
                 }
             }

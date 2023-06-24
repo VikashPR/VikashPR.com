@@ -1497,6 +1497,49 @@ footer .footer-bottom .heart {
   pointer-events: all;
 }
 
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-container .gallery-wrapper {
+  -moz-columns: 5 250px;
+       columns: 5 250px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.gallery-container .gallery-wrapper div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery-container .gallery-wrapper div:hover img {
+  filter: grayscale(0);
+}
+.gallery-container .gallery-wrapper div:hover {
+  border-color: var(--infoColor);
+}
+.gallery-container .gallery-wrapper div img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery-container .gallery-wrapper div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+}
+
 .pdf-home {
   margin-top: 100px;
   display: flex;

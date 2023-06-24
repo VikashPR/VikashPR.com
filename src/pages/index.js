@@ -1,5 +1,6 @@
 import * as React from "react"
-import "../styles/global.scss";
+import "../scss/styles.scss"
+
 import Layout from "../components/Layout";
 
 // Import sections

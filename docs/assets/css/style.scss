@@ -1167,8 +1167,9 @@ footer .footer-bottom {
 
     .achievements-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        flex-direction: column;
         margin: 50px;
 
         .achievements-left {

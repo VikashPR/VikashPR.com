@@ -163,12 +163,14 @@
   --tagTableauColor: #000000;
   --tagNextjsBg: #000000;
   --tagNextjsColor: #ffffff;
-  --tagReactBg: #61dbfb;
-  --tagReactColor: #000000;
+  --tagReactjsBg: #61dbfb;
+  --tagReactjsColor: #000000;
   --tagVueBg: #41b883;
   --tagVueColor: #ffffff;
   --tagJsonBg: #f0db50;
   --tagJsonColor: #000000;
+  --tagScssBg: #c6538c;
+  --tagScssColor: #ffffff;
 }
 
 * {
@@ -342,9 +344,9 @@ li {
   color: var(--tagNextjsColor);
 }
 
-.tag-react {
-  background: var(--tagReactBg);
-  color: var(--tagReactColor);
+.tag-reactjs {
+  background: var(--tagReactjsBg);
+  color: var(--tagReactjsColor);
 }
 
 .tag-nodejs {
@@ -365,6 +367,11 @@ li {
 .tag-json {
   background: var(--tagJsonBg);
   color: var(--tagJsonColor);
+}
+
+.tag-scss {
+  background: var(--tagScssBg);
+  color: var(--tagScssColor);
 }
 
 .dots {

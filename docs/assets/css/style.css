@@ -153,6 +153,22 @@
   --tagMarkdownColor: #ffffff;
   --tagGithubactionBg: #167bff;
   --tagGithubactionColor: #141414;
+  --tagD3jsBg: #f9a03c;
+  --tagD3jsColor: #000000;
+  --tagNodejsBg: #3c873a;
+  --tagNodejsColor: #ffffff;
+  --tagPythonBg: #306998;
+  --tagPythonColor: #ffffff;
+  --tagTableauBg: #f5b044;
+  --tagTableauColor: #000000;
+  --tagNextjsBg: #000000;
+  --tagNextjsColor: #ffffff;
+  --tagReactBg: #61dbfb;
+  --tagReactColor: #000000;
+  --tagVueBg: #41b883;
+  --tagVueColor: #ffffff;
+  --tagJsonBg: #f0db50;
+  --tagJsonColor: #000000;
 }
 
 * {
@@ -309,6 +325,46 @@ li {
 .tag-githubaction {
   background: var(--tagGithubactionBg);
   color: var(--tagGithubactionColor);
+}
+
+.tag-d3js {
+  background: var(--tagD3jsBg);
+  color: var(--tagD3jsColor);
+}
+
+.tag-python {
+  background: var(--tagPythonBg);
+  color: var(--tagPythonColor);
+}
+
+.tag-nextjs {
+  background: var(--tagNextjsBg);
+  color: var(--tagNextjsColor);
+}
+
+.tag-react {
+  background: var(--tagReactBg);
+  color: var(--tagReactColor);
+}
+
+.tag-nodejs {
+  background: var(--tagNodejsBg);
+  color: var(--tagNodejsColor);
+}
+
+.tag-vuejs {
+  background: var(--tagVuejsBg);
+  color: var(--tagVuejsColor);
+}
+
+.tag-tableau {
+  background: var(--tagTableauBg);
+  color: var(--tagTableauColor);
+}
+
+.tag-json {
+  background: var(--tagJsonBg);
+  color: var(--tagJsonColor);
 }
 
 .dots {

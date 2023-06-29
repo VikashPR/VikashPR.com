@@ -144,8 +144,6 @@
     --tagFirebaseColor: #12181a;
     --tagCssBg: #f954be;
     --tagCssColor: #2c2b2b;
-    --tagVuejsBg: #41b883;
-    --tagVuejsColor: #36495e;
     --tagGoogleMapBg: #33a668;
     --tagGoogleMapColor: #f8d844;
     --tagDiscordjsBg: #020f08;
@@ -164,7 +162,7 @@
     --tagGithubactionColor: #141414;
     --tagD3jsBg: #f9a03c;
     --tagD3jsColor: #000000;
-    --tagNodejsBg: #3c873a;
+    --tagNodejsBg: #2D642B;
     --tagNodejsColor: #ffffff;
     --tagPythonBg: #306998;
     --tagPythonColor: #ffffff;
@@ -174,12 +172,12 @@
     --tagNextjsColor: #ffffff;
     --tagReactjsBg: #61dbfb;
     --tagReactjsColor: #000000;
-    --tagVueBg: #41b883;
+    --tagVueBg: #336B52;
     --tagVueColor: #ffffff;
     --tagJsonBg: #f0db50;
     --tagJsonColor: #000000;
-    --tagScssBg: #c6538c;
-    --tagScssColor: #ffffff;
+    --tagScssBg: #D78EB7;
+    --tagScssColor: #000000;
 }
 
 * {
@@ -306,11 +304,6 @@ li {
     color: var(--tagHtmlColor);
 }
 
-.tag-vuejs {
-    background: var(--tagVuejsBg);
-    color: var(--tagVuejsColor);
-}
-
 .tag-css {
     background: var(--tagCssBg);
     color: var(--tagCssColor);
@@ -367,8 +360,8 @@ li {
 }
 
 .tag-vuejs {
-    background: var(--tagVuejsBg);
-    color: var(--tagVuejsColor);
+    background: var(--tagVueBg);
+    color: var(--tagVueColor);
 }
 
 .tag-tableau {

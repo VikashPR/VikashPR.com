@@ -897,7 +897,7 @@ footer .footer-bottom {
             width: 90%;
             max-width: 400px;
             transform: rotate(2deg);
-            animation: swing ease-in-out 2s infinite alternate;
+            // animation: swing ease-in-out 2s infinite alternate;
         }
 
         .swing img {
@@ -934,17 +934,6 @@ footer .footer-bottom {
             border-radius: 50%;
             background: rgb(248, 248, 248);
         }
-
-        @keyframes swing {
-            0% {
-                transform: rotate(2deg);
-            }
-
-            100% {
-                transform: rotate(-2deg);
-            }
-        }
-
     }
 }
 

@@ -824,7 +824,6 @@ footer .footer-bottom .heart {
   width: 90%;
   max-width: 400px;
   transform: rotate(2deg);
-  animation: swing ease-in-out 2s infinite alternate;
 }
 .intro-wrapper .home-right .swing img {
   border: 5px solid #f8f8f8;
@@ -856,14 +855,6 @@ footer .footer-bottom .heart {
   z-index: 5;
   border-radius: 50%;
   background: rgb(248, 248, 248);
-}
-@keyframes swing {
-  0% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
 }
 
 .scrollToTopBtn {

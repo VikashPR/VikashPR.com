@@ -1011,11 +1011,10 @@ footer .footer-bottom .heart {
   margin-top: 100px;
 }
 .gallery-container .gallery-wrapper div {
-  width: 150px;
   margin: 0 1.5rem 1.5rem 0;
   display: inline-block;
   width: 100%;
-  border: solid 2px rgb(109, 107, 107);
+  border: solid 2px rgb(0, 0, 0);
   padding: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -1029,6 +1028,9 @@ footer .footer-bottom .heart {
 }
 .gallery-container .gallery-wrapper div img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: grayscale(100%);
   border-radius: 5px;
   transition: all 0.25s ease-in-out;

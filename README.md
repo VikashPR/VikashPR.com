@@ -70,4 +70,3 @@ Open command pallet
 ``Mac OS: ⌘ + ⇧ + P``
 
 ``Windows: Ctrl + P``
-

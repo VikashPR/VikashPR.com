@@ -70,3 +70,8 @@ Open command pallet
 ``Mac OS: ⌘ + ⇧ + P``
 
 ``Windows: Ctrl + P``
+
+``Linux: Ctrl + P``
+
+Type `Live Sass: Watch Sass` and press `Enter`.
+

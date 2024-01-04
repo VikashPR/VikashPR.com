@@ -946,6 +946,7 @@ footer .footer-bottom {
     font-size: 1.3rem;
     line-height: 48px;
     width: 48px;
+    display: none;
 
     /* place it at the bottom right corner */
     position: fixed;
@@ -953,17 +954,37 @@ footer .footer-bottom {
     right: 20px;
     /* keep it at the top of everything else */
     z-index: 100;
-    /* hide with opacity */
-    opacity: 0;
-    /* also add a translate effect */
-    transform: translateY(100px);
-    /* and a transition */
-    transition: all 0.5s ease;
-}
+    // animation: all 0.5s ease;
+    animation: up 1.5s infinite;
+    -webkit-animation: up 1.5s infinite;
 
-.showBtn {
-    opacity: 1;
-    transform: translateY(0);
+    @keyframes up {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translateY(-15px);
+        }
+
+        40% {
+            transform: translate(0);
+        }
+    }
+
+    @-webkit-keyframes up {
+        0% {
+            transform: translate(0);
+        }
+
+        20% {
+            transform: translateY(-15px);
+        }
+
+        40% {
+            transform: translate(0);
+        }
+    }
 }
 
 .scroll-down-button {
@@ -1014,11 +1035,6 @@ footer .footer-bottom {
     }
 
 }
-
-.hide-scroll-down {
-    opacity: 0;
-}
-
 
 .about-container {
     width: 100%;

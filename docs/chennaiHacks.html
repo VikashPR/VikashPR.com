@@ -43,7 +43,6 @@
 
         const scale = 1, canvas = document.querySelector('#pdf-render'), ctx = canvas.getContext("2d");
 
-    // Render page
     const renderPage = num => {
         pageIsRendering = true;
         pdfDoc.getPage(num).then(page => {

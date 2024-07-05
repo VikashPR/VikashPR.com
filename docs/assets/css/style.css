@@ -911,7 +911,7 @@ footer .footer-bottom .heart {
   border-top-left-radius: 40px;
 }
 .about-container .about-right::before {
-  content: "yes, its me";
+  content: "VIKASH PR";
   text-transform: capitalize;
   position: absolute;
   left: -60px;

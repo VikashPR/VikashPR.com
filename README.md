@@ -74,4 +74,3 @@ Open command pallet
 ``Linux: Ctrl + P``
 
 Type `Live Sass: Watch Sass` and press `Enter`.
-

@@ -59,13 +59,13 @@ export default function Hero() {
               transition={{ duration: 1, repeat: Infinity }}
             />
             <span className="text-sm font-medium text-muted-foreground">
-              Pioneering at the intersection of technology and human potential
+              Doer With Thinker's Mind
             </span>
           </div>
 
           <h1 className="mb-6 font-sans">
             <span className="mb-4 block fluid-text-lg font-light uppercase tracking-wider text-muted-foreground">
-              Visionary Technologist
+              Purpose Driven 🎯 Passion Fueled 🚀
             </span>
             <span className="block fluid-text-6xl font-bold tracking-tight">
               <span className="relative inline-flex">
@@ -78,25 +78,14 @@ export default function Hero() {
 
           {/* Condensed description with bullet points */}
           <div className="mb-8 max-w-2xl">
-            <p className="fluid-text-xl font-light mb-3 text-muted-foreground">
-              Transforming technology through:
+            <p className="mb-8 max-w-2xl fluid-text-xl font-light leading-relaxed text-muted-foreground">
+              An award winning engineer dedicated to{" "}
+              <span className="text-foreground">designing</span>,{" "}
+              <span className="text-foreground">developing</span>, and{" "}
+              <span className="text-foreground">deploying (E2E)</span> digital
+              solutions that connect scientific discovery with real-world
+              impact.
             </p>
-            <ul className="space-y-2 text-lg">
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></span>
-                <span className="text-foreground">Innovative AI research</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></span>
-                <span className="text-foreground">Ethical system design</span>
-              </li>
-              <li className="flex items-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></span>
-                <span className="text-foreground">
-                  Human-centered solutions
-                </span>
-              </li>
-            </ul>
           </div>
 
           {/* Enhanced CTA Buttons with Tooltips and Micro-interactions */}
@@ -160,7 +149,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Simplified scroll indicator */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
+      <div className="absolute bottom-10 left-0 right-0 flex justify-center">
         <ScrollIndicator href="#about" label="Discover my journey" />
       </div>
     </section>

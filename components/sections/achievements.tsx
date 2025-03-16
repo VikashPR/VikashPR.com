@@ -121,7 +121,6 @@ export default function Achievements() {
           <div className="relative max-w-4xl mx-auto">
             {/* Decorative elements */}
             <div className="absolute -top-8 -left-8 w-16 h-16 rounded-full bg-primary/10 animate-pulse" />
-            <div className="absolute -bottom-8 -right-8 w-24 h-24 rounded-full bg-accent/10 animate-pulse animation-delay-2000" />
 
             <VisionCard depth="lg" interactive={false} className="p-8">
               <VisionCardContent className="text-center">

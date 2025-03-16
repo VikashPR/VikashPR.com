@@ -59,13 +59,13 @@ export default function Hero() {
               transition={{ duration: 1, repeat: Infinity }}
             />
             <span className="text-sm font-medium text-muted-foreground">
-              Doer With Thinker's Mind
+              Software Engineer @ Standard Chartered
             </span>
           </div>
 
           <h1 className="mb-6 font-sans">
             <span className="mb-4 block fluid-text-lg font-light uppercase tracking-wider text-muted-foreground">
-              Purpose Driven 🎯 Passion Fueled 🚀
+              #AI4All | #AI4Good 
             </span>
             <span className="block fluid-text-6xl font-bold tracking-tight">
               <span className="relative inline-flex">
@@ -95,7 +95,7 @@ export default function Hero() {
               onClick={() => (window.location.href = "#contact")}
             >
               <span className="relative z-10 flex items-center gap-2">
-                Connect
+                Contact My Team
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
               <motion.div

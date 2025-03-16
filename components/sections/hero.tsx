@@ -47,7 +47,10 @@ export default function Hero() {
       />
 
       {/* Main content - optimized for immediate visibility */}
-      <motion.div style={{ y: springY, opacity: springOpacity }} className="container relative z-10 mx-auto px-4 py-20">
+      <motion.div
+        style={{ y: springY, opacity: springOpacity }}
+        className="container relative z-10 mx-auto px-4 py-20"
+      >
         <div className="mx-auto max-w-5xl">
           <div className="mb-6 inline-flex items-center rounded-full border border-white/10 bg-secondary/30 px-4 py-1.5 backdrop-blur-sm">
             <span className="mr-2 h-2 w-2 rounded-full bg-primary"></span>
@@ -71,7 +74,9 @@ export default function Hero() {
 
           {/* Condensed description with bullet points */}
           <div className="mb-8 max-w-2xl">
-            <p className="fluid-text-xl font-light mb-3 text-muted-foreground">Transforming technology through:</p>
+            <p className="fluid-text-xl font-light mb-3 text-muted-foreground">
+              Transforming technology through:
+            </p>
             <ul className="space-y-2 text-lg">
               <li className="flex items-center">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></span>
@@ -83,14 +88,19 @@ export default function Hero() {
               </li>
               <li className="flex items-center">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary mr-2"></span>
-                <span className="text-foreground">Human-centered solutions</span>
+                <span className="text-foreground">
+                  Human-centered solutions
+                </span>
               </li>
             </ul>
           </div>
 
           {/* Enhanced CTA Buttons with Tooltips and Micro-interactions */}
           <div className="flex flex-wrap gap-4 relative">
-            <Button className="relative overflow-hidden" onClick={() => (window.location.href = "#contact")}>
+            <Button
+              className="relative overflow-hidden"
+              onClick={() => (window.location.href = "#contact")}
+            >
               <span className="relative z-10 flex items-center gap-2">
                 Connect
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -119,18 +129,28 @@ export default function Hero() {
 
           <div className="mt-12 flex items-center gap-1">
             <div className="h-px w-12 bg-white/10"></div>
-            <span className="px-4 text-sm text-muted-foreground">Social Presence</span>
+            <span className="px-4 text-sm text-muted-foreground">
+              Social Presence
+            </span>
             <div className="h-px flex-1 bg-white/10"></div>
           </div>
 
           <div className="mt-6 flex gap-4">
-            <SocialIcon href="https://github.com/vikashpr" icon={<Github className="h-5 w-5" />} label="GitHub" />
+            <SocialIcon
+              href="https://github.com/vikashpr"
+              icon={<Github className="h-5 w-5" />}
+              label="GitHub"
+            />
             <SocialIcon
               href="https://linkedin.com/in/vikashpr"
               icon={<Linkedin className="h-5 w-5" />}
               label="LinkedIn"
             />
-            <SocialIcon href="https://twitter.com/vikashpr" icon={<Twitter className="h-5 w-5" />} label="Twitter" />
+            <SocialIcon
+              href="https://x.com/vikash_pr"
+              icon={<Twitter className="h-5 w-5" />}
+              label="Twitter"
+            />
           </div>
         </div>
       </motion.div>
@@ -140,6 +160,6 @@ export default function Hero() {
         <ScrollIndicator href="#about" label="Discover my journey" />
       </div>
     </section>
-  )
+  );
 }
 

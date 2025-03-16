@@ -87,22 +87,16 @@ export default function About() {
 
                 {/* Photo with hover effect */}
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1, delay: 0.2 }}
                   className="relative overflow-hidden rounded-xl border border-white/10 aspect-square"
                 >
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
+                    src="/about-img.webp?height=600&width=600"
                     alt="VIKASH PR"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 400px"
                     priority
                   />
-
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-30" />
 
                   {/* Photo caption */}
                   <div className="absolute bottom-4 left-4 right-4 text-center">

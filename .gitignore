@@ -71,6 +71,5 @@ node_modules/
 # Cache
 .cache
 
-# I want to ignore all the .next files 
-
-.next/
+# Next.js build output
+.next

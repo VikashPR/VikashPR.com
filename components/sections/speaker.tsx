@@ -132,7 +132,7 @@ export default function Speaker() {
               className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-lg"
             >
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/speak-img.webp?height=800&width=600"
                 alt="Vikash PR speaking at a conference"
                 fill
                 className="object-cover"
@@ -145,9 +145,16 @@ export default function Speaker() {
 
               {/* Content overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <Badge className="mb-3 bg-primary/20 text-primary border-none">Featured Speaker</Badge>
-                <h3 className="text-2xl font-bold text-white mb-2">TechCrunch Disrupt 2023</h3>
-                <p className="text-white/80">"The Future of Ethical AI in Enterprise Applications"</p>
+                <Badge className="mb-3 bg-primary/20 text-primary border-none">
+                  Featured Speaker
+                </Badge>
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  B.Tech Inauguration Speech 2024
+                </h3>
+                <p className="text-white/80">
+                  "The youth of today are the leaders of tomorrow." - Nelson
+                  Mandela{" "}
+                </p>
               </div>
             </div>
           </Reveal>
@@ -161,9 +168,10 @@ export default function Speaker() {
                   <h3 className="text-2xl font-bold">Speaker Profile</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  As a thought leader in AI and technology ethics, I deliver engaging talks that bridge complex
-                  technical concepts with practical applications, combining rigorous research with compelling
-                  storytelling.
+                  As a thought leader in AI and technology ethics, I deliver
+                  engaging talks that bridge complex technical concepts with
+                  practical applications, combining rigorous research with
+                  compelling storytelling.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="flex items-center gap-3">
@@ -172,7 +180,9 @@ export default function Speaker() {
                     </div>
                     <div>
                       <div className="text-sm font-medium">25+</div>
-                      <div className="text-xs text-muted-foreground">Speaking Engagements</div>
+                      <div className="text-xs text-muted-foreground">
+                        Speaking Engagements
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -181,7 +191,9 @@ export default function Speaker() {
                     </div>
                     <div>
                       <div className="text-sm font-medium">10,000+</div>
-                      <div className="text-xs text-muted-foreground">Audience Reached</div>
+                      <div className="text-xs text-muted-foreground">
+                        Audience Reached
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -202,7 +214,9 @@ export default function Speaker() {
                       </div>
                       <div>
                         <h5 className="text-sm font-medium">{topic.title}</h5>
-                        <p className="text-xs text-muted-foreground mt-1">{topic.description}</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {topic.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -224,7 +238,10 @@ export default function Speaker() {
                     transition={{ duration: 0.5 }}
                   />
                 </Button>
-                <Button variant="outline" className="flex-1 group relative overflow-hidden">
+                <Button
+                  variant="outline"
+                  className="flex-1 group relative overflow-hidden"
+                >
                   <span className="relative z-10 flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
                     <span>Invite for an Event</span>
@@ -256,6 +273,6 @@ export default function Speaker() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

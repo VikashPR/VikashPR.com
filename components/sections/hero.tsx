@@ -77,16 +77,16 @@ export default function Hero() {
           </h1>
 
           {/* Condensed description with bullet points */}
-          <div className="mb-8 max-w-2xl">
+            <div className="mb-8 max-w-2xl">
             <p className="mb-8 max-w-2xl fluid-text-xl font-light leading-relaxed text-muted-foreground">
-              An award winning engineer dedicated to{" "}
-              <span className="text-foreground">designing</span>,{" "}
-              <span className="text-foreground">developing</span>, and{" "}
-              <span className="text-foreground">deploying (E2E)</span> digital
-              solutions that connect scientific discovery with real-world
+              An award-winning engineering graduate reimagining global well-being at the intersection of{" "}
+              <span className="text-foreground">machine learning</span>,{" "}
+              <span className="text-foreground">software engineering</span>, and{" "}
+              <span className="text-foreground">healthcare innovation</span>—developing digital
+              solutions that turn scientific discovery into real-world
               impact.
             </p>
-          </div>
+            </div>
 
           {/* Enhanced CTA Buttons with Tooltips and Micro-interactions */}
           <div className="flex flex-wrap gap-4 relative">
@@ -95,7 +95,7 @@ export default function Hero() {
               onClick={() => (window.location.href = "#contact")}
             >
               <span className="relative z-10 flex items-center gap-2">
-                Contact My Team
+                Connect
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
               <motion.div

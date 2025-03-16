@@ -70,3 +70,5 @@ node_modules/
 
 # Cache
 .cache
+
+.next/

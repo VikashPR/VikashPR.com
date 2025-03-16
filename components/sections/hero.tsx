@@ -53,7 +53,11 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-5xl">
           <div className="mb-6 inline-flex items-center rounded-full border border-white/10 bg-secondary/30 px-4 py-1.5 backdrop-blur-sm">
-            <span className="mr-2 h-2 w-2 rounded-full bg-primary"></span>
+            <motion.span
+              className="mr-2 h-2 w-2 rounded-full bg-primary"
+              animate={{ opacity: [1, 0, 1] }}
+              transition={{ duration: 1, repeat: Infinity }}
+            />
             <span className="text-sm font-medium text-muted-foreground">
               Pioneering at the intersection of technology and human potential
             </span>

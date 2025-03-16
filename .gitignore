@@ -72,4 +72,4 @@ node_modules/
 .cache
 
 # Next.js build output
-.next
+/.next/

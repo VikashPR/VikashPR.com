@@ -98,38 +98,18 @@ export default function Navbar() {
           className="flex items-center space-x-2 text-xl font-bold tracking-tighter transition-all duration-300 hover:text-primary group"
           aria-label="VIKASH PR Logo"
         >
-          <div className="relative flex items-center justify-center w-10 h-10 overflow-hidden rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 border border-white/10 transition-all duration-300 group-hover:border-primary/30">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="transition-all duration-300 group-hover:scale-110"
-            >
-              <path
-                d="M4 4L12 20L20 4"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-primary"
-              />
-              <path
-                d="M4 20H20"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-accent"
-              />
-            </svg>
+            <div className="relative flex items-center justify-center w-10 h-10 overflow-hidden rounded-xl bg-white border border-white/10 transition-all duration-300 group-hover:border-primary/30">
+            <img
+              src="/logo-dark.svg"
+              alt="VIKASH PR Logo"
+              className="w-8 h-8"
+            />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-primary/10 to-accent/10 blur-xl"></div>
-          </div>
+            </div>
           <span className="relative overflow-hidden">
-            <span className="block transition-transform duration-300 group-hover:translate-y-full">VP</span>
+            <span className="block transition-transform duration-300 group-hover:translate-y-full">PRV</span>
             <span className="absolute top-0 left-0 block transition-transform duration-300 -translate-y-full group-hover:translate-y-0 text-primary">
-              VP
+              PRV
             </span>
           </span>
         </Link>

@@ -1,84 +1,80 @@
+/* =========================================
+   Tailwind Imports
+   ========================================= */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================
+   THEME VARIABLES
+   ========================================= */
 @layer base {
   :root {
-    /* Light theme variables */
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 98%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 98%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 260 80% 50%;
-    --primary-rgb: 102, 51, 204;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 260 80% 50%;
-    --accent-foreground: 222 47% 11%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 260 80% 50%;
-    --radius: 1rem;
+    /* LIGHT THEME - Professional Knowledge Worker */
+    --background: 210 33% 98%;       /* Clean paper white */
+    --foreground: 220 39% 11%;       /* Deep navy for text */
+    --card: 220 14% 96%;             /* Slightly off-white cards */
+    --card-foreground: 220 39% 11%;
+    --popover: 220 14% 96%;
+    --popover-foreground: 220 39% 11%;
+    --primary: 220 76% 38%;          /* Trustworthy navy blue */
+    --primary-rgb: 30, 64, 124;
+    --primary-foreground: 210 33% 98%;
+    --secondary: 202 72% 90%;        /* Airy sky blue */
+    --secondary-foreground: 220 39% 11%;
+    --muted: 220 14% 90%;            /* Subtle gray-blue */
+    --muted-foreground: 215 16% 47%; /* Professional gray */
+    --accent: 172 66% 36%;           /* Innovation teal */
+    --accent-foreground: 210 33% 98%;
+    --destructive: 5 82% 53%;        /* Clear warning red */
+    --destructive-foreground: 210 33% 98%;
+    --border: 220 14% 90%;           /* Delicate borders */
+    --input: 220 14% 93%;            /* Soft input fields */
+    --ring: 220 76% 38%;             /* Focus ring matches primary */
+    --radius: 0.5rem;                /* Professional rounded corners */
   }
 
   .dark {
-    /* Dark theme variables (GitHub Copilot inspired) */
-    --background: 225 23% 10%;
-    --foreground: 213 31% 91%;
-    --card: 224 25% 12%;
-    --card-foreground: 213 31% 91%;
-    --popover: 224 25% 12%;
-    --popover-foreground: 213 31% 91%;
-    --primary: 260 80% 70%;
-    --primary-rgb: 179, 136, 255;
-    --primary-foreground: 213 31% 91%;
-    --secondary: 224 25% 18%;
-    --secondary-foreground: 213 31% 91%;
-    --muted: 224 25% 16%;
-    --muted-foreground: 215 20% 65%;
-    --accent: 260 80% 60%;
-    --accent-foreground: 213 31% 91%;
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 224 25% 18%;
-    --input: 224 25% 18%;
-    --ring: 260 80% 70%;
-  }
-
-  /* Theme transition class */
-  .theme-transition {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
-      transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-  }
-
-  /* Prevent transition on page load */
-  .theme-transition * {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
-      transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
+    /* DARK THEME - Code Lab Atmosphere */
+    --background: 225 23% 10%;       /* Deep space blue */
+    --foreground: 210 29% 93%;       /* Soft screen glow */
+    --card: 225 25% 12%;             /* Rich dark cards */
+    --card-foreground: 210 29% 93%;
+    --popover: 225 25% 15%;
+    --popover-foreground: 210 29% 93%;
+    --primary: 172 66% 50%;          /* Bright tech teal */
+    --primary-rgb: 56, 196, 172;
+    --primary-foreground: 225 23% 10%;
+    --secondary: 220 25% 18%;        /* Dark interface elements */
+    --secondary-foreground: 210 29% 93%;
+    --muted: 225 25% 16%;            /* Subtle dark variation */
+    --muted-foreground: 215 20% 65%; /* Comfortable gray */
+    --accent: 202 72% 60%;           /* Bright code blue */
+    --accent-foreground: 225 23% 10%;
+    --destructive: 5 82% 59%;        /* Alert neon red */
+    --destructive-foreground: 210 29% 93%;
+    --border: 220 25% 18%;           /* Defined borders */
+    --input: 220 25% 20%;            /* Input field depth */
+    --ring: 172 66% 50%;             /* Futuristic teal focus */
   }
 }
 
+/* =========================================
+   BASE STYLES
+   ========================================= */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-/* Animation utilities */
+/* =========================================
+   ANIMATION UTILITIES
+   ========================================= */
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);
@@ -101,12 +97,13 @@
 .animation-delay-2000 {
   animation-delay: 2s;
 }
-
 .animation-delay-4000 {
   animation-delay: 4s;
 }
 
-/* macOS inspired styles */
+/* =========================================
+   MAC-STYLE COMPONENTS (OPTIONAL)
+   ========================================= */
 .mac-card {
   @apply bg-card/80 backdrop-blur-md border border-border shadow-xl;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
@@ -160,6 +157,9 @@
   @apply bg-white/5 backdrop-blur-md border border-border rounded-2xl;
 }
 
+/* =========================================
+   GRID BACKGROUND UTIL (Light & Dark)
+   ========================================= */
 .bg-grid-white\/\[0\.02\] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.02)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
@@ -172,11 +172,12 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(0 0 0 / 0.02)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
 
-/* Glow effects */
+/* =========================================
+   GLOW EFFECTS
+   ========================================= */
 .glow {
   position: relative;
 }
-
 .glow::after {
   content: "";
   position: absolute;
@@ -189,16 +190,16 @@
   z-index: -1;
   filter: blur(15px);
 }
-
 .glow-primary::after {
   --tw-gradient-from: theme("colors.primary.DEFAULT");
 }
-
 .glow-accent::after {
   --tw-gradient-from: theme("colors.accent.DEFAULT");
 }
 
-/* Add this to the end of your globals.css file */
+/* =========================================
+   SPIN SLOW
+   ========================================= */
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);
@@ -207,12 +208,13 @@
     transform: rotate(360deg);
   }
 }
-
 .animate-spin-slow {
   animation: spin-slow 10s linear infinite;
 }
 
-/* Fluid typography */
+/* =========================================
+   FLUID TYPOGRAPHY
+   ========================================= */
 .fluid-text-sm {
   font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
 }
@@ -249,30 +251,30 @@
   font-size: clamp(3.75rem, 2.75rem + 5vw, 5rem);
 }
 
-/* Geometric shapes */
+/* =========================================
+   GEOMETRIC SHAPES
+   ========================================= */
 .geometric-shape {
   position: absolute;
   opacity: 0.1;
   z-index: -1;
 }
-
 .geometric-circle {
   border-radius: 50%;
 }
-
 .geometric-square {
   border-radius: 0;
 }
-
 .geometric-triangle {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
-
 .geometric-hexagon {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
-/* Gradient text */
+/* =========================================
+   GRADIENT TEXT
+   ========================================= */
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
@@ -280,27 +282,29 @@
   background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
 }
 
-/* Parallax effect */
+/* =========================================
+   PARALLAX EFFECT
+   ========================================= */
 .parallax {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
-
 .parallax-layer {
   transform: translateZ(0);
   transition: transform 0.1s;
   will-change: transform;
 }
 
-/* Mobile optimizations */
+/* =========================================
+   MOBILE OPTIMIZATIONS
+   ========================================= */
 @media (max-width: 768px) {
   .fluid-text-6xl {
     font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
   }
 
-  /* Adjust social presence section on mobile to avoid overlap */
+  /* Adjust your hero or special sections on mobile if needed */
   section[aria-label="Hero section"] .container {
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
   }
 }
-

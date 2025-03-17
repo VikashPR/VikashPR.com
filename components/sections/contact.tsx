@@ -96,7 +96,7 @@ export default function Contact() {
                           Apply for mentorship program
                         </Link>
                         <span className="block text-xs text-primary/80 mt-1">
-                          Currently accepting 4 mentees every 6 months
+                          2 mentees every 6 Fall and Spring
                         </span>
                       </p>
                     </div>

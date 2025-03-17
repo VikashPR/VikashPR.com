@@ -202,14 +202,12 @@ export default function About() {
             <div className="space-y-6">
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
-                  <span className="font-bold">My superpower?</span>{" "}
-                  <span className="italic">
-                    "I have no superpower. I am only passionately curious"
-                  </span>{" "}
-                  As a naturally curious and driven person I strong believe that
-                  the best solutions emerge when curiosity meets purpose. I have
-                  headed and developed digital SaaS solutions that serves more
-                  than 50,000 users across Asia, and Europe.
+                  I have headed and developed digital SaaS solutions that serves
+                  more than 50,000 users across 44 markets in Asia, Europe and
+                  other parts of the world. During my time at undergraduate
+                  student, I've conducted research in collaboration with India's
+                  premier research institutes and laboratories in the field of
+                  Artificial Intelligent Systems and Healthcare innovations.
                 </p>
               </Reveal>
 
@@ -220,9 +218,9 @@ export default function About() {
                     "I have no superpower. I am only passionately curious"
                   </span>{" "}
                   As a naturally curious and driven person I strong believe that
-                  the best solutions emerge when curiosity meets purpose. I have
-                  headed and developed digital SaaS solutions that serves more
-                  than 50,000 users across Asia, and Europe.
+                  the best solutions emerge when curiosity meets purpose. My
+                  inquisitive mind has always fostered my curiosity towards
+                  research which I aim to pursue as a career in the future.
                 </p>
               </Reveal>
 

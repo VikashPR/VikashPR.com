@@ -76,7 +76,7 @@ export default function About() {
       <div className="container px-4 mx-auto relative z-10">
         <SectionTitle
           tag="About Me"
-          title="The best solutions emerge when curiosity meets purpose"
+          title='Meaningful progress begins with asking 🤔 "What if ?" '
           subtitle="As a lifelong learner and creative thinker, I thrive to transform bold ideas into results that matter."
         />
 
@@ -202,18 +202,31 @@ export default function About() {
             <div className="space-y-6">
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
-                  A naturally curious and driven person who loves exploring
-                  where innovation, intellect, and impact collide With over a
-                  decade at the intersection of AI and software engineering,
-                  I've pioneered approaches that make advanced technologies more
-                  interpretable, equitable, and aligned with human values. My
-                  research has influenced how major institutions implement AI
-                  governance and shaped industry standards for responsible
-                  innovation.
+                  <span className="font-bold">My superpower?</span>{" "}
+                  <span className="italic">
+                    "I have no superpower. I am only passionately curious"
+                  </span>{" "}
+                  As a naturally curious and driven person I strong believe that
+                  the best solutions emerge when curiosity meets purpose. I have
+                  headed and developed digital SaaS solutions that serves more
+                  than 50,000 users across Asia, and Europe.
                 </p>
               </Reveal>
 
               <Reveal delay={0.1}>
+                <p className="text-foreground text-lg leading-relaxed">
+                  <span className="font-bold">My superpower?</span>{" "}
+                  <span className="italic">
+                    "I have no superpower. I am only passionately curious"
+                  </span>{" "}
+                  As a naturally curious and driven person I strong believe that
+                  the best solutions emerge when curiosity meets purpose. I have
+                  headed and developed digital SaaS solutions that serves more
+                  than 50,000 users across Asia, and Europe.
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.2}>
                 <p className="leading-relaxed text-muted-foreground">
                   As founder of Velam.ai, I lead a team developing
                   next-generation AI solutions that empower organizations to

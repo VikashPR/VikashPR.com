@@ -62,7 +62,11 @@ export default function About() {
   }
 
   return (
-    <section id="about" ref={containerRef} className="relative py-24 bg-background">
+    <section
+      id="about"
+      ref={containerRef}
+      className="relative py-24 bg-background"
+    >
       {/* Enhanced background elements */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px] opacity-20" />
       <div className="absolute top-0 h-32 w-full bg-gradient-to-b from-background to-transparent" />
@@ -72,8 +76,8 @@ export default function About() {
       <div className="container px-4 mx-auto relative z-10">
         <SectionTitle
           tag="About Me"
-          title="Advancing technology to address humanity's most profound challenges"
-          subtitle="I bridge the gap between theoretical AI research and practical applications that solve real-world problems."
+          title="The best solutions emerge when curiosity meets purpose"
+          subtitle="As a lifelong learner and creative thinker, I thrive to transform bold ideas into results that matter."
         />
 
         <div className="grid gap-16 md:grid-cols-12">
@@ -86,9 +90,7 @@ export default function About() {
                 <div className="absolute -bottom-4 -right-4 size-32 rounded-full bg-accent/5" />
 
                 {/* Photo with hover effect */}
-                <motion.div
-                  className="relative overflow-hidden rounded-xl border border-white/10 aspect-square"
-                >
+                <motion.div className="relative overflow-hidden rounded-xl border border-white/10 aspect-square">
                   <Image
                     src="/about-img.webp?height=600&width=600"
                     alt="VIKASH PR"
@@ -101,7 +103,9 @@ export default function About() {
                   {/* Photo caption */}
                   <div className="absolute bottom-4 left-4 right-4 text-center">
                     <div className="inline-flex items-center px-3 py-1 rounded-full bg-background/40 backdrop-blur-sm border border-white/10">
-                      <span className="text-xs font-medium text-primary">VIKASH PR</span>
+                      <span className="text-xs font-medium text-primary">
+                        VIKASH PR
+                      </span>
                     </div>
                   </div>
                 </motion.div>
@@ -117,7 +121,9 @@ export default function About() {
                 <motion.h3
                   className="text-lg font-medium tracking-wide"
                   initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }
+                  }
                   transition={{ duration: 0.5, delay: 0.5 }}
                 >
                   VIKASH PR
@@ -125,7 +131,9 @@ export default function About() {
                 <motion.p
                   className="text-sm text-muted-foreground"
                   initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }
+                  }
                   transition={{ duration: 0.5, delay: 0.6 }}
                 >
                   AI Researcher • Software Engineer • Speaker
@@ -134,7 +142,9 @@ export default function About() {
                 <motion.div
                   className="pt-4"
                   initial={{ opacity: 0, y: 10 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
                   transition={{ duration: 0.5, delay: 0.7 }}
                 >
                   <Link
@@ -150,24 +160,36 @@ export default function About() {
               {/* Enhanced impact metrics - visual presentation */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="grid grid-cols-2 gap-4 pt-4"
               >
                 <div className="p-4 rounded-xl border border-white/10 bg-card/30 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-primary">{impactMetrics.publications}</div>
-                  <div className="text-xs text-muted-foreground">Publications</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {impactMetrics.publications}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    Publications
+                  </div>
                 </div>
                 <div className="p-4 rounded-xl border border-white/10 bg-card/30 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-primary">{impactMetrics.citations}</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {impactMetrics.citations}
+                  </div>
                   <div className="text-xs text-muted-foreground">Citations</div>
                 </div>
                 <div className="p-4 rounded-xl border border-white/10 bg-card/30 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-primary">{impactMetrics.hIndex}</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {impactMetrics.hIndex}
+                  </div>
                   <div className="text-xs text-muted-foreground">h-index</div>
                 </div>
                 <div className="p-4 rounded-xl border border-white/10 bg-card/30 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-primary">{impactMetrics.patents}</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {impactMetrics.patents}
+                  </div>
                   <div className="text-xs text-muted-foreground">Patents</div>
                 </div>
               </motion.div>
@@ -180,18 +202,25 @@ export default function About() {
             <div className="space-y-6">
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
-                  With over a decade at the intersection of AI and software engineering, I've pioneered approaches that
-                  make advanced technologies more interpretable, equitable, and aligned with human values. My research
-                  has influenced how major institutions implement AI governance and shaped industry standards for
-                  responsible innovation.
+                  A naturally curious and driven person who loves exploring
+                  where innovation, intellect, and impact collide With over a
+                  decade at the intersection of AI and software engineering,
+                  I've pioneered approaches that make advanced technologies more
+                  interpretable, equitable, and aligned with human values. My
+                  research has influenced how major institutions implement AI
+                  governance and shaped industry standards for responsible
+                  innovation.
                 </p>
               </Reveal>
 
               <Reveal delay={0.1}>
                 <p className="leading-relaxed text-muted-foreground">
-                  As founder of Velam.ai, I lead a team developing next-generation AI solutions that empower
-                  organizations to harness the full potential of machine learning while maintaining the highest ethical
-                  standards. My approach combines rigorous scientific research with practical engineering expertise.
+                  As founder of Velam.ai, I lead a team developing
+                  next-generation AI solutions that empower organizations to
+                  harness the full potential of machine learning while
+                  maintaining the highest ethical standards. My approach
+                  combines rigorous scientific research with practical
+                  engineering expertise.
                 </p>
               </Reveal>
             </div>
@@ -201,7 +230,9 @@ export default function About() {
               <Reveal>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-px w-8 bg-primary/50"></div>
-                  <h3 className="text-2xl font-semibold relative inline-block">Core Principles</h3>
+                  <h3 className="text-2xl font-semibold relative inline-block">
+                    Core Principles
+                  </h3>
                 </div>
               </Reveal>
 
@@ -216,7 +247,10 @@ export default function About() {
                       }`}
                       layoutId={`principle-${principle.id}`}
                     >
-                      <div className="p-5 cursor-pointer" onClick={() => togglePrinciple(principle.id)}>
+                      <div
+                        className="p-5 cursor-pointer"
+                        onClick={() => togglePrinciple(principle.id)}
+                      >
                         <div className="flex items-start gap-4">
                           <motion.div
                             className={`flex items-center justify-center w-12 h-12 rounded-full shrink-0 bg-gradient-to-br ${principle.color}`}
@@ -228,9 +262,16 @@ export default function About() {
 
                           <div className="flex-1">
                             <div className="flex items-center justify-between">
-                              <h4 className="text-lg font-medium">{principle.title}</h4>
+                              <h4 className="text-lg font-medium">
+                                {principle.title}
+                              </h4>
                               <motion.div
-                                animate={{ rotate: expandedPrinciple === principle.id ? 180 : 0 }}
+                                animate={{
+                                  rotate:
+                                    expandedPrinciple === principle.id
+                                      ? 180
+                                      : 0,
+                                }}
                                 transition={{ duration: 0.3 }}
                                 className="w-5 h-5 flex items-center justify-center"
                               >
@@ -252,7 +293,9 @@ export default function About() {
                                 </svg>
                               </motion.div>
                             </div>
-                            <p className="text-sm text-muted-foreground mt-1">{principle.content}</p>
+                            <p className="text-sm text-muted-foreground mt-1">
+                              {principle.content}
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -265,7 +308,9 @@ export default function About() {
                           transition={{ duration: 0.3 }}
                           className="px-5 pb-5 pt-2 border-t border-white/10"
                         >
-                          <p className="text-sm text-foreground">{principle.expandedContent}</p>
+                          <p className="text-sm text-foreground">
+                            {principle.expandedContent}
+                          </p>
                         </motion.div>
                       )}
                     </motion.div>
@@ -311,6 +356,6 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

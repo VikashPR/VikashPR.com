@@ -141,7 +141,7 @@ export default function Speaker() {
               />
 
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" /> */}
 
               {/* Content overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -179,7 +179,7 @@ export default function Speaker() {
                       <Mic className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium">25+</div>
+                      <div className="text-sm font-medium">15+</div>
                       <div className="text-xs text-muted-foreground">
                         Speaking Engagements
                       </div>
@@ -190,7 +190,7 @@ export default function Speaker() {
                       <Users className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium">10,000+</div>
+                      <div className="text-sm font-medium">5,000+</div>
                       <div className="text-xs text-muted-foreground">
                         Audience Reached
                       </div>

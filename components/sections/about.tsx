@@ -76,8 +76,8 @@ export default function About() {
       <div className="container px-4 mx-auto relative z-10">
         <SectionTitle
           tag="About Me"
-          title='Meaningful progress begins with asking 🤔 "What if ?" '
-          subtitle="As a lifelong learner and creative thinker, I thrive to transform bold ideas into results that matter."
+          title="The Foundation of Progress Lies in the Right Questions"
+          subtitle="Transforming bold questions into ideas—and ideas into results that matter."
         />
 
         <div className="grid gap-16 md:grid-cols-12">

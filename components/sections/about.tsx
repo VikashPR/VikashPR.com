@@ -202,25 +202,26 @@ export default function About() {
             <div className="space-y-6">
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
-                  I have headed and developed digital SaaS solutions that serves
-                  more than 50,000 users across 44 markets in Asia, Europe and
-                  other parts of the world. During my time at undergraduate
-                  student, I've conducted research in collaboration with India's
-                  premier research institutes and laboratories in the field of
-                  Artificial Intelligent Systems and Healthcare innovations.
+                  More than 50,000 users in 44 different markets spanning Asia,
+                  Europe, and beyond have benefited from digital SaaS solutions
+                  that I have led and developed. I have worked with some of
+                  India's leading research institutions and laboratories in AI
+                  and healthcare innovation while I was an undergraduate
+                  student.
                 </p>
               </Reveal>
 
               <Reveal delay={0.1}>
                 <p className="text-foreground text-lg leading-relaxed">
-                  <span className="font-bold">My superpower?</span>{" "}
+                  <span className="font-bold">What is my superpower?</span>{" "}
                   <span className="italic">
                     "I have no superpower. I am only passionately curious"
                   </span>{" "}
-                  As a naturally curious and driven person I strong believe that
-                  the best solutions emerge when curiosity meets purpose. My
-                  inquisitive mind has always fostered my curiosity towards
-                  research which I aim to pursue as a career in the future.
+                  As a naturally curious and driven individual, I am
+                  believe that the most effective solutions emerge when
+                  curiosity meets purpose. For years, my inquisitive mind has
+                  fostered my curiosity in research, a profession that I intend
+                  to pursue in the future.
                 </p>
               </Reveal>
 

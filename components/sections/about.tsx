@@ -217,11 +217,12 @@ export default function About() {
                   <span className="italic">
                     "I have no superpower. I am only passionately curious"
                   </span>{" "}
-                  As a naturally curious and driven individual, I am
-                  believe that the most effective solutions emerge when
-                  curiosity meets purpose. For years, my inquisitive mind has
-                  fostered my curiosity in research, a profession that I intend
-                  to pursue in the future.
+                  As someone who naturally thrives in challenging environments,
+                  I firmly believe that the best solutions emerge when curiosity
+                  meets purpose. My inquisitive mind has driven me to explore
+                  research relentlessly, paving the way for a future where
+                  innovative thinking transforms complex problems into impactful
+                  solutions.
                 </p>
               </Reveal>
 

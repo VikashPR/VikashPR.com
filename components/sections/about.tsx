@@ -203,11 +203,10 @@ export default function About() {
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
                   More than 50,000 users in 44 different markets spanning Asia,
-                  Europe, and beyond have benefited from digital solutions
-                  that I have led and built. I have worked with some of
-                  India's leading research institutions and laboratories in AI
-                  and healthcare innovation while I was an undergraduate
-                  student.
+                  Europe, and beyond have benefited from digital solutions that
+                  I have led and built. I have worked with some of India's
+                  leading research institutions and laboratories in AI and
+                  healthcare innovation while I was an undergraduate student.
                 </p>
               </Reveal>
 
@@ -228,12 +227,10 @@ export default function About() {
 
               <Reveal delay={0.2}>
                 <p className="leading-relaxed text-muted-foreground">
-                  As founder of Velam.ai, I lead a team developing
-                  next-generation AI solutions that empower organizations to
-                  harness the full potential of machine learning while
-                  maintaining the highest ethical standards. My approach
-                  combines rigorous scientific research with practical
-                  engineering expertise.
+                  Beyond labs and laptops, you'll find me cycling through the
+                  city streets, reading news and making new friends. I am 
+                  passionate about sharing knowledge and have spoken at various
+                  conferences, events and mentored multiple students in the field of computer science.
                 </p>
               </Reveal>
             </div>

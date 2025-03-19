@@ -65,7 +65,7 @@ export default function Hero() {
 
           <h1 className="mb-6 font-sans">
             <span className="mb-4 block fluid-text-lg font-light uppercase tracking-wider text-muted-foreground">
-              #AI4All | #AI4Good | #Ideas2Action🚀
+              #AI4All | #AI4Good | #Ideas2Impact🚀
             </span>
             <span className="block fluid-text-6xl font-bold tracking-tight">
               <span className="relative inline-flex">

@@ -77,7 +77,7 @@ export default function About() {
         <SectionTitle
           tag="About Me"
           title="The Foundation of Progress Lies in the Right 🤔 Questions"
-          subtitle="Transforming bold ideas into results that matter."
+          subtitle="I transform bold ideas into results that matter 🎯"
         />
 
         <div className="grid gap-16 md:grid-cols-12">

@@ -68,7 +68,7 @@ export default function About() {
       className="relative py-24 bg-background"
     >
       {/* Enhanced background elements */}
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px] opacity-20" />
+      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px] opacity-40" />
       <div className="absolute top-0 h-32 w-full bg-gradient-to-b from-background to-transparent" />
       <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-background to-transparent" />
 

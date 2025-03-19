@@ -4,20 +4,18 @@ import { useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, useInView } from "framer-motion"
-import { ArrowRight, Shield, Brain, Globe } from "lucide-react"
+import { ArrowRight, BookCopy, Brain, Globe } from "lucide-react"
 import { SectionTitle } from "@/components/ui/section-title"
 import { Reveal } from "@/components/ui/reveal"
 
 // Condensed philosophy principles - reduced from 5 to 3 core principles
 const philosophyPrinciples = [
   {
-    id: "technology-ethics",
-    title: "Technology with Ethics",
+    id: "interdisciplinary-approach",
+    title: "Interdisciplinary Approach",
     content:
-      "Creating systems that augment human capabilities rather than replace them, respecting privacy, autonomy, and equity.",
-    expandedContent:
-      "My research has influenced ethical AI governance frameworks adopted by major tech companies and government agencies. I've developed novel methods for detecting and mitigating bias in machine learning systems that are now industry standards.",
-    icon: <Shield className="w-6 h-6 text-purple-400" />,
+      "Combining computer science, cognitive science, design thinking, and ethical philosophy to create holistic solutions to complex problems.",
+    icon: <BookCopy className="w-6 h-6 text-purple-400" />,
     color: "from-purple-500/20 to-purple-500/5",
   },
   {
@@ -25,18 +23,14 @@ const philosophyPrinciples = [
     title: "Human-Centered Design",
     content:
       "Designing intuitive, accessible systems aligned with how people think and behave, rather than forcing users to adapt to technology.",
-    expandedContent:
-      "My human-centered AI framework has been implemented in healthcare systems across three continents, improving diagnostic accuracy by 37% while making interfaces more intuitive for medical professionals.",
     icon: <Brain className="w-6 h-6 text-green-400" />,
     color: "from-green-500/20 to-green-500/5",
   },
   {
-    id: "interdisciplinary-approach",
-    title: "Interdisciplinary Approach",
+    id: "sustainable-innovation",
+    title: "Sustainable Innovation",
     content:
-      "Combining computer science, cognitive science, design thinking, and ethical philosophy to create holistic solutions to complex problems.",
-    expandedContent:
-      "My lab brings together researchers from diverse backgrounds—neuroscience, linguistics, computer science, and philosophy—creating a unique environment where breakthrough ideas emerge from unexpected connections.",
+      "Creating solutions that are scalable, ethical, and environmentally responsible, ensuring long-term impact and positive change.",
     icon: <Globe className="w-6 h-6 text-blue-400" />,
     color: "from-blue-500/20 to-blue-500/5",
   },
@@ -309,20 +303,6 @@ export default function About() {
                           </div>
                         </div>
                       </div>
-
-                      {expandedPrinciple === principle.id && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className="px-5 pb-5 pt-2 border-t border-white/10"
-                        >
-                          <p className="text-sm text-foreground">
-                            {principle.expandedContent}
-                          </p>
-                        </motion.div>
-                      )}
                     </motion.div>
                   </Reveal>
                 ))}

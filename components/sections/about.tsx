@@ -76,8 +76,8 @@ export default function About() {
       <div className="container px-4 mx-auto relative z-10">
         <SectionTitle
           tag="About Me"
-          title="The Foundation of Progress Lies in the Right Questions"
-          subtitle="Transforming bold questions into ideas—and ideas into results that matter."
+          title="The Foundation of Progress Lies in the Right 🤔 Questions"
+          subtitle="Transforming bold ideas into results that matter."
         />
 
         <div className="grid gap-16 md:grid-cols-12">
@@ -203,8 +203,8 @@ export default function About() {
               <Reveal>
                 <p className="text-foreground text-lg leading-relaxed">
                   More than 50,000 users in 44 different markets spanning Asia,
-                  Europe, and beyond have benefited from digital SaaS solutions
-                  that I have led and developed. I have worked with some of
+                  Europe, and beyond have benefited from digital solutions
+                  that I have led and built. I have worked with some of
                   India's leading research institutions and laboratories in AI
                   and healthcare innovation while I was an undergraduate
                   student.
